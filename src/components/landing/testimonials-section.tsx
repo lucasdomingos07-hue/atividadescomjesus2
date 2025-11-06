@@ -23,6 +23,7 @@ const testimonials = [
     role: "mãe da Maria, 6 anos",
     quote: "Minha filha pede pra colorir todo dia — e sempre pergunta sobre Jesus!",
     image: PlaceHolderImages.find(img => img.id === "testimonial-1"),
+    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-camila-image"),
   },
   {
     name: "Paula F.",
@@ -112,6 +113,18 @@ export default function TestimonialsSection() {
                       ))}
                     </div>
                     <p className="italic text-base text-muted-foreground flex-grow">“{testimonial.quote}”</p>
+                    {testimonial.testimonialImage && (
+                        <div className="mt-4">
+                            <Image
+                                src={testimonial.testimonialImage.imageUrl}
+                                alt={testimonial.testimonialImage.description}
+                                width={200}
+                                height={200}
+                                data-ai-hint={testimonial.testimonialImage.imageHint}
+                                className="rounded-lg shadow-md"
+                            />
+                        </div>
+                    )}
                   </CardContent>
                 </Card>
               </div>
