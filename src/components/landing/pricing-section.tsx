@@ -57,7 +57,7 @@ export default function PricingSection() {
                   </div>
                 )}
                 <div className="flex flex-col">
-                  <h3 className="text-lg font-headline font-bold text-headline">MATERIAL EDUCACIONAL COMPLETO</h3>
+                  <h3 className="text-xl font-headline font-semibold text-headline">Material Educacional Completo</h3>
                   <CardTitle className="text-base font-headline font-semibold">{plan.name}</CardTitle>
                 </div>
                 <div className="text-center">
