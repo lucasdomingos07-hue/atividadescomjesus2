@@ -7,7 +7,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const features = [
   { text: "<strong class=\"font-bold\">100 Atividades Bíblicas para Colorir</strong> — ensinam sobre Jesus enquanto desenvolvem criatividade e concentração." },
-  { text: "<strong class=\"font-bold\">30 Histórias Bíblicas Infantis</strong> — leitura fácil e inspiradora, ideal pra momentos em família." },
+  { text: "<strong class=\"font-bold\">25 Histórias Bíblicas Infantis</strong> — leitura fácil e inspiradora, ideal pra momentos em família." },
   { text: "<strong class=\"font-bold\">Guia da Mãe de Fé</strong> — ideias práticas pra transformar o tempo livre em momentos espirituais com seus filhos." },
   { text: "<strong class=\"font-bold\">Calendário da Fé 2026</strong> — ensine seus filhos a planejar o dia com propósito, com atividades e versículos diários." },
 ];
