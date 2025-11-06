@@ -53,10 +53,13 @@ export default function PricingSection() {
               <CardHeader className="items-center text-center pt-8">
                  {plan.isRecommended && (
                   <div className="bg-brand-green text-accent text-xs font-bold px-3 py-1 rounded-full shadow-lg mb-4">
-                    MATERIAL EDUCACIONAL COMPLETO - 70% OFF
+                    70% OFF
                   </div>
                 )}
-                <CardTitle className="text-xl font-headline">{plan.name}</CardTitle>
+                <div className="flex flex-col">
+                  <h3 className="text-lg font-headline font-bold text-headline">MATERIAL EDUCACIONAL COMPLETO</h3>
+                  <CardTitle className="text-base font-headline font-semibold">{plan.name}</CardTitle>
+                </div>
                 <div className="text-center">
                   <p className="text-lg font-semibold text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
                   <div className="text-4xl font-bold font-headline py-2 text-accent">
