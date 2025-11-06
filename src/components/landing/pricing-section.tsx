@@ -9,20 +9,6 @@ import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "Kit Básico • Uso Pessoal",
-    originalPrice: "R$67",
-    price: "R$17,00",
-    priceDescription: "Acesso vitalício",
-    features: [
-      "50 desenhos bíblicos para ensinar fé enquanto eles se divertem colorindo.",
-      "Acesso imediato para imprimir quando quiser.",
-      "Suporte individual via e-mail para tirar dúvidas.",
-    ],
-    isRecommended: false,
-    cta: "COMPRAR KIT BÁSICO",
-    url: "https://app.ombrelone.com/checkout/digital/2sfcjj7u0v"
-  },
-  {
     name: "Kit Completo • Uso Pessoal e Educativo",
     originalPrice: "R$97",
     price: "R$27,00",
@@ -32,6 +18,8 @@ const plans = [
       "Histórias infantis que tornam o aprendizado espiritual leve e envolvente.",
       "Guia prático para criar momentos de fé em família.",
       "Calendário da Fé 2026 para criar uma rotina divertida e com propósito.",
+      "Acesso imediato para imprimir quando quiser.",
+      "Suporte individual via e-mail para tirar dúvidas."
     ],
     bonuses: [
       { name: "Bônus 1", description: "Guia de Atividades em Família" },
@@ -47,9 +35,6 @@ export default function PricingSection() {
   return (
     <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-4 pb-12">
       <div className="text-center space-y-4 mb-8 max-w-3xl mx-auto">
-        <h2 className="text-xl md:text-2xl font-headline font-bold text-headline">
-          Escolha o Kit ideal para seu filho:
-        </h2>
         <div className="flex items-center justify-center text-center gap-3 text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
             <Users className="w-6 h-6 text-accent shrink-0"/>
             <span className="font-medium text-left text-sm leading-tight">
@@ -58,8 +43,8 @@ export default function PricingSection() {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="max-w-xl mx-auto">
+        <div className="grid grid-cols-1 gap-8">
           {plans.map((plan) => (
             <Card key={plan.name} className={cn(
               "shadow-lg relative flex flex-col h-full bg-card overflow-hidden rounded-lg",
