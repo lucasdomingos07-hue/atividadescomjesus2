@@ -19,7 +19,7 @@ export default function HeroSection() {
               Estimule o amor de Deus nas crianças<br />Mesmo em um mundo cheio de telas e distrações!
             </h1>
             <h2 className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              +100 Atividades Bíblicas para imprimir e colorir 🖨️🎨<br />Crie momentos de fé e conexão em família - de forma leve e encantadora.
+              +100 Atividades Bíblicas para imprimir e colorir 🖨️<br />Crie momentos de fé e conexão em família - de forma leve e encantadora.
             </h2>
           </div>
         </div>
