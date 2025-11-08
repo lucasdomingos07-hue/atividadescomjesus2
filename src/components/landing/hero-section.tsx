@@ -15,7 +15,7 @@ export default function HeroSection() {
         {/* Text content */}
         <div className="flex flex-col space-y-6 text-center md:items-center">
           <div className="space-y-4 text-center">
-            <h1 className="text-xl md:text-3xl font-headline font-bold tracking-tight text-headline">
+            <h1 className="text-2xl md:text-3xl font-headline font-bold tracking-tight text-headline">
               Nestas férias, troque horas de tela por<br /> momentos de fé e conexão em família.
             </h1>
             <h2 className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -56,3 +56,4 @@ export default function HeroSection() {
     </section>
   );
 }
+
