@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster"
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Faithful Creations',
+  title: 'Colorindo Fé e Alegria',
   description: 'Transforme o tempo de tela em momentos de fé, alegria e aprendizado com Jesus!',
 };
 

@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "Kit Colorindo com Fé e Alegria",
+    name: "Kit Colorindo Fé e Alegria",
     subtitle: "Material Completo",
     originalPrice: "R$97,90",
     price: "R$27,90",
@@ -56,7 +56,8 @@ export default function PricingSection() {
                   </div>
                 )}
                 <div className="flex flex-col">
-                  <h3 className="font-headline font-semibold text-xl text-primary-foreground">
+                  <h3 className="font-headline font-semibold text-xl text-primary-foreground flex items-center gap-2">
+                    <Gift className="w-6 h-6 text-accent" />
                     {plan.name}
                   </h3>
                   <CardTitle className="text-base font-headline font-semibold">{plan.subtitle}</CardTitle>
