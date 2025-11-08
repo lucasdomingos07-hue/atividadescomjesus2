@@ -55,7 +55,7 @@ export default function PricingSection() {
               <CardHeader className="items-center text-center pt-8">
                  {plan.isRecommended && (
                   <div className="bg-brand-green text-accent text-xs font-bold px-3 py-1 rounded-full shadow-lg mb-4">
-                    70% OFF
+                    70%OFF
                   </div>
                 )}
                 <div className="flex flex-col">
