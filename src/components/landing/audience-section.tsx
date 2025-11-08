@@ -6,14 +6,14 @@ import { Heart, Gift, BookOpen, Users, Milestone } from "lucide-react";
 const audience = [
   { text: "Mães e Pais que buscam momentos de qualidade e ensino com seus filhos.", icon: <Heart size={12} fill="hsl(var(--accent))" stroke="hsl(var(--accent-foreground))" /> },
   { text: "Avós, Tios e Padrinhos que desejam presentear com algo que edifica e diverte.", icon: <Gift size={12} fill="hsl(var(--accent))" stroke="hsl(var(--accent-foreground))" /> },
-  { text: "Professores de Escola Dominical e Catequistas que precisam de materiais criativos.", icon: <BookOpen size={12} fill="hsl(var(--accent))" stroke="hsl(var(--accent-foreground))" /> },
+  { text: "Professores de Escola Dominical e Catequistas que precisam de materiais criativos.", icon: <BookOpen size={12} fill-="hsl(var(--accent))" stroke="hsl(var(--accent-foreground))" /> },
   { text: "Líderes de Ministério Infantil que querem engajar as crianças com a Palavra.", icon: <Users size={12} fill="hsl(var(--accent))" stroke="hsl(var(--accent-foreground))" /> },
   { text: "Qualquer pessoa que queira plantar sementes de fé nas futuras gerações.", icon: <Milestone size={12} fill="hsl(var(--accent))" stroke="hsl(var(--accent-foreground))" /> },
 ];
 
 export default function AudienceSection() {
     return (
-        <SectionWrapper className="pt-12 pb-8">
+        <SectionWrapper className="pt-8 pb-8">
             <div className="max-w-xl mx-auto">
                 <Card className="shadow-lg bg-card border-accent/30">
                     <CardHeader>
