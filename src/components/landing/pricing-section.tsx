@@ -26,9 +26,9 @@ const plans = [
       "Suporte individual via e-mail"
     ],
     bonuses: [
-      { description: "Devocional Infantil", oldPrice: "R$ 29,90", newPrice: "R$ 0,00" },
-      { description: "Guia da Mãe de Fé", oldPrice: "R$ 19,90", newPrice: "R$ 0,00" },
-      { description: "Calendário da Fé 2026", oldPrice: "R$ 19,90", newPrice: "R$ 0,00" },
+      { title: "Devocional Infantil", oldPrice: "R$ 29,90", newPrice: "R$ 0,00" },
+      { title: "Guia da Mãe de Fé", oldPrice: "R$ 19,90", newPrice: "R$ 0,00" },
+      { title: "Calendário da Fé 2026", oldPrice: "R$ 19,90", newPrice: "R$ 0,00" },
     ],
     isRecommended: true,
     cta: "KIT COMPLETO COM 70%OFF",
@@ -70,9 +70,9 @@ export default function PricingSection() {
                 </div>
                 
                 {plan.audience && (
-                  <div className="text-center text-sm text-muted-foreground mt-4 space-y-2">
+                  <div className="text-left text-sm text-muted-foreground mt-4 space-y-2 w-full px-6">
                     {plan.audience.map((item, index) => (
-                      <div key={index} className="flex items-center gap-2 justify-center">
+                      <div key={index} className="flex items-center gap-2">
                         <Heart className="w-4 h-4 text-red-400" />
                         <span>{item}</span>
                       </div>
@@ -110,7 +110,7 @@ export default function PricingSection() {
                               </div>
                               <div className="flex flex-col">
                                 <span className="text-secondary-foreground font-semibold">
-                                  {bonus.description}
+                                  {bonus.title}
                                 </span>
                                 <div className="text-sm">
                                   <span className="line-through text-muted-foreground/80">{bonus.oldPrice}</span> por <strong className="text-primary-foreground">{bonus.newPrice}</strong>
