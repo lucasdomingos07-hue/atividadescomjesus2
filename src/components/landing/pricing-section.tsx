@@ -63,7 +63,7 @@ export default function PricingSection() {
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mt-2">Crie momentos leves, divertidos e com propósito com seu filho.</p>
-                  <p className="text-lg font-semibold text-muted-foreground mt-2">De <span className="line-through">{plan.originalPrice}</span> por</p>
+                  <p className="text-xl font-semibold text-muted-foreground mt-2">De <span className="line-through">{plan.originalPrice}</span> por</p>
                   <div className="text-4xl font-bold font-headline py-2 text-accent">
                     {plan.price}
                   </div>
