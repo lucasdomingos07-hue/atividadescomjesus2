@@ -5,27 +5,27 @@ import { Heart, BookOpen, Palette, HeartHandshake, Church } from "lucide-react";
 
 const benefits = [
   {
-    icon: <Heart className="w-8 h-8 text-accent" />,
+    icon: <Heart className="w-8 h-8 text-red-500" />,
     title: "Fortalece a fé e o coração dos pequenos",
     description: "Ensina valores cristãos de um jeito que eles amam.",
   },
   {
-    icon: <Palette className="w-8 h-8 text-accent" />,
+    icon: <Palette className="w-8 h-8 text-blue-500" />,
     title: "Desperta criatividade e coordenação de forma natural",
     description: "Atividades que desenvolvem habilidades enquanto divertem.",
   },
   {
-    icon: <HeartHandshake className="w-8 h-8 text-accent" />,
+    icon: <HeartHandshake className="w-8 h-8 text-pink-500" />,
     title: "Cria laços reais entre pais e filhos",
     description: "Momentos de qualidade que fortalecem a família.",
   },
   {
-    icon: <BookOpen className="w-8 h-8 text-accent" />,
+    icon: <BookOpen className="w-8 h-8 text-green-500" />,
     title: "Histórias que ensinam e aproximam de Deus",
     description: "Conteúdos que tocam o coração e ensinam a Palavra.",
   },
   {
-    icon: <Church className="w-8 h-8 text-accent" />,
+    icon: <Church className="w-8 h-8 text-purple-500" />,
     title: "Tenha um pequeno ministério em casa",
     description: "Um material completo e pronto para usar, que transforma o ambiente em um espaço de fé.",
   },
