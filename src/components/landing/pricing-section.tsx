@@ -20,9 +20,9 @@ const plans = [
       "Suporte individual via e-mail"
     ],
     bonuses: [
-      { name: "Bônus 1", description: "Devocional Infantil" },
-      { name: "Bônus 2", description: "Guia prático para criar momentos de fé em família" },
-      { name: "Bônus 3", description: "Calendário da Fé 2026 para criar uma rotina divertida e com propósito" },
+      { description: "Devocional Infantil", oldPrice: "R$ 29,90", newPrice: "R$ 0,00" },
+      { description: "Guia da Mãe de Fé", oldPrice: "R$ 19,90", newPrice: "R$ 0,00" },
+      { description: "Calendário da Fé 2026", oldPrice: "R$ 19,90", newPrice: "R$ 0,00" },
     ],
     isRecommended: true,
     cta: "KIT COMPLETO COM 70%OFF",
@@ -90,7 +90,9 @@ export default function PricingSection() {
                               <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-brand-green text-accent p-0.5">
                                 <Gift className="w-full h-full"/>
                               </div>
-                              <span className="text-secondary-foreground font-semibold">{bonus.description}</span>
+                              <span className="text-secondary-foreground font-semibold">
+                                {bonus.description} - <span className="line-through text-muted-foreground/80">{bonus.oldPrice}</span> por <strong className="text-primary-foreground">{bonus.newPrice}</strong>
+                              </span>
                            </li>
                         ))}
                       </ul>
