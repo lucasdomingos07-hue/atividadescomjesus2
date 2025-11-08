@@ -11,11 +11,6 @@ const plans = [
   {
     name: "Kit Colorindo Fé e Alegria",
     subtitle: "Material Completo",
-    audience: [
-      "Mães, Pais e Avós",
-      "Catequistas e líderes de ministério infantil",
-      "Qualquer pessoa que queira ensinar a Bíblia de forma criativa",
-    ],
     originalPrice: "R$97,90",
     price: "R$27,90",
     priceDescription: "Acesso vitalício",
@@ -36,6 +31,12 @@ const plans = [
   },
 ];
 
+const audience = [
+  "Mães, Pais e Avós",
+  "Catequistas e líderes de ministério infantil",
+  "Qualquer pessoa que queira ensinar a Bíblia de forma criativa",
+];
+
 export default function PricingSection() {
   return (
     <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-4 pb-12">
@@ -46,6 +47,26 @@ export default function PricingSection() {
               <strong>+ de 5 mil</strong> famílias já transformaram o tempo de tela das crianças em diversão e aprendizado.
             </span>
         </div>
+      </div>
+      
+      <div className="max-w-xl mx-auto mb-8">
+        <Card className="shadow-lg bg-card border-accent/30">
+          <CardHeader>
+            <CardTitle className="text-lg text-center font-headline font-semibold text-primary-foreground">Para quem é o kit?</CardTitle>
+          </CardHeader>
+          <CardContent className="pt-0">
+            <div className="text-left text-sm text-muted-foreground space-y-2 w-full">
+              {audience.map((item, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <div className="w-5 h-5 flex items-center justify-center shrink-0">
+                    <Heart className="w-4 h-4 text-red-400" />
+                  </div>
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
       </div>
 
       <div className="max-w-xl mx-auto">
@@ -69,19 +90,6 @@ export default function PricingSection() {
                   <CardTitle className="text-base font-headline font-semibold">{plan.subtitle}</CardTitle>
                 </div>
                 
-                {plan.audience && (
-                  <div className="text-left text-sm text-muted-foreground mt-4 space-y-2 w-full px-6">
-                    {plan.audience.map((item, index) => (
-                      <div key={index} className="flex items-start gap-3">
-                        <div className="w-5 h-5 flex items-center justify-center shrink-0">
-                          <Heart className="w-4 h-4 text-red-400" />
-                        </div>
-                        <span>{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-
                 <div className="text-center pt-4">
                   <p className="text-xl font-semibold text-muted-foreground mt-2">De <span className="line-through">{plan.originalPrice}</span> por</p>
                   <div className="text-4xl font-bold font-headline py-2 text-accent">
