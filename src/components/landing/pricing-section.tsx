@@ -4,13 +4,18 @@
 import { SectionWrapper } from "./section-wrapper";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Users, Gift, Shield } from "lucide-react";
+import { Check, Users, Gift, Shield, Heart } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const plans = [
   {
     name: "Kit Colorindo Fé e Alegria",
     subtitle: "Material Completo",
+    audience: [
+      "Mães, Pais e Avós",
+      "Catequistas e líderes de ministério infantil",
+      "Qualquer pessoa que queira ensinar a Bíblia de forma criativa",
+    ],
     originalPrice: "R$97,90",
     price: "R$27,90",
     priceDescription: "Acesso vitalício",
@@ -57,13 +62,25 @@ export default function PricingSection() {
                   </div>
                 )}
                 <div className="flex flex-col">
-                  <h3 className="font-headline font-semibold text-[1.375rem] text-primary-foreground flex items-center gap-2">
+                  <h3 className="font-headline font-semibold text-[1.45rem] text-primary-foreground flex items-center justify-center gap-2">
                     <Gift className="w-6 h-6 text-accent" />
                     {plan.name}
                   </h3>
                   <CardTitle className="text-base font-headline font-semibold">{plan.subtitle}</CardTitle>
                 </div>
-                <div className="text-center">
+                
+                {plan.audience && (
+                  <div className="text-center text-sm text-muted-foreground mt-4 space-y-2">
+                    {plan.audience.map((item, index) => (
+                      <div key={index} className="flex items-center gap-2 justify-center">
+                        <Heart className="w-4 h-4 text-red-400" />
+                        <span>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                <div className="text-center pt-4">
                   <p className="text-xl font-semibold text-muted-foreground mt-2">De <span className="line-through">{plan.originalPrice}</span> por</p>
                   <div className="text-4xl font-bold font-headline py-2 text-accent">
                     {plan.price}
@@ -95,9 +112,9 @@ export default function PricingSection() {
                                 <span className="text-secondary-foreground font-semibold">
                                   {bonus.description}
                                 </span>
-                                <span className="text-sm">
-                                  de <span className="line-through text-muted-foreground/80">{bonus.oldPrice}</span> por <strong className="text-primary-foreground">{bonus.newPrice}</strong>
-                                </span>
+                                <div className="text-sm">
+                                  <span className="line-through text-muted-foreground/80">{bonus.oldPrice}</span> por <strong className="text-primary-foreground">{bonus.newPrice}</strong>
+                                </div>
                               </div>
                            </li>
                         ))}
