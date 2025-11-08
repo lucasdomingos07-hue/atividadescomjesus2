@@ -24,7 +24,7 @@ export default function AudienceSection() {
                         <div className="text-left text-sm text-muted-foreground space-y-3 w-full">
                         {audience.map((item, index) => (
                             <div key={index} className="flex items-start gap-3">
-                              <div className={cn("w-5 h-5 flex items-center justify-center shrink-0 p-1 mt-0.5",
+                              <div className={cn("w-6 h-6 flex items-center justify-center shrink-0 p-1 mt-0.5",
                                 "bg-accent/10 border border-accent/20 rounded-full"
                               )}>
                                 {item.icon}
