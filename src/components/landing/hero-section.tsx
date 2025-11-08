@@ -16,7 +16,7 @@ export default function HeroSection() {
         <div className="flex flex-col space-y-6 text-center md:items-center">
           <div className="space-y-4 text-center">
             <h1 className="text-2xl md:text-3xl font-headline font-bold tracking-tight text-headline">
-              Nestas férias, troque horas de tela por<br /> momentos de fé e conexão em família.
+              Nestas férias, troque as telas por<br /> momentos de Fé e Conexão em Família.
             </h1>
             <h2 className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               <strong>+100 atividades bíblicas prontas para imprimir 🖨</strong><br />divertidas, leves e ideais para manter as crianças ocupadas sem celular.
