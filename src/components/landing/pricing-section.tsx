@@ -1,3 +1,4 @@
+
 "use client";
 
 import { SectionWrapper } from "./section-wrapper";
@@ -56,7 +57,7 @@ export default function PricingSection() {
                   </div>
                 )}
                 <div className="flex flex-col">
-                  <h3 className="font-headline font-semibold text-xl text-primary-foreground flex items-center gap-2">
+                  <h3 className="font-headline font-semibold text-[1.375rem] text-primary-foreground flex items-center gap-2">
                     <Gift className="w-6 h-6 text-accent" />
                     {plan.name}
                   </h3>
