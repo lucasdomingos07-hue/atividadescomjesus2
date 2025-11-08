@@ -8,7 +8,7 @@ export default function CreatorSection() {
     const creatorImage = PlaceHolderImages.find(img => img.id === "creator-monica-2");
 
     return (
-        <SectionWrapper className="pt-0 pb-12">
+        <SectionWrapper className="pt-12 pb-12">
             <div className="max-w-xl mx-auto">
                 <Card className="shadow-lg bg-card border-accent/20 rounded-2xl p-6 md:p-8">
                     <CardContent className="p-0 flex flex-col items-center text-center gap-4">
@@ -26,7 +26,7 @@ export default function CreatorSection() {
                             </div>
                         )}
                         <h2 className="text-xl font-headline font-bold text-headline mt-2">
-                            Quem está por trás do Colorindo Fé e Alegria
+                            Conheça a criadora das Atividades 📚
                         </h2>
                         <p className="text-base text-muted-foreground">
                             "Sou mãe, psicóloga infantil e cristã, e percebi que muitas famílias estão lutando contra o excesso de telas. Criei o <strong>Colorindo Fé e Alegria</strong> para que pais possam ensinar fé e valores com amor — de um jeito leve, criativo e longe das telas. Feito com muito carinho, espero que abençoe o seu lar ❤️"
