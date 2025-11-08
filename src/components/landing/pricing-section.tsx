@@ -28,7 +28,7 @@ const plans = [
       { name: "Bônus 3", description: "Devocional Infantil" },
     ],
     isRecommended: true,
-    cta: "ACESSAR MATERIAL COM 70% OFF",
+    cta: "ADQUIRIR MATERIAL COM 70%OFF",
     url: "https://app.ombrelone.com/checkout/digital/3y799g6jpv"
   },
 ];
@@ -54,7 +54,7 @@ export default function PricingSection() {
             )}>
               <CardHeader className="items-center text-center pt-8">
                  {plan.isRecommended && (
-                  <div className="bg-brand-green text-accent text-sm font-bold px-3 py-1 rounded-full shadow-lg mb-4">
+                  <div className="bg-brand-green text-accent text-sm font-bold px-3 py-1 rounded-full shadow-lg mb-4 text-base">
                     70% OFF
                   </div>
                 )}
