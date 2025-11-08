@@ -10,6 +10,7 @@ import FaqSection from '@/components/landing/faq-section';
 import FinalCtaSection from '@/components/landing/final-cta-section';
 import ColoringPagesSection from '@/components/landing/coloring-pages-section';
 import AudienceSection from '@/components/landing/audience-section';
+import CreatorSection from '@/components/landing/creator-section';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <TestimonialsSection />
         <BenefitsSection />
         <WhatYouGetSection />
+        <CreatorSection />
         <PricingSection />
         <FaqSection />
         <FinalCtaSection />

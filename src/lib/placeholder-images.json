@@ -19,6 +19,12 @@
       "imageHint": "woman portrait"
     },
     {
+      "id": "creator-monica-2",
+      "description": "A circular portrait of Mônica Alencar, the creator of the product.",
+      "imageUrl": "https://i.imgur.com/Z2eEFJf.jpeg",
+      "imageHint": "woman portrait"
+    },
+    {
       "id": "testimonial-1",
       "description": "Profile picture for the first testimonial.",
       "imageUrl": "https://i.imgur.com/noqPinQ.jpeg",
