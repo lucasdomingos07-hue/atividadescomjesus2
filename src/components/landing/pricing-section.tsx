@@ -28,7 +28,7 @@ const plans = [
       { name: "Bônus 3", description: "Devocional Infantil" },
     ],
     isRecommended: true,
-    cta: "ADQUIRIR MATERIAL COM 70%OFF",
+    cta: "ADQUIRIR KIT COMPLETO COM 70%OFF",
     url: "https://app.ombrelone.com/checkout/digital/3y799g6jpv"
   },
 ];
