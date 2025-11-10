@@ -29,7 +29,7 @@ export default function CreatorSection() {
                             Conheça a criadora das Atividades 📚
                         </h2>
                         <p className="text-base text-muted-foreground">
-                            "Sou mãe, psicóloga infantil e cristã, e percebi que muitas famílias estão lutando contra o excesso de telas. Criei o <strong>Colorindo Fé e Alegria</strong> para que pais possam ensinar fé e valores com amor — de um jeito leve, criativo e longe das telas. Feito com muito carinho, espero que abençoe o seu lar ❤️"
+                            "Como mãe e psicóloga infantil cristã, vi muitas famílias perdendo momentos preciosos por causa das telas. Criei o <strong>Colorindo Fé e Alegria</strong> para ajudar pais a ensinarem valores e fortalecerem a fé — de um jeito simples, leve e cheio de amor. Que abençoe o seu lar tanto quanto abençoou o meu ❤️"
                         </p>
                         <p className="font-semibold text-primary-foreground text-lg">- Mônica Alencar</p>
                     </CardContent>
