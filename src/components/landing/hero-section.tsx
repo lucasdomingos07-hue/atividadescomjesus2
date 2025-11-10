@@ -19,7 +19,7 @@ export default function HeroSection() {
               Cansada das telas tomando o tempo das crianças?
             </h1>
             <h2 className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Nessas férias, você pode transformar isso em tempo de fé, conversa e conexão real. <br/><strong>+100 atividades bíblicas prontas para imprimir e colorir com as crianças 🎨</strong>
+              Nessas férias, você pode transformar isso em tempo de fé, conversa e conexão real. <br/><strong>+100 atividades bíblicas prontas para imprimir e colorir 🎨</strong>
             </h2>
           </div>
         </div>
