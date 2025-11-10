@@ -33,7 +33,7 @@ const plans = [
 
 export default function PricingSection() {
   return (
-    <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 py-8">
+    <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-4 pb-8">
       <div className="text-center space-y-4 mb-6 max-w-3xl mx-auto">
         <div className="flex items-center justify-center text-center gap-3 text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
             <Users className="w-6 h-6 text-accent shrink-0"/>
