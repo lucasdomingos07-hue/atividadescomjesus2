@@ -14,7 +14,7 @@ const audience = [
 
 export default function AudienceSection() {
     return (
-        <SectionWrapper className="pt-4 pb-4">
+        <SectionWrapper className="pb-4">
             <div className="max-w-xl mx-auto">
                 <Card className="shadow-lg bg-card border-accent/30">
                     <CardHeader>
