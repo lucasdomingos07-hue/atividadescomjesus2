@@ -1,7 +1,7 @@
 
 import { SectionWrapper } from "./section-wrapper";
 import { Card, CardContent } from "@/components/ui/card";
-import { ListChecks } from "lucide-react";
+import { Check } from "lucide-react";
 
 const points = [
   "As telas estão tomando tempo demais das crianças",
@@ -22,13 +22,13 @@ export default function TargetAudienceSection() {
                         <ul className="text-left text-lg text-muted-foreground space-y-3">
                             {points.map((point, index) => (
                                 <li key={index} className="flex items-start gap-3">
-                                    <ListChecks className="w-6 h-6 text-accent mt-1 shrink-0" />
+                                    <Check className="w-6 h-6 text-accent mt-1 shrink-0" />
                                     <span>{point}</span>
                                 </li>
                             ))}
                         </ul>
                         <p className="font-semibold text-primary-foreground text-lg mt-2">
-                            ...Então esse kit foi criado exatamente para você.
+                            Então esse kit foi criado exatamente para você.
                         </p>
                     </CardContent>
                 </Card>
