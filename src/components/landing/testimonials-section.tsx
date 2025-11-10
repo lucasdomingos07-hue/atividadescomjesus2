@@ -44,7 +44,7 @@ const StarIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export default function TestimonialsSection() {
   return (
-    <SectionWrapper className="py-8">
+    <SectionWrapper className="pt-4 pb-8">
       <div className="text-center space-y-2 mb-6">
         <h2 className="text-xl font-headline font-bold text-headline">
           O que as famílias estão dizendo:
