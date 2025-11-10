@@ -20,7 +20,7 @@ export default function WhatYouGetSection() {
         <div className="max-w-xl mx-auto">
              {flatlayImage && (
                 <div className="mb-8 flex justify-center">
-                    <Card className="overflow-hidden shadow-2xl rounded-2xl w-full max-w-md">
+                    <Card className="overflow-hidden shadow-lg rounded-2xl w-full max-w-md">
                         <CardContent className="p-0">
                             <Image
                                 src={flatlayImage.imageUrl}
