@@ -8,7 +8,7 @@ export default function CreatorSection() {
     const creatorImage = PlaceHolderImages.find(img => img.id === "creator-monica-2");
 
     return (
-        <SectionWrapper className="pt-4 pb-8">
+        <SectionWrapper className="py-4">
             <div className="max-w-xl mx-auto">
                 <Card className="shadow-lg bg-card border-accent/20 rounded-2xl p-6 md:p-8">
                     <CardContent className="p-0 flex flex-col items-center text-center gap-4">
@@ -29,7 +29,7 @@ export default function CreatorSection() {
                             Conheça a criadora das Atividades 📚
                         </h2>
                         <p className="text-base text-muted-foreground">
-                            "Como mãe e psicóloga infantil cristã, vi muitas famílias perdendo momentos preciosos por causa das telas. Criei o <strong>Colorindo Fé e Alegria</strong> para ajudar pais a ensinarem valores e fortalecerem a fé — de um jeito simples, leve e cheio de amor. Que abençoe o seu lar tanto quanto abençoou o meu ❤️"
+                            "Como mãe e psicóloga infantil cristã, vi muitas famílias perdendo momentos preciosos por causa das telas. Criei o Colorindo Fé e Alegria para ajudar pais a ensinarem valores e fortalecerem a fé — de um jeito simples, leve e cheio de amor. Que abençoe o seu lar tanto quanto abençoou o meu ❤️"
                         </p>
                         <p className="font-semibold text-primary-foreground text-lg">- Mônica Alencar</p>
                     </CardContent>
