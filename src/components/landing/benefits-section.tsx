@@ -33,12 +33,7 @@ const benefits = [
 
 export default function BenefitsSection() {
   return (
-    <SectionWrapper className="py-8">
-      <div className="text-center space-y-2 mb-6">
-        <h2 className="text-xl font-headline font-bold text-headline">
-          Atividades com Propósito
-        </h2>
-      </div>
+    <SectionWrapper className="pt-4 pb-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
         {benefits.map((benefit, index) => (
           <Card key={index} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
