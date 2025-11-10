@@ -14,7 +14,7 @@ const audience = [
 
 export default function AudienceSection() {
     return (
-        <SectionWrapper className="pt-8 pb-8">
+        <SectionWrapper className="py-8">
             <div className="max-w-xl mx-auto">
                 <Card className="shadow-lg bg-card border-accent/30">
                     <CardHeader>

@@ -9,7 +9,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(img => img.id === "hero-family-coloring");
 
   return (
-    <section className="pt-8 pb-4 sm:pt-12 sm:pb-4 bg-secondary">
+    <section className="pt-8 pb-8 sm:pt-12 bg-secondary">
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center">
         
         {/* Text content */}
@@ -25,7 +25,7 @@ export default function HeroSection() {
         </div>
 
         {/* Image */}
-        <div className="w-full max-w-lg mt-6">
+        <div className="w-full max-w-lg mt-8">
           <Card className="overflow-hidden shadow-none rounded-2xl bg-transparent border-none md:shadow-2xl md:bg-card md:border">
             <CardContent className="p-0">
               {heroImage && (
@@ -44,7 +44,7 @@ export default function HeroSection() {
         </div>
         
         {/* CTA Button */}
-        <div className="mt-6 w-full flex justify-center">
+        <div className="mt-8 w-full flex justify-center">
           <a href="#pricing" className="w-full max-w-md md:max-w-none md:w-auto">
               <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full shine-effect w-full md:w-auto")}>
                 QUERO COMEÇAR AINDA HOJE

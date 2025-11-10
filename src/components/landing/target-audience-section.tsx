@@ -12,7 +12,7 @@ const points = [
 
 export default function TargetAudienceSection() {
     return (
-        <SectionWrapper className="pt-8 pb-8">
+        <SectionWrapper className="py-8">
             <div className="max-w-xl mx-auto">
                 <Card className="shadow-lg bg-card border-accent/20 rounded-2xl p-6 md:p-8">
                     <CardContent className="p-0 flex flex-col items-center text-center gap-4">

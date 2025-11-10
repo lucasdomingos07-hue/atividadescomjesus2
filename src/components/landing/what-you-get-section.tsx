@@ -16,10 +16,10 @@ const features = [
 export default function WhatYouGetSection() {
     const flatlayImage = PlaceHolderImages.find(img => img.id === "flatlay-drawings");
   return (
-    <SectionWrapper className="bg-secondary pt-4 pb-12">
+    <SectionWrapper className="bg-secondary py-8">
         <div className="max-w-xl mx-auto">
              {flatlayImage && (
-                <div className="mb-8 flex justify-center">
+                <div className="mb-6 flex justify-center">
                     <Card className="overflow-hidden shadow-lg rounded-2xl w-full max-w-md">
                         <CardContent className="p-0">
                             <Image
