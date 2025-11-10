@@ -21,10 +21,10 @@ export default function AudienceSection() {
                         <CardTitle className="text-lg text-center font-headline font-semibold text-primary-foreground">Para quem é o kit?</CardTitle>
                     </CardHeader>
                     <CardContent className="pt-0">
-                        <div className="text-left text-sm text-muted-foreground space-y-3 w-full">
+                        <div className="text-left text-lg text-muted-foreground space-y-3 w-full">
                         {audience.map((item, index) => (
                             <div key={index} className="flex items-start gap-3">
-                              <div className={cn("w-8 h-8 flex items-center justify-center shrink-0 p-1 mt-0.5",
+                              <div className={cn("w-10 h-10 flex items-center justify-center shrink-0 p-1.5 mt-0.5",
                                 "bg-accent/10 border border-accent/20 rounded-full"
                               )}>
                                 {item.icon}
