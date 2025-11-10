@@ -9,7 +9,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(img => img.id === "hero-family-coloring");
 
   return (
-    <section className="pt-8 pb-8 sm:pt-12 bg-secondary">
+    <section className="pt-8 pb-4 sm:pt-12 bg-secondary">
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center">
         
         {/* Text content */}
