@@ -123,8 +123,8 @@ export default function PricingSection() {
         </div>
       </div>
 
-       <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
-        Compra 100% Segura <Shield className="w-4 h-4 text-muted-foreground" />
+       <p className="text-center text-sm text-foreground mt-4 flex items-center justify-center gap-2">
+        Compra 100% Segura <Shield className="w-4 h-4 text-foreground" />
       </p>
     </SectionWrapper>
   );
