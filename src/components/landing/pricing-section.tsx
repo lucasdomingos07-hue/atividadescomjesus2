@@ -42,9 +42,9 @@ export default function PricingSection() {
               plan.isRecommended ? 'border-accent border-2' : 'border'
             )}>
               <CardHeader className="items-center text-center p-4 sm:p-6 pb-0">
-                <div className="flex items-center justify-center text-center gap-3 bg-blue-600 p-3 rounded-lg w-full max-w-md">
-                    <Users className="w-6 h-6 text-white shrink-0"/>
-                    <span className="font-medium text-left text-sm leading-tight text-white">
+                <div className="flex items-center justify-center text-center gap-3 bg-background p-3 rounded-lg w-full max-w-md">
+                    <Users className="w-6 h-6 text-foreground shrink-0"/>
+                    <span className="font-medium text-left text-sm leading-tight text-foreground">
                       <strong>+ de 5 mil</strong> famílias já transformaram o tempo de tela em diversão e aprendizado.
                     </span>
                 </div>
