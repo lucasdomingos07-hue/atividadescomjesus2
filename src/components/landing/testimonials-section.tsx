@@ -124,7 +124,7 @@ export default function TestimonialsSection() {
                                   width={200}
                                   height={200}
                                   data-ai-hint={testimonial.testimonialImage.imageHint}
-                                  className="rounded-lg shadow-md"
+                                  className="shadow-md"
                               />
                           </div>
                       )}
