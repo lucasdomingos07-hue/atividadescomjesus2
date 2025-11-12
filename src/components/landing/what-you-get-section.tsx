@@ -20,7 +20,7 @@ export default function WhatYouGetSection() {
     <SectionWrapper className="bg-secondary pt-8 pb-8">
         <div className="text-center space-y-4 mb-6 max-w-2xl mx-auto">
             <h2 className="text-xl font-headline font-bold text-foreground">
-                O Kit Colorindo Fé e Alegria, inclui:
+                O Kit Colorindo Fé<br/>e Alegria, inclui:
             </h2>
         </div>
         <div className="max-w-xl mx-auto">
@@ -29,7 +29,7 @@ export default function WhatYouGetSection() {
                     <ul className="space-y-4 text-left">
                         {features.map((feature, index) => (
                         <li key={index} className="flex items-start gap-4">
-                            <CheckCircle2 className="w-6 h-6 text-accent-foreground mt-1 shrink-0" />
+                            <CheckCircle2 className="w-5 h-5 text-accent-foreground mt-1 shrink-0" />
                             <span 
                             className="text-sm text-muted-foreground"
                             dangerouslySetInnerHTML={{ __html: feature.text }}
