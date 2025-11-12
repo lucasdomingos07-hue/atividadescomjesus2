@@ -16,8 +16,8 @@ const plans = [
     price: "R$29,90",
     priceDescription: "Acesso vitalício",
     features: [
-      "100 Desenhos Bíblicos — fé e diversão em cada página",
-      "25 Histórias infantis — lições que tocam o coração",
+      "100 Desenhos Bíblicos • fé e diversão em cada página",
+      "25 Histórias infantis • lições que tocam o coração",
       "Imprima e use sempre que quiser",
       "Suporte e orientação personalizados",
     ],
@@ -28,7 +28,7 @@ const plans = [
       { title: "Calendário da Fé 2026", oldPrice: "R$ 19,90", newPrice: "R$ 0,00" },
     ],
     isRecommended: true,
-    cta: "🟢 GARANTIR KIT COM 70% OFF",
+    cta: "GARANTIR KIT COM 70% OFF",
     url: "https://app.ombrelone.com/checkout/digital/3y799g6jpv"
   },
 ];
@@ -119,7 +119,7 @@ export default function PricingSection() {
               <CardFooter className="mt-auto p-6">
                 <a href={plan.url} className="w-full">
                   {plan.isRecommended ? (
-                    <Button size="lg" className={cn("w-full font-bold text-sm h-14 rounded-full cta-glow shine-effect")}>
+                    <Button size="lg" className={cn("w-full font-bold text-base h-14 rounded-full cta-glow shine-effect")}>
                       {plan.cta}
                     </Button>
                   ) : (
