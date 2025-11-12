@@ -28,7 +28,7 @@ const plans = [
       { title: "Calendário da Fé 2026", oldPrice: "R$ 19,90", newPrice: "R$ 0,00" },
     ],
     isRecommended: true,
-    cta: "GARANTIR MEU KIT COM 70% OFF AGORA",
+    cta: "🟢 GARANTIR KIT COM 70% OFF",
     url: "https://app.ombrelone.com/checkout/digital/3y799g6jpv"
   },
 ];
@@ -83,7 +83,9 @@ export default function PricingSection() {
                   ))}
                    {plan.finalBullet && (
                     <li className="flex items-start gap-3">
-                      <span className="w-5 h-5 flex items-center justify-center shrink-0 mt-0.5 text-xl">💝</span>
+                      <div className="w-5 h-5 flex items-center justify-center shrink-0 mt-0.5">
+                        <span className="text-xl">💝</span>
+                      </div>
                       <span className="text-card-foreground font-semibold">{plan.finalBullet}</span>
                     </li>
                   )}
