@@ -46,7 +46,7 @@ export default function PricingSection() {
                 <div className="py-6 pb-2 w-full flex flex-col items-center">
                   {plan.isRecommended && (
                     <div className="bg-black text-white text-sm px-3 py-1 rounded-full shadow-lg mb-4 text-base">
-                      <span dangerouslySetInnerHTML={{ __html: "<strong>Apenas Hoje -</strong> 70% OFF ❤️‍🔥" }} />
+                      <span dangerouslySetInnerHTML={{ __html: "🚨 Apenas Hoje • 70% OFF" }} />
                     </div>
                   )}
                 </div>
@@ -91,7 +91,7 @@ export default function PricingSection() {
                    <div className="border-t border-dashed pt-6 space-y-4">
                       <h4 className="font-headline font-semibold text-center text-xl text-card-foreground flex flex-col items-center gap-1">
                         <div className="flex items-center gap-2">
-                            <Gift className="w-6 h-6 text-blue-900"/>
+                            <Gift className="w-6 h-6 text-background"/>
                             <span>Bônus Exclusivos</span>
                         </div>
                         <span className="text-base font-medium text-muted-foreground">(R$ 70,00 em Presentes)</span>
