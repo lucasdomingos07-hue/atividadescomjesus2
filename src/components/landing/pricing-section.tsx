@@ -134,9 +134,10 @@ export default function PricingSection() {
         </div>
       </div>
 
-       <p className="text-center text-sm text-foreground mt-4 flex items-center justify-center gap-2">
-        <span className="text-white">🔒 Compra 100% segura • Acesso imediato após o pagamento</span>
-      </p>
+       <div className="text-center text-sm text-foreground mt-4 flex flex-col items-center justify-center gap-0">
+        <p className="text-white">🔒 Compra 100% segura</p>
+        <p className="text-white">Acesso imediato após o pagamento</p>
+      </div>
     </SectionWrapper>
   );
 }
