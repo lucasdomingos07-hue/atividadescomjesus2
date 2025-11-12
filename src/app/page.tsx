@@ -20,8 +20,8 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <TargetAudienceSection />
-        <ColoringPagesSection />
         <AudienceSection />
+        <ColoringPagesSection />
         <TestimonialsSection />
         <CreatorSection />
         <BenefitsSection />
