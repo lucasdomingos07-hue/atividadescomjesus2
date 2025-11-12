@@ -149,7 +149,7 @@ export default function TestimonialsSection() {
                 />
             ))}
         </div>
-        <p className="text-center text-muted-foreground text-sm">
+        <p className="text-center text-foreground text-sm">
           Arraste para o lado
         </p>
       </div>

@@ -49,7 +49,7 @@ export default function ColoringPagesSection() {
 
 
   return (
-    <SectionWrapper className="py-8 pb-0">
+    <SectionWrapper className="py-8 pb-4">
       <div className="text-center space-y-2 mb-6 max-w-2xl mx-auto">
         <h2 className="text-xl font-headline font-bold text-foreground">
           Desenhos com traços delicados e expressões de fé!
@@ -101,7 +101,7 @@ export default function ColoringPagesSection() {
                 />
             ))}
         </div>
-        <p className="text-center text-muted-foreground text-sm">
+        <p className="text-center text-foreground text-sm">
           Arraste para o lado
         </p>
       </div>
