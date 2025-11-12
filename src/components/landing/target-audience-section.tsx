@@ -1,7 +1,7 @@
 
 import { SectionWrapper } from "./section-wrapper";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Heart, Gift, BookOpen, Users, Milestone } from "lucide-react";
+import { Check, Heart, Gift, BookOpen, Users, Milestone, Leaf, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -15,11 +15,11 @@ const points = [
 ];
 
 const audience = [
-    { text: "Mães e Pais que buscam momentos de qualidade e ensino com seus filhos.", icon: <Heart className="w-full h-full text-pink-500" /> },
-    { text: "Avós, Tios e Padrinhos que desejam presentear com algo que edifica e diverte.", icon: <Gift className="w-full h-full text-red-500" /> },
-    { text: "Professores de Escola Dominical e Catequistas que precisam de materiais criativos.", icon: <BookOpen className="w-full h-full text-green-500" /> },
-    { text: "Líderes de Ministério Infantil que querem engajar as crianças com a Palavra.", icon: <Users className="w-full h-full text-blue-500" /> },
-    { text: "Qualquer pessoa que queira plantar sementes de fé nas futuras gerações.", icon: <Milestone className="w-full h-full text-purple-500" /> },
+    { text: "Pais que buscam momentos de qualidade com os filhos", icon: <Users className="w-full h-full text-pink-500" /> },
+    { text: "Familiares que querem presentear com propósito", icon: <Gift className="w-full h-full text-red-500" /> },
+    { text: "Professores e catequistas que precisam de materiais criativos", icon: <BookOpen className="w-full h-full text-green-500" /> },
+    { text: "Líderes infantis que desejam engajar com a Palavra", icon: <Sparkles className="w-full h-full text-blue-500" /> },
+    { text: "Quem quer plantar fé nas próximas gerações", icon: <Leaf className="w-full h-full text-purple-500" /> },
 ];
 
 export default function TargetAudienceSection() {
