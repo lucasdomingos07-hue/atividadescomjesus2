@@ -18,7 +18,7 @@ export default function HeroSection() {
             <h1 className="text-2xl md:text-3xl font-headline font-bold tracking-tight text-foreground text-[26px] leading-tight md:leading-snug">
               Cansada das telas tomando o tempo das crianças?
             </h1>
-            <h2 className="text-lg md:text-xl text-secondary-foreground max-w-3xl mx-auto">
+            <h2 className="text-lg md:text-xl text-foreground max-w-3xl mx-auto">
               Nessas férias, você pode transformar isso em tempo de fé, conversa e conexão real. <br/><strong>+100 atividades bíblicas prontas para imprimir e colorir 🎨</strong>
             </h2>
           </div>
@@ -26,7 +26,7 @@ export default function HeroSection() {
 
         {/* Image */}
         <div className="w-full max-w-lg mt-8">
-          <Card className="overflow-visible shadow-none rounded-2xl bg-transparent border-none md:shadow-none md:bg-transparent md:border-none relative">
+          <Card className={cn("overflow-visible shadow-none rounded-2xl bg-transparent border-none md:shadow-none md:bg-transparent md:border-none relative", "card-glow")}>
             <div className="absolute -inset-4 bg-white/30 rounded-full blur-3xl opacity-50"></div>
             <CardContent className="p-0 relative">
               {heroImage && (
@@ -47,7 +47,7 @@ export default function HeroSection() {
         {/* CTA Button */}
         <div className="mt-8 w-full flex justify-center">
           <a href="#pricing" className="w-full max-w-md md:max-w-none md:w-auto">
-              <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full shine-effect w-full md:w-auto text-primary")}>
+              <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full shine-effect w-full md:w-auto text-primary-foreground")}>
                 QUERO COMEÇAR AINDA HOJE
               </Button>
           </a>
