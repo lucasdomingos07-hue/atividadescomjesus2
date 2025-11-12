@@ -23,8 +23,8 @@ export default function Home() {
         <TestimonialsSection />
         <CreatorSection />
         <BenefitsSection />
-        <PricingSection />
         <WhatYouGetSection />
+        <PricingSection />
         <FaqSection />
         <FinalCtaSection />
       </main>
