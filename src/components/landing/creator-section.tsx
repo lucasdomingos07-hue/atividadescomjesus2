@@ -31,7 +31,10 @@ export default function CreatorSection() {
                                 <div className="absolute inset-0 rounded-full border-4 border-brand-green ring-4 ring-brand-green/50 animate-pulse"></div>
                             </div>
                         )}
-                        <p className="font-semibold text-primary-foreground text-lg">- Mônica Alencar</p>
+                        <div className="flex flex-col items-center gap-1">
+                            <p className="font-semibold text-primary-foreground text-lg">- Mônica Alencar</p>
+                            <p className="text-sm text-muted-foreground">Psicóloga há 12 anos</p>
+                        </div>
                         <p className="text-base text-muted-foreground">
                             "Como mãe e psicóloga infantil cristã, vi muitas famílias perdendo momentos preciosos por causa das telas. Criei o Colorindo Fé e Alegria para ajudar pais a ensinarem valores e fortalecerem a fé — de um jeito simples, leve e cheio de amor. Que abençoe o seu lar tanto quanto abençoou o meu ❤️"
                         </p>
