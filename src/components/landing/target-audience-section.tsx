@@ -29,7 +29,7 @@ export default function TargetAudienceSection() {
                             ))}
                         </ul>
                         <p className="text-xl font-headline font-bold text-card-foreground mt-2">
-                            Então esse kit foi criado<br />exatamente para você.
+                            Então esse kit foi criado<br />exatamente para você:
                         </p>
                     </CardContent>
                 </Card>
