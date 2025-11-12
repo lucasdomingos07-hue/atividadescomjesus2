@@ -16,6 +16,8 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
+import { Users } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
 
 const testimonials = [
   {
@@ -135,6 +137,15 @@ export default function TestimonialsSection() {
               <CarouselPrevious className="hidden sm:flex -left-10" />
               <CarouselNext className="hidden sm:flex -right-10" />
             </Carousel>
+          </CardContent>
+          <Separator className="bg-border/50" />
+          <CardContent className="p-4">
+            <div className={cn("flex items-center justify-center text-center gap-3 w-full")}>
+                <Users className="w-6 h-6 text-primary shrink-0"/>
+                <span className="font-medium text-left text-sm leading-tight text-primary">
+                  <strong>+ de 5 mil</strong> famílias já transformaram o tempo de tela em diversão e aprendizado.
+                </span>
+            </div>
           </CardContent>
         </Card>
       </div>
