@@ -86,7 +86,7 @@ export default function TestimonialsSection() {
 
       <div className="max-w-xl mx-auto">
         <Card className={cn("bg-card shadow-lg rounded-xl overflow-hidden border-primary/20", "card-glow")}>
-          <CardContent className="p-6">
+          <CardContent className="p-6 relative pb-12">
             <Carousel
               setApi={setApi}
               plugins={[plugin.current]}
@@ -137,6 +137,22 @@ export default function TestimonialsSection() {
               <CarouselPrevious className="hidden sm:flex -left-10" />
               <CarouselNext className="hidden sm:flex -right-10" />
             </Carousel>
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center gap-1">
+                <div className="flex items-center gap-2">
+                    {Array.from({ length: count }).map((_, i) => (
+                        <span
+                            key={i}
+                            className={cn(
+                                'h-2 rounded-full transition-all duration-300',
+                                i + 1 === current ? 'w-5 bg-background' : 'w-2 bg-background/50'
+                            )}
+                        />
+                    ))}
+                </div>
+                <p className="text-center text-background/80 text-xs font-medium">
+                  Arraste para o lado
+                </p>
+            </div>
           </CardContent>
           <Separator className="bg-border/50" />
           <CardContent className="p-4 bg-white">
@@ -148,23 +164,6 @@ export default function TestimonialsSection() {
             </div>
           </CardContent>
         </Card>
-      </div>
-      
-      <div className="flex flex-col items-center justify-center gap-1 mt-4">
-        <div className="flex items-center gap-2">
-            {Array.from({ length: count }).map((_, i) => (
-                <span
-                    key={i}
-                    className={cn(
-                        'h-2.5 rounded-full transition-all duration-300',
-                        i + 1 === current ? 'w-6 bg-accent' : 'w-2.5 bg-accent/20'
-                    )}
-                />
-            ))}
-        </div>
-        <p className="text-center text-foreground text-sm">
-          Arraste para o lado
-        </p>
       </div>
     </SectionWrapper>
   );
