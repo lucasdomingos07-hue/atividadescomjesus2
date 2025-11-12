@@ -46,7 +46,7 @@ export default function PricingSection() {
                 <div className="py-6 pb-2 w-full flex flex-col items-center">
                   {plan.isRecommended && (
                     <div className="bg-black text-white text-sm px-3 py-1 rounded-full shadow-lg mb-4 text-base">
-                      <span dangerouslySetInnerHTML={{ __html: "🚨 Apenas Hoje • 70% OFF" }} />
+                      <span dangerouslySetInnerHTML={{ __html: "🚨 <strong>Apenas Hoje</strong> • 70% OFF" }} />
                     </div>
                   )}
                 </div>
@@ -82,7 +82,7 @@ export default function PricingSection() {
                   ))}
                    {plan.finalBullet && (
                     <li className="flex items-start gap-3">
-                      <span className="w-5 h-5 flex items-center justify-center shrink-0 mt-0.5">💖</span>
+                      <span className="w-5 h-5 flex items-center justify-center shrink-0 mt-0.5 text-xl">💝</span>
                       <span className="text-card-foreground font-semibold">{plan.finalBullet}</span>
                     </li>
                   )}
@@ -91,7 +91,9 @@ export default function PricingSection() {
                    <div className="border-t border-dashed pt-6 space-y-4">
                       <h4 className="font-headline font-semibold text-center text-xl text-card-foreground flex flex-col items-center gap-1">
                         <div className="flex items-center gap-2">
-                            <Gift className="w-6 h-6 text-background"/>
+                            <div className="w-6 h-6 text-background">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="hsl(var(--background))"><path d="M12.0001 2.00002L12.7072 2.70713L18.0001 8.00002V15.0001C18.0001 15.5523 17.5524 16.0001 17.0001 16.0001H15.0001V18.0001H9.00012V16.0001H7.00012C6.44784 16.0001 6.00012 15.5523 6.00012 15.0001V8.00002L11.293 2.70713L12.0001 2.00002ZM11.0001 14.0001H13.0001V20.0001H11.0001V14.0001ZM19.0001 10.0001H14.0001V5.00002L19.0001 10.0001ZM5.00012 10.0001H10.0001V5.00002L5.00012 10.0001Z"></path></svg>
+                            </div>
                             <span>Bônus Exclusivos</span>
                         </div>
                         <span className="text-base font-medium text-muted-foreground">(R$ 70,00 em Presentes)</span>
