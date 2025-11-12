@@ -41,6 +41,29 @@ function MovedImage() {
   )
 }
 
+function AudienceTopImage() {
+  const audienceImage = PlaceHolderImages.find(img => img.id === "audience-section-image");
+  if (!audienceImage) return null;
+  return (
+     <SectionWrapper className="pt-4 pb-4">
+      <div className="flex justify-center">
+        <Card className={cn("overflow-hidden shadow-lg rounded-2xl w-full max-w-xl", "card-glow")}>
+            <CardContent className="p-0">
+                <Image
+                    src={audienceImage.imageUrl}
+                    alt={audienceImage.description}
+                    width={1024}
+                    height={576}
+                    data-ai-hint={audienceImage.imageHint}
+                    className="w-full h-auto object-cover"
+                />
+            </CardContent>
+        </Card>
+    </div>
+    </SectionWrapper>
+  )
+}
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -50,6 +73,7 @@ export default function Home() {
         <TargetAudienceSection />
         <ColoringPagesSection />
         <MovedImage />
+        <AudienceTopImage />
         <AudienceSection />
         <TestimonialsSection />
         <CreatorSection />

@@ -95,6 +95,12 @@
       "description": "Coloring page of the Nativity scene.",
       "imageUrl": "https://i.imgur.com/VDmyRb9.jpeg",
       "imageHint": "nativity scene coloring"
+    },
+    {
+      "id": "audience-section-image",
+      "description": "Crianças colorindo desenhos da bíblia em uma mesa.",
+      "imageUrl": "https://i.imgur.com/wkHzf9n.png",
+      "imageHint": "children coloring"
     }
   ]
 }
