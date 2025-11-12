@@ -7,11 +7,11 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { cn } from "@/lib/utils";
 
 const features = [
-  { text: "<strong class=\"font-bold\">100 Atividades Bíblicas para Colorir</strong> — ensinam sobre Jesus enquanto desenvolvem criatividade e concentração." },
-  { text: "<strong class=\"font-bold\">25 Histórias Bíblicas Infantis</strong> — leitura fácil e inspiradora, ideal pra momentos em família." },
-  { text: "<strong class=\"font-bold\">Devocional Infantil</strong> — um guia para fortalecer a fé dos pequenos de forma lúdica e diária." },
-  { text: "<strong class=\"font-bold\">Guia da Mãe de Fé</strong> — ideias práticas pra transformar o tempo livre em momentos espirituais com seus filhos." },
-  { text: "<strong class=\"font-bold\">Calendário da Fé 2026</strong> — ensine seus filhos a planejar o dia com propósito, com atividades e versículos diários." },
+  { text: "<strong class=\"font-headline text-base font-semibold text-card-foreground\">100 Atividades Bíblicas para Colorir</strong> — ensinam sobre Jesus enquanto desenvolvem criatividade e concentração." },
+  { text: "<strong class=\"font-headline text-base font-semibold text-card-foreground\">25 Histórias Bíblicas Infantis</strong> — leitura fácil e inspiradora, ideal pra momentos em família." },
+  { text: "<strong class=\"font-headline text-base font-semibold text-card-foreground\">Devocional Infantil</strong> — um guia para fortalecer a fé dos pequenos de forma lúdica e diária." },
+  { text: "<strong class=\"font-headline text-base font-semibold text-card-foreground\">Guia da Mãe de Fé</strong> — ideias práticas pra transformar o tempo livre em momentos espirituais com seus filhos." },
+  { text: "<strong class=\"font-headline text-base font-semibold text-card-foreground\">Calendário da Fé 2026</strong> — ensine seus filhos a planejar o dia com propósito, com atividades e versículos diários." },
 ];
 
 export default function WhatYouGetSection() {
