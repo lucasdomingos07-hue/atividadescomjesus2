@@ -98,14 +98,17 @@ export default function TestimonialsSection() {
                   <CarouselItem key={index}>
                     <div className="flex flex-col items-center text-center gap-2">
                       {testimonial.image && (
-                        <Image
-                          src={testimonial.image.imageUrl}
-                          alt={testimonial.image.description}
-                          width={100}
-                          height={100}
-                          data-ai-hint={testimonial.image.imageHint}
-                          className="rounded-full w-24 h-24 object-cover border-4 border-background shadow-md"
-                        />
+                        <div className="relative w-24 h-24">
+                          <Image
+                            src={testimonial.image.imageUrl}
+                            alt={testimonial.image.description}
+                            width={100}
+                            height={100}
+                            data-ai-hint={testimonial.image.imageHint}
+                            className="rounded-full w-24 h-24 object-cover border-4 border-background shadow-md"
+                          />
+                           <div className="absolute inset-0 rounded-full border-2 border-background ring-2 ring-background/50 animate-pulse"></div>
+                        </div>
                       )}
                       <div className="flex flex-col mt-2">
                         <p className="font-headline font-bold text-lg text-card-foreground">{testimonial.name}</p>
