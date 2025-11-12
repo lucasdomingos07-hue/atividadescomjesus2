@@ -51,7 +51,7 @@ export default function FaqSection() {
           <HelpCircle className="w-8 h-8 text-accent-foreground relative" strokeWidth={1.5} />
         </div>
         <h2 className="text-xl font-headline font-bold text-foreground">
-          Ainda tem dúvidas? A gente responde:
+          Ainda tem dúvidas?<br />A gente responde:
         </h2>
       </div>
 
