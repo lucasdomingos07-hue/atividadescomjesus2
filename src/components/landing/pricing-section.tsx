@@ -11,7 +11,7 @@ const plans = [
   {
     name: "Kit Colorindo Fé e Alegria",
     subtitle: "Ensine valores e divirta seu filho",
-    description: "O pacote ideal para desenvolver fé, criatividade e atenção das crianças.",
+    description: "O pacote ideal para desenvolver fé,\ncriatividade e atenção das crianças.",
     originalPrice: "R$99,90",
     price: "R$29,90",
     priceDescription: "Acesso vitalício",
@@ -46,12 +46,12 @@ export default function PricingSection() {
               <CardHeader className="items-center text-center p-0">
                 <div className="py-6 pb-2 w-full flex flex-col items-center">
                   {plan.isRecommended && (
-                    <div className="bg-brand-green text-accent-foreground text-sm font-bold px-3 py-1 rounded-full shadow-lg mb-4 text-base">
-                      70% OFF
+                    <div className="bg-black text-white text-sm font-bold px-3 py-1 rounded-full shadow-lg mb-4 text-base">
+                      Black Novembro - 70% OFF
                     </div>
                   )}
                 </div>
-                <div className="bg-brand-green py-2 w-full">
+                <div className="bg-brand-green py-2 w-full px-6">
                   <h3 className="font-headline font-semibold text-xl text-primary-foreground leading-tight">
                     {plan.name}
                   </h3>
