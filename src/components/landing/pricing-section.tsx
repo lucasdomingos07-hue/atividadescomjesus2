@@ -11,8 +11,8 @@ const plans = [
   {
     name: "Kit Colorindo Fé e Alegria",
     subtitle: "Material Completo",
-    originalPrice: "R$97,90",
-    price: "R$27,90",
+    originalPrice: "R$89,90",
+    price: "R$19,90",
     priceDescription: "Acesso vitalício",
     features: [
       "100 Desenhos Bíblicos para colorir",
@@ -33,11 +33,11 @@ const plans = [
 
 export default function PricingSection() {
   return (
-    <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-8 pb-8">
+    <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-4 pb-8">
       <div className="text-center space-y-4 mb-6 max-w-3xl mx-auto">
         <div className="flex items-center justify-center text-center gap-3 text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
             <Users className="w-6 h-6 text-accent-foreground shrink-0"/>
-            <span className="font-medium text-left text-sm leading-tight">
+            <span className="font-medium text-left text-sm leading-tight text-card-foreground">
               <strong>+ de 5 mil</strong> famílias já transformaram o tempo de tela em diversão e aprendizado.
             </span>
         </div>
