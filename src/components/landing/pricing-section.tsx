@@ -20,7 +20,7 @@ const plans = [
       "25 Histórias infantis — lições que tocam o coração",
       "Imprima e use sempre que quiser",
       "Suporte e orientação personalizados",
-      "💖 Ajude seu filho a crescer com fé, foco e valores.",
+      "Ajude seu filho a crescer com fé, foco e valores.",
     ],
     bonuses: [
       { title: "Devocional Infantil", oldPrice: "R$ 29,90", newPrice: "R$ 0,00" },
