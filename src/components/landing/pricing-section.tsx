@@ -80,7 +80,7 @@ export default function PricingSection() {
                    <div className="border-t border-dashed pt-6 space-y-4">
                       <h4 className="font-headline font-semibold text-center text-xl text-card-foreground flex flex-col items-center gap-1">
                         <div className="flex items-center gap-2">
-                            <Gift className="w-6 h-6 text-blue-500"/>
+                            <Gift className="w-6 h-6 text-blue-900"/>
                             <span>Bônus Exclusivos</span>
                         </div>
                         <span className="text-base font-medium text-muted-foreground">(R$ 70,00 em Presentes)</span>
