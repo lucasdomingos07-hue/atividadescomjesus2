@@ -91,12 +91,7 @@ export default function PricingSection() {
                 {plan.bonuses && (
                    <div className="border-t border-dashed pt-6 space-y-4">
                       <h4 className="font-headline font-semibold text-center text-xl text-card-foreground flex flex-col items-center gap-1">
-                        <div className="flex items-center gap-2">
-                            <div className="w-6 h-6 text-background">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="hsl(var(--background))"><path d="M12.0001 2.00002L12.7072 2.70713L18.0001 8.00002V15.0001C18.0001 15.5523 17.5524 16.0001 17.0001 16.0001H15.0001V18.0001H9.00012V16.0001H7.00012C6.44784 16.0001 6.00012 15.5523 6.00012 15.0001V8.00002L11.293 2.70713L12.0001 2.00002ZM11.0001 14.0001H13.0001V20.0001H11.0001V14.0001ZM19.0001 10.0001H14.0001V5.00002L19.0001 10.0001ZM5.00012 10.0001H10.0001V5.00002L5.00012 10.0001Z"></path></svg>
-                            </div>
-                            <span>Bônus Exclusivos</span>
-                        </div>
+                        <span>Bônus Exclusivos</span>
                         <span className="text-base font-medium text-muted-foreground">(R$ 70,00 em Presentes)</span>
                       </h4>
                       <ul className="space-y-4">
