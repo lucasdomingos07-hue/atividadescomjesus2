@@ -83,7 +83,7 @@ export default function PricingSection() {
                             <Gift className="w-6 h-6 text-blue-500"/>
                             <span>Bônus Exclusivos</span>
                         </div>
-                        <span className="text-base font-medium text-muted-foreground">(R$ 70,00 em Presentes!)</span>
+                        <span className="text-base font-medium text-muted-foreground">(R$ 70,00 em Presentes)</span>
                       </h4>
                       <ul className="space-y-4">
                         {plan.bonuses.map((bonus, index) => (
