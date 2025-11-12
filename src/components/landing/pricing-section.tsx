@@ -47,7 +47,7 @@ export default function PricingSection() {
                 <div className="py-6 pb-2 w-full flex flex-col items-center">
                   {plan.isRecommended && (
                     <div className="bg-black text-white text-sm px-3 py-1 rounded-lg shadow-lg mb-4 text-base">
-                      <span dangerouslySetInnerHTML={{ __html: "<strong>Apenas Hoje</strong> • 70% OFF" }} />
+                      <span><strong>Apenas Hoje</strong> • <span className="text-brand-green">70% OFF</span></span>
                     </div>
                   )}
                 </div>
