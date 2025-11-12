@@ -9,7 +9,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(img => img.id === "hero-family-coloring");
 
   return (
-    <section className="pt-8 pb-4 sm:pt-12 bg-secondary">
+    <section className="pt-8 pb-4 sm:pt-12 bg-background">
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center">
         
         {/* Text content */}
@@ -26,8 +26,9 @@ export default function HeroSection() {
 
         {/* Image */}
         <div className="w-full max-w-lg mt-8">
-          <Card className="overflow-hidden shadow-none rounded-2xl bg-transparent border-none md:shadow-2xl md:bg-card md:border">
-            <CardContent className="p-0">
+          <Card className="overflow-visible shadow-none rounded-2xl bg-transparent border-none md:shadow-none md:bg-transparent md:border-none relative">
+            <div className="absolute -inset-4 bg-white/30 rounded-full blur-3xl opacity-50"></div>
+            <CardContent className="p-0 relative">
               {heroImage && (
                 <Image
                   src={heroImage.imageUrl}
@@ -35,7 +36,7 @@ export default function HeroSection() {
                   width={1200}
                   height={800}
                   data-ai-hint={heroImage.imageHint}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain rounded-2xl"
                   priority
                 />
               )}
@@ -46,7 +47,7 @@ export default function HeroSection() {
         {/* CTA Button */}
         <div className="mt-8 w-full flex justify-center">
           <a href="#pricing" className="w-full max-w-md md:max-w-none md:w-auto">
-              <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full shine-effect w-full md:w-auto")}>
+              <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full shine-effect w-full md:w-auto text-primary")}>
                 QUERO COMEÇAR AINDA HOJE
               </Button>
           </a>
