@@ -1,4 +1,3 @@
-
 "use client";
 
 import { SectionWrapper } from "./section-wrapper";
@@ -105,7 +104,7 @@ export default function TestimonialsSection() {
                           width={100}
                           height={100}
                           data-ai-hint={testimonial.image.imageHint}
-                          className="rounded-full w-24 h-24 object-cover border-4 border-white shadow-md"
+                          className="rounded-full w-24 h-24 object-cover border-4 border-background shadow-md"
                         />
                       )}
                       <div className="flex flex-col mt-2">
