@@ -56,7 +56,7 @@ export default function ColoringPagesSection() {
         </h2>
       </div>
 
-      <div className="max-w-xs mx-auto">
+      <div className="max-w-xl mx-auto">
         <Card className={cn("bg-card shadow-lg rounded-xl overflow-hidden border-primary/20", "card-glow")}>
           <CardContent className="p-1 md:p-2">
             <Carousel
