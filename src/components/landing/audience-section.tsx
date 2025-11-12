@@ -3,6 +3,8 @@ import { SectionWrapper } from "./section-wrapper";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Gift, BookOpen, Users, Milestone } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const audience = [
   { text: "Mães e Pais que buscam momentos de qualidade e ensino com seus filhos.", icon: <Heart className="w-full h-full text-pink-500" /> },
@@ -13,13 +15,14 @@ const audience = [
 ];
 
 export default function AudienceSection() {
+    const audienceImage = PlaceHolderImages.find(img => img.id === "audience-section-image");
     return (
         <SectionWrapper className="py-4">
             <div className="text-center space-y-4 mb-6 max-w-2xl mx-auto">
                 <h2 className="text-xl font-headline font-bold text-foreground">Para quem é o kit?</h2>
             </div>
             <div className="max-w-xl mx-auto">
-                <Card className={cn("shadow-lg bg-card border-accent/30", "card-glow")}>
+                <Card className={cn("shadow-lg bg-card border-accent/30 rounded-2xl overflow-hidden", "card-glow")}>
                     <CardContent className="p-6">
                         <div className="text-left text-lg text-muted-foreground space-y-3 w-full">
                         {audience.map((item, index) => (
@@ -34,6 +37,18 @@ export default function AudienceSection() {
                         ))}
                         </div>
                     </CardContent>
+                    {audienceImage && (
+                        <CardContent className="p-0">
+                            <Image
+                                src={audienceImage.imageUrl}
+                                alt={audienceImage.description}
+                                width={1024}
+                                height={576}
+                                data-ai-hint={audienceImage.imageHint}
+                                className="w-full h-auto object-cover"
+                            />
+                        </CardContent>
+                    )}
                 </Card>
             </div>
         </SectionWrapper>

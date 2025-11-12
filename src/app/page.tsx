@@ -12,34 +12,6 @@ import ColoringPagesSection from '@/components/landing/coloring-pages-section';
 import AudienceSection from '@/components/landing/audience-section';
 import CreatorSection from '@/components/landing/creator-section';
 import TargetAudienceSection from '@/components/landing/target-audience-section';
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Card, CardContent } from '@/components/ui/card';
-import { SectionWrapper } from '@/components/landing/section-wrapper';
-import { cn } from '@/lib/utils';
-
-function AudienceTopImage() {
-  const audienceImage = PlaceHolderImages.find(img => img.id === "audience-section-image");
-  if (!audienceImage) return null;
-  return (
-     <SectionWrapper className="pt-4 pb-4">
-      <div className="flex justify-center">
-        <Card className={cn("overflow-hidden shadow-lg rounded-2xl w-full max-w-xl", "card-glow")}>
-            <CardContent className="p-0">
-                <Image
-                    src={audienceImage.imageUrl}
-                    alt={audienceImage.description}
-                    width={1024}
-                    height={576}
-                    data-ai-hint={audienceImage.imageHint}
-                    className="w-full h-auto object-cover"
-                />
-            </CardContent>
-        </Card>
-    </div>
-    </SectionWrapper>
-  )
-}
 
 export default function Home() {
   return (
@@ -49,7 +21,6 @@ export default function Home() {
         <HeroSection />
         <TargetAudienceSection />
         <ColoringPagesSection />
-        <AudienceTopImage />
         <AudienceSection />
         <TestimonialsSection />
         <CreatorSection />
