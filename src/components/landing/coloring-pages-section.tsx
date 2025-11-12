@@ -56,39 +56,41 @@ export default function ColoringPagesSection() {
         </h2>
       </div>
 
-      <Carousel
-        setApi={setApi}
-        plugins={[plugin.current]}
-        className="w-full max-w-xl mx-auto"
-        onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.reset}
-      >
-        <CarouselContent>
-          {coloringPages.map((page, index) => (
-            page && (
-            <CarouselItem key={index}>
-              <div className="p-1">
-                <Card className={cn("overflow-hidden shadow-lg rounded-2xl", "card-glow")}>
-                  <CardContent className="p-0">
-                    <Image
-                      src={page.imageUrl}
-                      alt={page.description}
-                      width={800}
-                      height={800}
-                      data-ai-hint={page.imageHint}
-                      className="w-full h-auto object-contain aspect-square"
-                    />
-                  </CardContent>
-                </Card>
-              </div>
-            </CarouselItem>
-            )
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="hidden sm:flex" />
-        <CarouselNext className="hidden sm:flex" />
-      </Carousel>
-      
+      <div className="max-w-xl mx-auto">
+        <Card className={cn("bg-card shadow-lg rounded-xl overflow-hidden border-primary/20", "card-glow")}>
+          <CardContent className="p-1 md:p-2">
+            <Carousel
+              setApi={setApi}
+              plugins={[plugin.current]}
+              className="w-full"
+              onMouseEnter={plugin.current.stop}
+              onMouseLeave={plugin.current.reset}
+            >
+              <CarouselContent>
+                {coloringPages.map((page, index) => (
+                  page && (
+                  <CarouselItem key={index}>
+                    <div className="overflow-hidden rounded-lg">
+                      <Image
+                        src={page.imageUrl}
+                        alt={page.description}
+                        width={800}
+                        height={800}
+                        data-ai-hint={page.imageHint}
+                        className="w-full h-auto object-contain aspect-square"
+                      />
+                    </div>
+                  </CarouselItem>
+                  )
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden sm:flex -left-4" />
+              <CarouselNext className="hidden sm:flex -right-4" />
+            </Carousel>
+          </CardContent>
+        </Card>
+      </div>
+
       <div className="flex flex-col items-center justify-center gap-1 mt-2">
         <div className="flex items-center gap-2">
             {Array.from({ length: count }).map((_, i) => (
