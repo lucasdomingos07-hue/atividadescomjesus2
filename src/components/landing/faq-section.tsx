@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/accordion";
 import { SectionWrapper } from "./section-wrapper";
 import { HelpCircle } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const faqs = [
   {
@@ -43,27 +44,32 @@ const faqs = [
 
 export default function FaqSection() {
   return (
-    <SectionWrapper className="pt-8">
-      <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-4 mb-6">
-        <div className="bg-card border-2 border-accent p-3 rounded-full aspect-square flex items-center justify-center">
-          <HelpCircle className="w-8 h-8 text-accent-foreground" strokeWidth={1.5} />
+    <SectionWrapper className="py-8">
+      <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-4 mb-8">
+        <div className={cn("relative p-3 rounded-full flex items-center justify-center bg-accent/10 border-2 border-accent/20", "card-glow")}>
+          <div className="absolute inset-0.5 rounded-full bg-accent/20 blur-lg"></div>
+          <HelpCircle className="w-8 h-8 text-accent-foreground relative" strokeWidth={1.5} />
         </div>
         <h2 className="text-xl font-headline font-bold text-foreground">
-          Perguntas Frequentes:
+          Ainda tem dúvidas? A gente responde:
         </h2>
       </div>
 
-      <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
+      <Accordion type="single" collapsible className="w-full max-w-xl mx-auto space-y-3">
         {faqs.map((faq, index) => (
           <AccordionItem
             key={index}
             value={`item-${index}`}
-            className="bg-card shadow-sm rounded-lg mb-2 px-6 border-b-0 hover:shadow-md transition-shadow"
+            className={cn(
+                "bg-card shadow-sm rounded-xl border border-accent/20",
+                "hover:border-accent/40 transition-all duration-300",
+                "[&[data-state=open]]:border-accent/50"
+            )}
           >
-            <AccordionTrigger className="text-lg text-left font-semibold hover:no-underline text-card-foreground">
+            <AccordionTrigger className="text-base text-left font-semibold hover:no-underline text-card-foreground px-6 py-4">
               {faq.question}
             </AccordionTrigger>
-            <AccordionContent className="text-muted-foreground text-base pt-2">
+            <AccordionContent className="text-muted-foreground text-sm px-6">
               <span dangerouslySetInnerHTML={{ __html: faq.answer }} />
             </AccordionContent>
           </AccordionItem>
