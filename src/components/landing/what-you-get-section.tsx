@@ -19,8 +19,8 @@ export default function WhatYouGetSection() {
   return (
     <SectionWrapper className="bg-secondary pt-8 pb-8">
         <div className="max-w-xl mx-auto">
-            <Card className={cn("shadow-lg bg-card border-accent/20 rounded-2xl p-6 md:p-8", "card-glow")}>
-                <CardContent className="p-0 flex flex-col items-center text-center gap-4">
+            <Card className={cn("shadow-lg bg-card border-accent/20 rounded-2xl", "card-glow")}>
+                <CardContent className="p-6 md:p-8 flex flex-col items-center text-center gap-4">
                     <h2 className="text-xl font-headline font-bold text-card-foreground">
                         O Kit Colorindo Fé e Alegria, inclui:
                     </h2>
@@ -36,6 +36,18 @@ export default function WhatYouGetSection() {
                         ))}
                     </ul>
                 </CardContent>
+                {flatlayImage && (
+                    <CardContent className="p-0 overflow-hidden rounded-b-2xl">
+                        <Image
+                            src={flatlayImage.imageUrl}
+                            alt={flatlayImage.description}
+                            width={600}
+                            height={400}
+                            data-ai-hint={flatlayImage.imageHint}
+                            className="w-full h-auto object-cover"
+                        />
+                    </CardContent>
+                )}
             </Card>
         </div>
     </SectionWrapper>

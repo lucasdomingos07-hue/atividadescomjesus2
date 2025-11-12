@@ -18,29 +18,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { SectionWrapper } from '@/components/landing/section-wrapper';
 import { cn } from '@/lib/utils';
 
-function MovedImage() {
-  const flatlayImage = PlaceHolderImages.find(img => img.id === "flatlay-drawings");
-  if (!flatlayImage) return null;
-  return (
-     <SectionWrapper className="pt-8 pb-4">
-      <div className="flex justify-center">
-        <Card className={cn("overflow-hidden shadow-lg rounded-2xl w-full max-w-md", "card-glow")}>
-            <CardContent className="p-0">
-                <Image
-                    src={flatlayImage.imageUrl}
-                    alt={flatlayImage.description}
-                    width={600}
-                    height={400}
-                    data-ai-hint={flatlayImage.imageHint}
-                    className="w-full h-auto object-cover"
-                />
-            </CardContent>
-        </Card>
-    </div>
-    </SectionWrapper>
-  )
-}
-
 function AudienceTopImage() {
   const audienceImage = PlaceHolderImages.find(img => img.id === "audience-section-image");
   if (!audienceImage) return null;
@@ -78,7 +55,6 @@ export default function Home() {
         <CreatorSection />
         <BenefitsSection />
         <WhatYouGetSection />
-        <MovedImage />
         <PricingSection />
         <FaqSection />
         <FinalCtaSection />
