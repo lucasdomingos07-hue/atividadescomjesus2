@@ -58,7 +58,7 @@ export default function ColoringPagesSection() {
 
       <div className="max-w-xl mx-auto">
         <Card className={cn("bg-card shadow-lg rounded-xl overflow-hidden border-primary/20", "card-glow")}>
-          <CardContent className="p-1 md:p-2">
+          <CardContent className="p-1 md:p-2 relative">
             <Carousel
               setApi={setApi}
               plugins={[plugin.current]}
@@ -87,25 +87,24 @@ export default function ColoringPagesSection() {
               <CarouselPrevious className="hidden sm:flex -left-4" />
               <CarouselNext className="hidden sm:flex -right-4" />
             </Carousel>
+             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center gap-1">
+                <div className="flex items-center gap-2">
+                    {Array.from({ length: count }).map((_, i) => (
+                        <span
+                            key={i}
+                            className={cn(
+                                'h-2 rounded-full transition-all duration-300',
+                                i + 1 === current ? 'w-5 bg-white' : 'w-2 bg-white/50'
+                            )}
+                        />
+                    ))}
+                </div>
+                <p className="text-center text-white/80 text-xs font-medium">
+                  Arraste para o lado
+                </p>
+            </div>
           </CardContent>
         </Card>
-      </div>
-
-      <div className="flex flex-col items-center justify-center gap-1 mt-2">
-        <div className="flex items-center gap-2">
-            {Array.from({ length: count }).map((_, i) => (
-                <span
-                    key={i}
-                    className={cn(
-                        'h-2.5 rounded-full transition-all duration-300',
-                        i + 1 === current ? 'w-6 bg-accent' : 'w-2.5 bg-accent/20'
-                    )}
-                />
-            ))}
-        </div>
-        <p className="text-center text-foreground text-sm">
-          Arraste para o lado
-        </p>
       </div>
     </SectionWrapper>
   );
