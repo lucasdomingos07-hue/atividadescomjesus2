@@ -44,17 +44,19 @@ export default function PricingSection() {
               plan.isRecommended ? 'border-accent border-2' : 'border'
             )}>
               <CardHeader className="items-center text-center p-0">
-                <div className="p-6 pb-2 w-full flex flex-col items-center">
+                <div className="py-6 pb-2 w-full flex flex-col items-center">
                   {plan.isRecommended && (
                     <div className="bg-brand-green text-accent-foreground text-sm font-bold px-3 py-1 rounded-full shadow-lg mb-4 text-base">
                       70% OFF
                     </div>
                   )}
-                  <div className="bg-brand-green py-2 px-6 w-full">
-                    <h3 className="font-headline font-semibold text-xl text-primary-foreground leading-tight">
-                      {plan.name}
-                    </h3>
-                  </div>
+                </div>
+                <div className="bg-brand-green py-2 w-full">
+                  <h3 className="font-headline font-semibold text-xl text-primary-foreground leading-tight">
+                    {plan.name}
+                  </h3>
+                </div>
+                <div className="p-6 pt-2 w-full flex flex-col items-center">
                   <div className="flex flex-col gap-1 mt-3">
                     <CardTitle className="text-base font-headline font-semibold text-card-foreground">{plan.subtitle}</CardTitle>
                   </div>
