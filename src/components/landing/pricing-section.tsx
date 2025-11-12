@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils";
 const plans = [
   {
     name: "Kit Colorindo Fé e Alegria",
-    subtitle: "Ensine valores e divirta seu filho",
-    description: "O pacote ideal para desenvolver fé,\ncriatividade e atenção das crianças.",
+    subtitle: "Ensine valores, fortaleça a fé e crie memórias especiais.",
+    description: "Desperte a fé, o foco e a imaginação das crianças com atividades que encantam.",
     originalPrice: "R$99,90",
     price: "R$29,90",
     priceDescription: "Acesso vitalício",
@@ -19,8 +19,8 @@ const plans = [
       "25 Histórias infantis — lições que tocam o coração",
       "Imprima e use sempre que quiser",
       "Suporte e orientação personalizados",
-      "Ajude seu filho a crescer com fé, foco e valores.",
     ],
+    finalBullet: "Ajude seu filho a crescer com fé, foco e valores.",
     bonuses: [
       { title: "Devocional Infantil", oldPrice: "R$ 29,90", newPrice: "R$ 0,00" },
       { title: "Guia da Mãe de Fé", oldPrice: "R$ 19,90", newPrice: "R$ 0,00" },
@@ -80,6 +80,12 @@ export default function PricingSection() {
                       <span className="text-card-foreground font-semibold" dangerouslySetInnerHTML={{ __html: feature }} />
                     </li>
                   ))}
+                   {plan.finalBullet && (
+                    <li className="flex items-start gap-3">
+                      <span className="w-5 h-5 flex items-center justify-center shrink-0 mt-0.5">💖</span>
+                      <span className="text-card-foreground font-semibold">{plan.finalBullet}</span>
+                    </li>
+                  )}
                 </ul>
                 {plan.bonuses && (
                    <div className="border-t border-dashed pt-6 space-y-4">
@@ -129,7 +135,7 @@ export default function PricingSection() {
       </div>
 
        <p className="text-center text-sm text-foreground mt-4 flex items-center justify-center gap-2">
-        <span className="text-white">Compra 100% Segura</span> <Shield className="w-4 h-4 text-white" />
+        <span className="text-white">🔒 Compra 100% segura • Acesso imediato após o pagamento</span>
       </p>
     </SectionWrapper>
   );
