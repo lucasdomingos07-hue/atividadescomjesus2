@@ -85,7 +85,7 @@ export default function TestimonialsSection() {
 
       <div className="max-w-xl mx-auto">
         <Card className={cn("bg-card shadow-lg rounded-xl overflow-hidden border-primary/20", "card-glow")}>
-          <CardContent className="p-6 relative pb-12">
+          <CardContent className="p-6 pt-8 relative pb-12">
             <Carousel
               setApi={setApi}
               plugins={[plugin.current]}
