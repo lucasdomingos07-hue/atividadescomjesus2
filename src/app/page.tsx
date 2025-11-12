@@ -2,7 +2,6 @@
 import Header from '@/components/landing/header';
 import Footer from '@/components/landing/footer';
 import HeroSection from '@/components/landing/hero-section';
-import BenefitsSection from '@/components/landing/benefits-section';
 import WhatYouGetSection from '@/components/landing/what-you-get-section';
 import TestimonialsSection from '@/components/landing/testimonials-section';
 import PricingSection from '@/components/landing/pricing-section';
@@ -22,7 +21,6 @@ export default function Home() {
         <ColoringPagesSection />
         <TestimonialsSection />
         <CreatorSection />
-        <BenefitsSection />
         <WhatYouGetSection />
         <PricingSection />
         <FaqSection />
