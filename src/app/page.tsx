@@ -22,8 +22,8 @@ export default function Home() {
         <ColoringPagesSection />
         <TestimonialsSection />
         <CreatorSection />
-        <PricingSection />
         <BenefitsSection />
+        <PricingSection />
         <WhatYouGetSection />
         <FaqSection />
         <FinalCtaSection />
