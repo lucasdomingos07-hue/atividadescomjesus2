@@ -10,6 +10,11 @@ export default function CreatorSection() {
 
     return (
         <SectionWrapper className="py-4">
+            <div className="text-center space-y-4 mb-6 max-w-2xl mx-auto">
+                <h2 className="text-xl font-headline font-bold text-foreground">
+                    Conheça a criadora das Atividades 📚
+                </h2>
+            </div>
             <div className="max-w-xl mx-auto">
                 <Card className={cn("shadow-lg bg-card border-accent/20 rounded-2xl p-6 md:p-8", "card-glow")}>
                     <CardContent className="p-0 flex flex-col items-center text-center gap-4">
@@ -26,10 +31,7 @@ export default function CreatorSection() {
                                 <div className="absolute inset-0 rounded-full border-4 border-brand-green ring-4 ring-brand-green/50 animate-pulse"></div>
                             </div>
                         )}
-                        <h2 className="text-xl font-headline font-bold text-card-foreground mt-2">
-                            Conheça a criadora das Atividades 📚
-                        </h2>
-                        <p className="text-base text-muted-foreground">
+                        <p className="text-base text-muted-foreground mt-4">
                             "Como mãe e psicóloga infantil cristã, vi muitas famílias perdendo momentos preciosos por causa das telas. Criei o Colorindo Fé e Alegria para ajudar pais a ensinarem valores e fortalecerem a fé — de um jeito simples, leve e cheio de amor. Que abençoe o seu lar tanto quanto abençoou o meu ❤️"
                         </p>
                         <p className="font-semibold text-primary-foreground text-lg">- Mônica Alencar</p>
