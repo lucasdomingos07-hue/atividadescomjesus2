@@ -139,10 +139,10 @@ export default function TestimonialsSection() {
             </Carousel>
           </CardContent>
           <Separator className="bg-border/50" />
-          <CardContent className="p-4">
+          <CardContent className="p-4 bg-white">
             <div className={cn("flex items-center justify-center text-center gap-3 w-full")}>
-                <Users className="w-6 h-6 text-primary shrink-0"/>
-                <span className="font-medium text-left text-sm leading-tight text-primary">
+                <Users className="w-6 h-6 text-background shrink-0"/>
+                <span className="font-medium text-left text-sm leading-tight text-background">
                   <strong>+ de 5 mil</strong> famílias já transformaram o tempo de tela em diversão e aprendizado.
                 </span>
             </div>
