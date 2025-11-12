@@ -21,10 +21,10 @@ export default function Home() {
         <TargetAudienceSection />
         <ColoringPagesSection />
         <TestimonialsSection />
+        <PricingSection />
         <CreatorSection />
         <BenefitsSection />
         <WhatYouGetSection />
-        <PricingSection />
         <FaqSection />
         <FinalCtaSection />
       </main>
