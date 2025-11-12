@@ -27,7 +27,7 @@ const plans = [
       { title: "Calendário da Fé 2026", oldPrice: "R$ 19,90", newPrice: "R$ 0,00" },
     ],
     isRecommended: true,
-    cta: "GARANTIR KIT COM 70%OFF AGORA",
+    cta: "GARANTIR MEU KIT COM 70% OFF AGORA",
     url: "https://app.ombrelone.com/checkout/digital/3y799g6jpv"
   },
 ];
