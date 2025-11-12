@@ -108,11 +108,11 @@ export default function PricingSection() {
               <CardFooter className="mt-auto p-6">
                 <a href={plan.url} className="w-full">
                   {plan.isRecommended ? (
-                    <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow shine-effect")}>
+                    <Button size="lg" className={cn("w-full font-bold text-base h-14 rounded-full cta-glow shine-effect")}>
                       {plan.cta}
                     </Button>
                   ) : (
-                    <Button variant="outline" size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full border-accent text-accent hover:bg-accent/10 hover:text-accent")}>
+                    <Button variant="outline" size="lg" className={cn("w-full font-bold text-base h-14 rounded-full border-accent text-accent hover:bg-accent/10 hover:text-accent")}>
                       {plan.cta}
                     </Button>
                   )}
