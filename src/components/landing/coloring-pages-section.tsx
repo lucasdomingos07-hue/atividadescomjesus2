@@ -56,7 +56,7 @@ export default function ColoringPagesSection() {
         </h2>
       </div>
 
-      <div className="max-w-xl mx-auto">
+      <div className="max-w-md mx-auto">
         <Card className={cn("bg-card shadow-lg rounded-xl overflow-hidden border-primary/20", "card-glow")}>
           <CardContent className="p-1 md:p-2">
             <Carousel
@@ -77,7 +77,7 @@ export default function ColoringPagesSection() {
                         width={800}
                         height={800}
                         data-ai-hint={page.imageHint}
-                        className="w-full h-auto object-contain aspect-square"
+                        className="w-full h-auto object-contain aspect-[210/297]"
                       />
                     </div>
                   </CarouselItem>
