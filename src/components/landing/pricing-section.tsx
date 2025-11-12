@@ -43,29 +43,33 @@ export default function PricingSection() {
               "shadow-lg relative flex flex-col h-full bg-card overflow-hidden rounded-lg",
               plan.isRecommended ? 'border-accent border-2' : 'border'
             )}>
-              <CardHeader className="items-center text-center pt-6">
-                 {plan.isRecommended && (
-                  <div className="bg-brand-green text-accent-foreground text-sm font-bold px-3 py-1 rounded-full shadow-lg mb-4 text-base">
-                    70% OFF
+              <CardHeader className="items-center text-center p-0">
+                <div className="p-6 pb-2 w-full flex flex-col items-center">
+                  {plan.isRecommended && (
+                    <div className="bg-brand-green text-accent-foreground text-sm font-bold px-3 py-1 rounded-full shadow-lg mb-4 text-base">
+                      70% OFF
+                    </div>
+                  )}
+                  <div className="bg-brand-green py-2 px-6 w-full">
+                    <h3 className="font-headline font-semibold text-xl text-primary-foreground leading-tight">
+                      {plan.name}
+                    </h3>
                   </div>
-                )}
-                <div className="flex flex-col gap-1">
-                  <h3 className="font-headline font-semibold text-[1.45rem] text-card-foreground leading-tight">
-                    {plan.name}
-                  </h3>
-                  <CardTitle className="text-base font-headline font-semibold text-card-foreground">{plan.subtitle}</CardTitle>
-                </div>
-                <CardDescription className="text-sm text-muted-foreground !mt-3 px-4">{plan.description}</CardDescription>
-                
-                <div className="text-center pt-4">
-                  <p className="text-xl font-semibold text-muted-foreground mt-2">De <span className="line-through">{plan.originalPrice}</span> por</p>
-                  <div className="text-4xl font-bold font-headline py-2 text-accent-foreground">
-                    {plan.price}
+                  <div className="flex flex-col gap-1 mt-3">
+                    <CardTitle className="text-base font-headline font-semibold text-card-foreground">{plan.subtitle}</CardTitle>
                   </div>
-                  <p className="font-bold text-lg text-muted-foreground"> / {plan.priceDescription}</p>
+                  <CardDescription className="text-sm text-muted-foreground !mt-3 px-4">{plan.description}</CardDescription>
+                  
+                  <div className="text-center pt-4">
+                    <p className="text-xl font-semibold text-muted-foreground mt-2">De <span className="line-through">{plan.originalPrice}</span> por</p>
+                    <div className="text-4xl font-bold font-headline py-2 text-accent-foreground">
+                      {plan.price}
+                    </div>
+                    <p className="font-bold text-lg text-muted-foreground"> / {plan.priceDescription}</p>
+                  </div>
                 </div>
               </CardHeader>
-              <CardContent className="space-y-6 flex-grow">
+              <CardContent className="space-y-6 flex-grow px-6">
                 <ul className="space-y-3">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
@@ -108,7 +112,7 @@ export default function PricingSection() {
               <CardFooter className="mt-auto p-6">
                 <a href={plan.url} className="w-full">
                   {plan.isRecommended ? (
-                    <Button size="lg" className={cn("w-full font-bold text-base h-14 rounded-full cta-glow shine-effect")}>
+                    <Button size="lg" className={cn("w-full font-bold text-sm h-14 rounded-full cta-glow shine-effect")}>
                       {plan.cta}
                     </Button>
                   ) : (
