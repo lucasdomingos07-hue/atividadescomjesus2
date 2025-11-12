@@ -78,8 +78,11 @@ export default function PricingSection() {
                 </ul>
                 {plan.bonuses && (
                    <div className="border-t border-dashed pt-6 space-y-4">
-                      <h4 className="font-headline font-semibold text-center text-xl text-card-foreground flex flex-col">
-                        Bônus Exclusivos
+                      <h4 className="font-headline font-semibold text-center text-xl text-card-foreground flex flex-col items-center gap-1">
+                        <div className="flex items-center gap-2">
+                            <Gift className="w-6 h-6 text-brand-green"/>
+                            <span>Bônus Exclusivos</span>
+                        </div>
                         <span className="text-base font-medium text-muted-foreground">(R$ 70,00 em Presentes!)</span>
                       </h4>
                       <ul className="space-y-4">
