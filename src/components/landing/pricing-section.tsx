@@ -34,15 +34,6 @@ const plans = [
 export default function PricingSection() {
   return (
     <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-4 pb-8">
-      <div className="text-center space-y-4 mb-6 max-w-3xl mx-auto">
-        <div className="flex items-center justify-center text-center gap-3 text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
-            <Users className="w-6 h-6 text-accent-foreground shrink-0"/>
-            <span className="font-medium text-left text-sm leading-tight text-card-foreground">
-              <strong>+ de 5 mil</strong> famílias já transformaram o tempo de tela em diversão e aprendizado.
-            </span>
-        </div>
-      </div>
-      
       <div className="max-w-xl mx-auto">
         <div className="grid grid-cols-1 gap-8">
           {plans.map((plan) => (
@@ -50,7 +41,15 @@ export default function PricingSection() {
               "shadow-lg relative flex flex-col h-full bg-card overflow-hidden rounded-lg",
               plan.isRecommended ? 'border-accent border-2' : 'border'
             )}>
-              <CardHeader className="items-center text-center pt-8">
+              <CardHeader className="items-center text-center p-4 sm:p-6 pb-0">
+                <div className="flex items-center justify-center text-center gap-3 text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 w-full max-w-md">
+                    <Users className="w-6 h-6 text-accent-foreground shrink-0"/>
+                    <span className="font-medium text-left text-sm leading-tight text-card-foreground">
+                      <strong>+ de 5 mil</strong> famílias já transformaram o tempo de tela em diversão e aprendizado.
+                    </span>
+                </div>
+              </CardHeader>
+              <CardHeader className="items-center text-center pt-6">
                  {plan.isRecommended && (
                   <div className="bg-brand-green text-accent-foreground text-sm font-bold px-3 py-1 rounded-full shadow-lg mb-4 text-base">
                     70% OFF
