@@ -72,13 +72,13 @@ export default function Home() {
         <HeroSection />
         <TargetAudienceSection />
         <ColoringPagesSection />
-        <MovedImage />
         <AudienceTopImage />
         <AudienceSection />
         <TestimonialsSection />
         <CreatorSection />
         <BenefitsSection />
         <WhatYouGetSection />
+        <MovedImage />
         <PricingSection />
         <FaqSection />
         <FinalCtaSection />
