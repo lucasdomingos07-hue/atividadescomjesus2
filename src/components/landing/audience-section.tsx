@@ -5,11 +5,11 @@ import { Heart, Gift, BookOpen, Users, Milestone } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const audience = [
-  { text: "Mães e Pais que buscam momentos de qualidade e ensino com seus filhos.", icon: <Heart className="w-full h-full text-accent" /> },
-  { text: "Avós, Tios e Padrinhos que desejam presentear com algo que edifica e diverte.", icon: <Gift className="w-full h-full text-accent" /> },
-  { text: "Professores de Escola Dominical e Catequistas que precisam de materiais criativos.", icon: <BookOpen className="w-full h-full text-accent" /> },
-  { text: "Líderes de Ministério Infantil que querem engajar as crianças com a Palavra.", icon: <Users className="w-full h-full text-accent" /> },
-  { text: "Qualquer pessoa que queira plantar sementes de fé nas futuras gerações.", icon: <Milestone className="w-full h-full text-accent" /> },
+  { text: "Mães e Pais que buscam momentos de qualidade e ensino com seus filhos.", icon: <Heart className="w-full h-full text-accent-foreground" /> },
+  { text: "Avós, Tios e Padrinhos que desejam presentear com algo que edifica e diverte.", icon: <Gift className="w-full h-full text-accent-foreground" /> },
+  { text: "Professores de Escola Dominical e Catequistas que precisam de materiais criativos.", icon: <BookOpen className="w-full h-full text-accent-foreground" /> },
+  { text: "Líderes de Ministério Infantil que querem engajar as crianças com a Palavra.", icon: <Users className="w-full h-full text-accent-foreground" /> },
+  { text: "Qualquer pessoa que queira plantar sementes de fé nas futuras gerações.", icon: <Milestone className="w-full h-full text-accent-foreground" /> },
 ];
 
 export default function AudienceSection() {
@@ -18,7 +18,7 @@ export default function AudienceSection() {
             <div className="max-w-xl mx-auto">
                 <Card className="shadow-lg bg-card border-accent/30">
                     <CardHeader>
-                        <CardTitle className="text-xl text-center font-headline font-bold text-primary-foreground">Para quem é o kit?</CardTitle>
+                        <CardTitle className="text-xl text-center font-headline font-bold text-card-foreground">Para quem é o kit?</CardTitle>
                     </CardHeader>
                     <CardContent className="pt-0">
                         <div className="text-left text-lg text-muted-foreground space-y-3 w-full">

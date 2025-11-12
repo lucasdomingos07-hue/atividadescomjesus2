@@ -1,3 +1,4 @@
+
 "use client";
 
 import { SectionWrapper } from "./section-wrapper";
@@ -76,7 +77,7 @@ export default function TestimonialsSection() {
   return (
     <SectionWrapper className="pt-4 pb-4">
       <div className="text-center space-y-2 mb-6">
-        <h2 className="text-xl font-headline font-bold text-headline">
+        <h2 className="text-xl font-headline font-bold text-foreground">
           O que as famílias estão dizendo:
         </h2>
       </div>
@@ -105,7 +106,7 @@ export default function TestimonialsSection() {
                       />
                     )}
                     <div className="flex flex-col mt-2">
-                      <p className="font-headline font-bold text-lg text-primary-foreground">{testimonial.name}</p>
+                      <p className="font-headline font-bold text-lg text-card-foreground">{testimonial.name}</p>
                       <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                     </div>
                     <div className="flex text-yellow-400 my-1">

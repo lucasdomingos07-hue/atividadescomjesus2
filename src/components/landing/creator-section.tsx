@@ -25,7 +25,7 @@ export default function CreatorSection() {
                                 <div className="absolute inset-0 rounded-full border-4 border-brand-green ring-4 ring-brand-green/50 animate-pulse"></div>
                             </div>
                         )}
-                        <h2 className="text-xl font-headline font-bold text-headline mt-2">
+                        <h2 className="text-xl font-headline font-bold text-card-foreground mt-2">
                             Conheça a criadora das Atividades 📚
                         </h2>
                         <p className="text-base text-muted-foreground">

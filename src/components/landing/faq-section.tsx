@@ -46,9 +46,9 @@ export default function FaqSection() {
     <SectionWrapper className="pt-8">
       <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-4 mb-6">
         <div className="bg-card border-2 border-accent p-3 rounded-full aspect-square flex items-center justify-center">
-          <HelpCircle className="w-8 h-8 text-accent" strokeWidth={1.5} />
+          <HelpCircle className="w-8 h-8 text-accent-foreground" strokeWidth={1.5} />
         </div>
-        <h2 className="text-xl font-headline font-bold text-headline">
+        <h2 className="text-xl font-headline font-bold text-foreground">
           Perguntas Frequentes:
         </h2>
       </div>
@@ -60,7 +60,7 @@ export default function FaqSection() {
             value={`item-${index}`}
             className="bg-card shadow-sm rounded-lg mb-2 px-6 border-b-0 hover:shadow-md transition-shadow"
           >
-            <AccordionTrigger className="text-lg text-left font-semibold hover:no-underline">
+            <AccordionTrigger className="text-lg text-left font-semibold hover:no-underline text-card-foreground">
               {faq.question}
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground text-base pt-2">

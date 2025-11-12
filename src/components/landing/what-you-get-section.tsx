@@ -20,13 +20,13 @@ export default function WhatYouGetSection() {
         <div className="max-w-xl mx-auto">
             <Card className="shadow-lg bg-card border-accent/20 rounded-2xl p-6 md:p-8">
                 <CardContent className="p-0 flex flex-col items-center text-center gap-4">
-                    <h2 className="text-xl font-headline font-bold text-headline">
+                    <h2 className="text-xl font-headline font-bold text-card-foreground">
                         O Kit Colorindo Fé e Alegria, inclui:
                     </h2>
                     <ul className="space-y-4 text-left">
                         {features.map((feature, index) => (
                         <li key={index} className="flex items-start gap-4">
-                            <CheckCircle2 className="w-8 h-8 text-accent mt-1 shrink-0" />
+                            <CheckCircle2 className="w-8 h-8 text-accent-foreground mt-1 shrink-0" />
                             <span 
                             className="text-lg text-muted-foreground"
                             dangerouslySetInnerHTML={{ __html: feature.text }}

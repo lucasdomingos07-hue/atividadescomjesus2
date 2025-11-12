@@ -16,13 +16,13 @@ export default function TargetAudienceSection() {
             <div className="max-w-xl mx-auto">
                 <Card className="shadow-lg bg-card border-accent/20 rounded-2xl p-6 md:p-8">
                     <CardContent className="p-0 flex flex-col items-center text-center gap-4">
-                        <h2 className="text-xl font-headline font-bold text-headline">
+                        <h2 className="text-xl font-headline font-bold text-card-foreground">
                             Se você sente que:
                         </h2>
                         <ul className="text-left text-lg text-muted-foreground space-y-3">
                             {points.map((point, index) => (
                                 <li key={index} className="flex items-start gap-3">
-                                    <Check className="w-6 h-6 text-accent mt-1 shrink-0" />
+                                    <Check className="w-6 h-6 text-accent-foreground mt-1 shrink-0" />
                                     <span>{point}</span>
                                 </li>
                             ))}

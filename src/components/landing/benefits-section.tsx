@@ -47,7 +47,7 @@ export default function BenefitsSection() {
                 {benefit.icon}
               </div>
               <div className="flex flex-col text-left">
-                <h3 className="font-headline text-base font-semibold text-primary-foreground">{benefit.title}</h3>
+                <h3 className="font-headline text-base font-semibold text-card-foreground">{benefit.title}</h3>
                 <p className="text-sm text-muted-foreground">{benefit.description}</p>
               </div>
             </CardContent>
