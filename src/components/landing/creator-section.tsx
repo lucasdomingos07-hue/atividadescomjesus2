@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { SectionWrapper } from "./section-wrapper";
+import { cn } from "@/lib/utils";
 
 export default function CreatorSection() {
     const creatorImage = PlaceHolderImages.find(img => img.id === "creator-monica-2");
@@ -10,7 +11,7 @@ export default function CreatorSection() {
     return (
         <SectionWrapper className="py-4">
             <div className="max-w-xl mx-auto">
-                <Card className="shadow-lg bg-card border-accent/20 rounded-2xl p-6 md:p-8">
+                <Card className={cn("shadow-lg bg-card border-accent/20 rounded-2xl p-6 md:p-8", "card-glow")}>
                     <CardContent className="p-0 flex flex-col items-center text-center gap-4">
                         {creatorImage && (
                             <div className="relative">

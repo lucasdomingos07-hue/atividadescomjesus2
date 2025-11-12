@@ -16,7 +16,7 @@ export default function AudienceSection() {
     return (
         <SectionWrapper className="py-4">
             <div className="max-w-xl mx-auto">
-                <Card className="shadow-lg bg-card border-accent/30">
+                <Card className={cn("shadow-lg bg-card border-accent/30", "card-glow")}>
                     <CardHeader>
                         <CardTitle className="text-xl text-center font-headline font-bold text-card-foreground">Para quem é o kit?</CardTitle>
                     </CardHeader>

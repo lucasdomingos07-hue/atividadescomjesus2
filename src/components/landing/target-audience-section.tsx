@@ -2,6 +2,7 @@
 import { SectionWrapper } from "./section-wrapper";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const points = [
   "As telas estão tomando tempo demais das crianças",
@@ -14,7 +15,7 @@ export default function TargetAudienceSection() {
     return (
         <SectionWrapper className="py-8 pb-4">
             <div className="max-w-xl mx-auto">
-                <Card className="shadow-lg bg-card border-accent/20 rounded-2xl p-6 md:p-8">
+                <Card className={cn("shadow-lg bg-card border-accent/20 rounded-2xl p-6 md:p-8", "card-glow")}>
                     <CardContent className="p-0 flex flex-col items-center text-center gap-4">
                         <h2 className="text-xl font-headline font-bold text-card-foreground">
                             Se você sente que:

@@ -93,7 +93,7 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <CarouselItem key={index}>
               <div className="p-1 h-full">
-                <Card className="bg-card/90 shadow-lg rounded-xl overflow-hidden border border-primary/20 h-full">
+                <Card className={cn("bg-card/90 shadow-lg rounded-xl overflow-hidden border border-primary/20 h-full", "card-glow")}>
                   <CardContent className="p-6 flex flex-col items-center text-center gap-2">
                     {testimonial.image && (
                       <Image
@@ -116,7 +116,7 @@ export default function TestimonialsSection() {
                     </div>
                     <p className="italic text-base text-muted-foreground flex-grow">“{testimonial.quote}”</p>
                     {testimonial.testimonialImage && (
-                        <div className="mt-4">
+                        <div className={cn("mt-4", "card-glow")}>
                             <Image
                                 src={testimonial.testimonialImage.imageUrl}
                                 alt={testimonial.testimonialImage.description}

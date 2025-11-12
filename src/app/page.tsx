@@ -16,6 +16,7 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
 import { SectionWrapper } from '@/components/landing/section-wrapper';
+import { cn } from '@/lib/utils';
 
 function MovedImage() {
   const flatlayImage = PlaceHolderImages.find(img => img.id === "flatlay-drawings");
@@ -23,7 +24,7 @@ function MovedImage() {
   return (
      <SectionWrapper className="pt-8 pb-4">
       <div className="flex justify-center">
-        <Card className="overflow-hidden shadow-lg rounded-2xl w-full max-w-md">
+        <Card className={cn("overflow-hidden shadow-lg rounded-2xl w-full max-w-md", "card-glow")}>
             <CardContent className="p-0">
                 <Image
                     src={flatlayImage.imageUrl}
@@ -48,11 +49,11 @@ export default function Home() {
         <HeroSection />
         <TargetAudienceSection />
         <ColoringPagesSection />
+        <MovedImage />
         <AudienceSection />
         <TestimonialsSection />
         <CreatorSection />
         <BenefitsSection />
-        <MovedImage />
         <WhatYouGetSection />
         <PricingSection />
         <FaqSection />

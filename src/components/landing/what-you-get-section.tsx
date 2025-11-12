@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { cn } from "@/lib/utils";
 
 const features = [
   { text: "<strong class=\"font-bold\">100 Atividades Bíblicas para Colorir</strong> — ensinam sobre Jesus enquanto desenvolvem criatividade e concentração." },
@@ -18,7 +19,7 @@ export default function WhatYouGetSection() {
   return (
     <SectionWrapper className="bg-secondary pt-8 pb-8">
         <div className="max-w-xl mx-auto">
-            <Card className="shadow-lg bg-card border-accent/20 rounded-2xl p-6 md:p-8">
+            <Card className={cn("shadow-lg bg-card border-accent/20 rounded-2xl p-6 md:p-8", "card-glow")}>
                 <CardContent className="p-0 flex flex-col items-center text-center gap-4">
                     <h2 className="text-xl font-headline font-bold text-card-foreground">
                         O Kit Colorindo Fé e Alegria, inclui:

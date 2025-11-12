@@ -49,7 +49,7 @@ export default function ColoringPagesSection() {
 
 
   return (
-    <SectionWrapper className="py-8 pb-4">
+    <SectionWrapper className="py-8 pb-0">
       <div className="text-center space-y-2 mb-6 max-w-2xl mx-auto">
         <h2 className="text-xl font-headline font-bold text-foreground">
           Desenhos com traços delicados e expressões de fé!
@@ -68,7 +68,7 @@ export default function ColoringPagesSection() {
             page && (
             <CarouselItem key={index}>
               <div className="p-1">
-                <Card className="overflow-hidden shadow-lg rounded-2xl">
+                <Card className={cn("overflow-hidden shadow-lg rounded-2xl", "card-glow")}>
                   <CardContent className="p-0">
                     <Image
                       src={page.imageUrl}
