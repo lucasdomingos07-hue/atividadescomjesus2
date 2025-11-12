@@ -11,6 +11,7 @@ import FinalCtaSection from '@/components/landing/final-cta-section';
 import ColoringPagesSection from '@/components/landing/coloring-pages-section';
 import CreatorSection from '@/components/landing/creator-section';
 import TargetAudienceSection from '@/components/landing/target-audience-section';
+import SocialProofBanner from '@/components/landing/social-proof-banner';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <TargetAudienceSection />
         <ColoringPagesSection />
         <TestimonialsSection />
+        <SocialProofBanner />
         <CreatorSection />
         <BenefitsSection />
         <WhatYouGetSection />

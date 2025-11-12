@@ -41,14 +41,6 @@ export default function PricingSection() {
               "shadow-lg relative flex flex-col h-full bg-card overflow-hidden rounded-lg",
               plan.isRecommended ? 'border-accent border-2' : 'border'
             )}>
-              <CardHeader className="items-center text-center p-4 sm:p-6 pb-0">
-                <div className={cn("flex items-center justify-center text-center gap-3 bg-background p-3 rounded-lg w-full max-w-md shine-effect")}>
-                    <Users className="w-6 h-6 text-foreground shrink-0"/>
-                    <span className="font-medium text-left text-sm leading-tight text-foreground">
-                      <strong>+ de 5 mil</strong> famílias já transformaram o tempo de tela em diversão e aprendizado.
-                    </span>
-                </div>
-              </CardHeader>
               <CardHeader className="items-center text-center pt-6">
                  {plan.isRecommended && (
                   <div className="bg-brand-green text-accent-foreground text-sm font-bold px-3 py-1 rounded-full shadow-lg mb-4 text-base">
@@ -124,7 +116,7 @@ export default function PricingSection() {
       </div>
 
        <p className="text-center text-sm text-foreground mt-4 flex items-center justify-center gap-2">
-        Compra 100% Segura <Shield className="w-4 h-4 text-foreground" />
+        <span className="text-white">Compra 100% Segura</span> <Shield className="w-4 h-4 text-white" />
       </p>
     </SectionWrapper>
   );
