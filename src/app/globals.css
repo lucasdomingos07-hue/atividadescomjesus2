@@ -132,7 +132,7 @@ body {
   }
 
   .text-glow {
-    text-shadow: 0 0 8px currentColor;
+    text-shadow: 0 0 10px hsla(var(--foreground), 0.5);
   }
 
   .card-glow {
