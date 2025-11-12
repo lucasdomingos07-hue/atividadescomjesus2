@@ -46,8 +46,8 @@ export default function PricingSection() {
               <CardHeader className="items-center text-center p-0">
                 <div className="py-6 pb-2 w-full flex flex-col items-center">
                   {plan.isRecommended && (
-                    <div className="bg-black text-white text-sm px-3 py-1 rounded-full shadow-lg mb-4 text-base">
-                      <span dangerouslySetInnerHTML={{ __html: "🚨 <strong>Apenas Hoje</strong> • 70% OFF" }} />
+                    <div className="bg-black text-white text-sm px-3 py-1 rounded-lg shadow-lg mb-4 text-base">
+                      <span dangerouslySetInnerHTML={{ __html: "<strong>Apenas Hoje</strong> • 70% OFF" }} />
                     </div>
                   )}
                 </div>
