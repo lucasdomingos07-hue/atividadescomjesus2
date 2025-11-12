@@ -10,15 +10,17 @@ import { cn } from "@/lib/utils";
 const plans = [
   {
     name: "Kit Colorindo Fé e Alegria",
-    subtitle: "Material Completo",
+    subtitle: "Ensine valores e divirta seu filho",
+    description: "O pacote ideal para desenvolver fé, criatividade e atenção das crianças.",
     originalPrice: "R$99,90",
     price: "R$29,90",
     priceDescription: "Acesso vitalício",
     features: [
-      "100 Desenhos Bíblicos para colorir",
-      "25 Histórias infantis que tornam o aprendizado espiritual leve e envolvente",
-      "Imprima quando quiser",
-      "Suporte individual via e-mail"
+      "100 Desenhos Bíblicos — fé e diversão em cada página",
+      "25 Histórias infantis — lições que tocam o coração",
+      "Imprima e use sempre que quiser",
+      "Suporte e orientação personalizados",
+      "💖 Ajude seu filho a crescer com fé, foco e valores.",
     ],
     bonuses: [
       { title: "Devocional Infantil", oldPrice: "R$ 29,90", newPrice: "R$ 0,00" },
@@ -47,13 +49,13 @@ export default function PricingSection() {
                     70% OFF
                   </div>
                 )}
-                <div className="flex flex-col">
-                  <h3 className="font-headline font-semibold text-[1.45rem] text-card-foreground flex items-center justify-center gap-2">
-                    <Gift className="w-6 h-6 text-accent-foreground" />
+                <div className="flex flex-col gap-1">
+                  <h3 className="font-headline font-semibold text-[1.45rem] text-card-foreground leading-tight">
                     {plan.name}
                   </h3>
                   <CardTitle className="text-base font-headline font-semibold text-card-foreground">{plan.subtitle}</CardTitle>
                 </div>
+                <CardDescription className="text-sm text-muted-foreground !mt-3 px-4">{plan.description}</CardDescription>
                 
                 <div className="text-center pt-4">
                   <p className="text-xl font-semibold text-muted-foreground mt-2">De <span className="line-through">{plan.originalPrice}</span> por</p>
@@ -67,16 +69,19 @@ export default function PricingSection() {
                 <ul className="space-y-3">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-accent-foreground">
+                      <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-accent-foreground mt-0.5">
                         <Check className="w-3.5 h-3.5 text-accent" />
                       </div>
-                      <span className="text-card-foreground font-semibold">{feature}</span>
+                      <span className="text-card-foreground font-semibold" dangerouslySetInnerHTML={{ __html: feature }} />
                     </li>
                   ))}
                 </ul>
                 {plan.bonuses && (
                    <div className="border-t border-dashed pt-6 space-y-4">
-                      <h4 className="font-headline font-semibold text-center text-xl text-card-foreground">Bônus Exclusivos:</h4>
+                      <h4 className="font-headline font-semibold text-center text-xl text-card-foreground flex flex-col">
+                        Bônus Exclusivos
+                        <span className="text-base font-medium text-muted-foreground">(R$ 70,00 em Presentes!)</span>
+                      </h4>
                       <ul className="space-y-4">
                         {plan.bonuses.map((bonus, index) => (
                            <li key={index} className="flex items-start gap-3">
