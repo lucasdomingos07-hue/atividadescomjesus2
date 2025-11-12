@@ -11,8 +11,8 @@ const plans = [
   {
     name: "Kit Colorindo Fé e Alegria",
     subtitle: "Material Completo",
-    originalPrice: "R$89,90",
-    price: "R$19,90",
+    originalPrice: "R$99,90",
+    price: "R$29,90",
     priceDescription: "Acesso vitalício",
     features: [
       "100 Desenhos Bíblicos para colorir",
