@@ -82,62 +82,64 @@ export default function TestimonialsSection() {
         </h2>
       </div>
 
-      <Carousel
-        setApi={setApi}
-        plugins={[plugin.current]}
-        className="w-full max-w-xl mx-auto"
-        onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.reset}
-      >
-        <CarouselContent>
-          {testimonials.map((testimonial, index) => (
-            <CarouselItem key={index}>
-              <div className="p-1 h-full">
-                <Card className={cn("bg-card shadow-lg rounded-xl overflow-hidden border border-primary/20 h-full", "card-glow")}>
-                  <CardContent className="p-6 flex flex-col items-center text-center gap-2">
-                    {testimonial.image && (
-                      <Image
-                        src={testimonial.image.imageUrl}
-                        alt={testimonial.image.description}
-                        width={100}
-                        height={100}
-                        data-ai-hint={testimonial.image.imageHint}
-                        className="rounded-full w-24 h-24 object-cover border-4 border-white shadow-md"
-                      />
-                    )}
-                    <div className="flex flex-col mt-2">
-                      <p className="font-headline font-bold text-lg text-card-foreground">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+      <div className="max-w-xl mx-auto">
+        <Card className={cn("bg-card shadow-lg rounded-xl overflow-hidden border-primary/20", "card-glow")}>
+          <CardContent className="p-6">
+            <Carousel
+              setApi={setApi}
+              plugins={[plugin.current]}
+              className="w-full"
+              onMouseEnter={plugin.current.stop}
+              onMouseLeave={plugin.current.reset}
+            >
+              <CarouselContent>
+                {testimonials.map((testimonial, index) => (
+                  <CarouselItem key={index}>
+                    <div className="flex flex-col items-center text-center gap-2">
+                      {testimonial.image && (
+                        <Image
+                          src={testimonial.image.imageUrl}
+                          alt={testimonial.image.description}
+                          width={100}
+                          height={100}
+                          data-ai-hint={testimonial.image.imageHint}
+                          className="rounded-full w-24 h-24 object-cover border-4 border-white shadow-md"
+                        />
+                      )}
+                      <div className="flex flex-col mt-2">
+                        <p className="font-headline font-bold text-lg text-card-foreground">{testimonial.name}</p>
+                        <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                      </div>
+                      <div className="flex text-yellow-400 my-1">
+                        {[...Array(5)].map((_, i) => (
+                          <StarIcon key={i} className="w-5 h-5" />
+                        ))}
+                      </div>
+                      <p className="italic text-base text-muted-foreground flex-grow">“{testimonial.quote}”</p>
+                      {testimonial.testimonialImage && (
+                          <div className={cn("mt-4", "card-glow")}>
+                              <Image
+                                  src={testimonial.testimonialImage.imageUrl}
+                                  alt={testimonial.testimonialImage.description}
+                                  width={200}
+                                  height={200}
+                                  data-ai-hint={testimonial.testimonialImage.imageHint}
+                                  className="rounded-lg shadow-md"
+                              />
+                          </div>
+                      )}
                     </div>
-                    <div className="flex text-yellow-400 my-1">
-                      {[...Array(5)].map((_, i) => (
-                        <StarIcon key={i} className="w-5 h-5" />
-                      ))}
-                    </div>
-                    <p className="italic text-base text-muted-foreground flex-grow">“{testimonial.quote}”</p>
-                    {testimonial.testimonialImage && (
-                        <div className={cn("mt-4", "card-glow")}>
-                            <Image
-                                src={testimonial.testimonialImage.imageUrl}
-                                alt={testimonial.testimonialImage.description}
-                                width={200}
-                                height={200}
-                                data-ai-hint={testimonial.testimonialImage.imageHint}
-                                className="rounded-lg shadow-md"
-                            />
-                        </div>
-                    )}
-                  </CardContent>
-                </Card>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="hidden sm:flex" />
-        <CarouselNext className="hidden sm:flex" />
-      </Carousel>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden sm:flex -left-10" />
+              <CarouselNext className="hidden sm:flex -right-10" />
+            </Carousel>
+          </CardContent>
+        </Card>
+      </div>
       
-      <div className="flex flex-col items-center justify-center gap-1 mt-2">
+      <div className="flex flex-col items-center justify-center gap-1 mt-4">
         <div className="flex items-center gap-2">
             {Array.from({ length: count }).map((_, i) => (
                 <span
