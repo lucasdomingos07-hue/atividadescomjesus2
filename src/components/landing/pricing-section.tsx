@@ -51,7 +51,7 @@ export default function PricingSection() {
                     </div>
                   )}
                 </div>
-                <div className="bg-brand-green py-2 w-full px-6">
+                <div className="bg-brand-green py-2 w-full px-6 shine-effect">
                   <h3 className="font-headline font-semibold text-xl text-primary-foreground leading-tight">
                     {plan.name}
                   </h3>
