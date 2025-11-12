@@ -31,7 +31,7 @@ export default function WhatYouGetSection() {
                         <li key={index} className="flex items-start gap-4">
                             <CheckCircle2 className="w-8 h-8 text-accent-foreground mt-1 shrink-0" />
                             <span 
-                            className="text-lg text-muted-foreground"
+                            className="text-sm text-muted-foreground"
                             dangerouslySetInnerHTML={{ __html: feature.text }}
                             />
                         </li>
