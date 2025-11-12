@@ -7,10 +7,11 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const points = [
-  "As telas estão tomando tempo demais das crianças",
-  "Os momentos em família estão ficando raros",
-  "Ensinar valores está mais difícil do que deveria",
-  "E você queria algo simples para viver mais fé no dia a dia",
+  "📱 Seu filho vive grudado nas telas",
+  "🏠 A família quase não se conecta mais",
+  "⚖️ Fica difícil ensinar o que é certo",
+  "🧠 Você nota que ele tem mais dificuldade de se concentrar",
+  "💔 E teme que cresça sem fé e valores",
 ];
 
 const audience = [
@@ -34,8 +35,10 @@ export default function TargetAudienceSection() {
                         <ul className="text-left text-lg text-muted-foreground space-y-3 w-full">
                             {points.map((point, index) => (
                                 <li key={index} className="flex items-start gap-3">
-                                    <Check className="w-10 h-10 text-accent-foreground mt-1 shrink-0 p-1.5" />
-                                    <span>{point}</span>
+                                    <span className="text-2xl mt-1">
+                                        {point.split(' ')[0]}
+                                    </span>
+                                    <span>{point.substring(point.indexOf(' ') + 1)}</span>
                                 </li>
                             ))}
                         </ul>
