@@ -1,6 +1,6 @@
 
 import { SectionWrapper } from "./section-wrapper";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Gift, BookOpen, Users, Milestone } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -15,12 +15,12 @@ const audience = [
 export default function AudienceSection() {
     return (
         <SectionWrapper className="py-4">
+            <div className="text-center space-y-4 mb-6 max-w-2xl mx-auto">
+                <h2 className="text-xl font-headline font-bold text-foreground">Para quem é o kit?</h2>
+            </div>
             <div className="max-w-xl mx-auto">
                 <Card className={cn("shadow-lg bg-card border-accent/30", "card-glow")}>
-                    <CardHeader>
-                        <CardTitle className="text-xl text-center font-headline font-bold text-card-foreground">Para quem é o kit?</CardTitle>
-                    </CardHeader>
-                    <CardContent className="pt-0">
+                    <CardContent className="p-6">
                         <div className="text-left text-lg text-muted-foreground space-y-3 w-full">
                         {audience.map((item, index) => (
                             <div key={index} className="flex items-start gap-3">

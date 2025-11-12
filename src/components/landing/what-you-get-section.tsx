@@ -18,12 +18,14 @@ export default function WhatYouGetSection() {
     const flatlayImage = PlaceHolderImages.find(img => img.id === "flatlay-drawings");
   return (
     <SectionWrapper className="bg-secondary pt-8 pb-8">
+        <div className="text-center space-y-4 mb-6 max-w-2xl mx-auto">
+            <h2 className="text-xl font-headline font-bold text-foreground">
+                O Kit Colorindo Fé e Alegria, inclui:
+            </h2>
+        </div>
         <div className="max-w-xl mx-auto">
             <Card className={cn("shadow-lg bg-card border-accent/20 rounded-2xl", "card-glow")}>
                 <CardContent className="p-6 md:p-8 flex flex-col items-center text-center gap-4">
-                    <h2 className="text-xl font-headline font-bold text-card-foreground">
-                        O Kit Colorindo Fé e Alegria, inclui:
-                    </h2>
                     <ul className="space-y-4 text-left">
                         {features.map((feature, index) => (
                         <li key={index} className="flex items-start gap-4">
