@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "Kit Colorindo Fé e Alegria",
+    name: "📚 Kit Colorindo Fé e Alegria",
     subtitle: "Ensine valores, fortaleça a fé e crie memórias especiais.",
     description: "Desperte a fé, o foco e a imaginação das crianças com atividades que encantam.",
     originalPrice: "R$99,90",
