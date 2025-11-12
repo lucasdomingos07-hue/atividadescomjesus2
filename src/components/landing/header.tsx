@@ -30,9 +30,9 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="py-2 px-4 md:px-6 bg-accent text-accent-foreground sticky top-0 z-40">
+    <header className={cn("py-2 px-4 md:px-6 sticky top-0 z-40 cta-glow shine-effect")}>
       <div className="container mx-auto flex items-center justify-center text-center gap-2">
-        <span className={cn("text-sm sm:text-base flex items-center gap-2")}>
+        <span className={cn("text-sm sm:text-base flex items-center gap-2 text-primary-foreground")}>
           <strong className="font-bold flex items-center gap-2"><span>⚡</span>OFERTA ESPECIAL</strong>
           <span>•</span>
           <span>Encerra em: {String(timeLeft.minutes).padStart(2, '0')}:{String(timeLeft.seconds).padStart(2, '0')}</span>
