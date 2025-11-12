@@ -31,10 +31,10 @@ export default function TargetAudienceSection() {
                         <h2 className="text-xl font-headline font-bold text-card-foreground">
                             Se você sente que:
                         </h2>
-                        <ul className="text-left text-lg text-muted-foreground space-y-3">
+                        <ul className="text-left text-lg text-muted-foreground space-y-3 w-full">
                             {points.map((point, index) => (
                                 <li key={index} className="flex items-start gap-3">
-                                    <Check className="w-6 h-6 text-accent-foreground mt-1 shrink-0" />
+                                    <Check className="w-10 h-10 text-accent-foreground mt-1 shrink-0 p-1.5" />
                                     <span>{point}</span>
                                 </li>
                             ))}
