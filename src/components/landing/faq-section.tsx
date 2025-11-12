@@ -48,7 +48,7 @@ export default function FaqSection() {
       <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-4 mb-8">
         <div className={cn("relative p-3 rounded-full flex items-center justify-center bg-accent/10 border-2 border-accent/20", "card-glow")}>
           <div className="absolute inset-0.5 rounded-full bg-accent/20 blur-lg"></div>
-          <HelpCircle className="w-8 h-8 text-accent-foreground relative" strokeWidth={1.5} />
+          <HelpCircle className="w-8 h-8 text-white relative" strokeWidth={1.5} />
         </div>
         <h2 className="text-xl font-headline font-bold text-foreground">
           Ainda tem dúvidas?<br />A gente responde:
