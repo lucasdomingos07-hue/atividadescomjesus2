@@ -28,8 +28,8 @@ export default function TargetAudienceSection() {
                                 </li>
                             ))}
                         </ul>
-                        <p className="font-semibold text-primary-foreground text-lg mt-2">
-                            Então esse kit foi criado exatamente para você.
+                        <p className="text-xl font-headline font-bold text-card-foreground mt-2">
+                            Então esse kit foi criado<br />exatamente para você.
                         </p>
                     </CardContent>
                 </Card>
