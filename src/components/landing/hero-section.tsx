@@ -24,6 +24,9 @@ export default function HeroSection() {
             <h2 className="text-lg md:text-xl text-foreground max-w-3xl mx-auto">
               Nessas férias, desperte o foco, a criatividade e a fé que as telas apagaram.
             </h2>
+            <p className="text-lg md:text-xl text-foreground max-w-3xl mx-auto font-bold">
+              +100 atividades bíblicas prontas para imprimir e colorir 🎨
+            </p>
           </div>
         </div>
 
