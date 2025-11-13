@@ -16,7 +16,7 @@ export default function HeroSection() {
         <div className="flex flex-col space-y-6 text-center md:items-center">
           <div className="space-y-4 text-center">
             <h1 className="text-2xl md:text-3xl font-headline tracking-tight text-foreground text-[26px] leading-tight md:leading-snug text-glow">
-              ⚠️ ATENÇÃO<br />
+              ⚠️ <span className="font-bold text-brand-green">ATENÇÃO:</span><br />
               As telas estão destruindo<br />
               o desenvolvimento dos<br />
               seus filhos lentamente!
