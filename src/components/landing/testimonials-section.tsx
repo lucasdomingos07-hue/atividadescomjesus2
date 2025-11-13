@@ -85,6 +85,15 @@ export default function TestimonialsSection() {
 
       <div className="max-w-xl mx-auto">
         <Card className={cn("bg-card shadow-lg rounded-xl overflow-hidden border-primary/20", "card-glow")}>
+          <CardContent className="p-4 bg-white">
+            <div className={cn("flex items-center justify-center text-center gap-3 w-full")}>
+                <Users className="w-6 h-6 text-background shrink-0"/>
+                <span className="font-medium text-left text-sm leading-tight text-background">
+                  <strong>+ de 5 mil</strong> famílias já transformaram o tempo de tela em diversão e aprendizado.
+                </span>
+            </div>
+          </CardContent>
+          <Separator className="bg-border/50" />
           <CardContent className="p-6 pt-8 relative pb-12">
             <Carousel
               setApi={setApi}
@@ -154,15 +163,6 @@ export default function TestimonialsSection() {
                 <p className="text-center text-background/80 text-xs font-medium">
                   Arraste para o lado
                 </p>
-            </div>
-          </CardContent>
-          <Separator className="bg-border/50" />
-          <CardContent className="p-4 bg-white">
-            <div className={cn("flex items-center justify-center text-center gap-3 w-full")}>
-                <Users className="w-6 h-6 text-background shrink-0"/>
-                <span className="font-medium text-left text-sm leading-tight text-background">
-                  <strong>+ de 5 mil</strong> famílias já transformaram o tempo de tela em diversão e aprendizado.
-                </span>
             </div>
           </CardContent>
         </Card>
