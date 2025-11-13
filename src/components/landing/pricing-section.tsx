@@ -10,8 +10,8 @@ import { cn } from "@/lib/utils";
 const plans = [
   {
     name: "📚 Kit Colorindo Fé e Alegria",
-    subtitle: "Ensine valores, fortaleça a fé e crie memórias especiais.",
-    description: "Desperte a fé, o foco e a imaginação das crianças com atividades que encantam.",
+    subtitle: "Ensine valores, fortaleça a fé e crie memórias que ficam para sempre.",
+    description: "Atividades que despertam a fé, o foco e a imaginação das crianças de forma leve e divertida.",
     originalPrice: "R$99,90",
     price: "R$29,90",
     priceDescription: "Acesso vitalício",
@@ -119,7 +119,7 @@ export default function PricingSection() {
               <CardFooter className="mt-auto p-6">
                 <a href={plan.url} className="w-full">
                   {plan.isRecommended ? (
-                    <Button size="lg" className={cn("w-full font-bold text-base h-14 rounded-full cta-glow shine-effect")}>
+                    <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow shine-effect")}>
                       {plan.cta}
                     </Button>
                   ) : (
@@ -136,7 +136,7 @@ export default function PricingSection() {
 
        <div className="text-center text-sm text-foreground mt-4 flex flex-col items-center justify-center gap-0">
         <p className="text-white">🔒 Compra 100% segura</p>
-        <p className="text-white">Acesso imediato após o pagamento</p>
+        <p className="text-white font-bold">Acesso imediato após o pagamento</p>
       </div>
     </SectionWrapper>
   );
