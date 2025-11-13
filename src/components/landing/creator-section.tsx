@@ -42,7 +42,7 @@ export default function CreatorSection() {
     return (
         <SectionWrapper className="py-4">
             <div className="text-center space-y-4 mb-6 max-w-2xl mx-auto">
-                <h2 className="text-xl font-headline font-bold text-foreground">
+                <h2 className="text-2xl md:text-3xl font-headline font-bold text-foreground">
                     Conheça a criadora<br />das Atividades 📚
                 </h2>
             </div>

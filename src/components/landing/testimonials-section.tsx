@@ -1,3 +1,4 @@
+
 "use client";
 
 import { SectionWrapper } from "./section-wrapper";
@@ -78,7 +79,7 @@ export default function TestimonialsSection() {
   return (
     <SectionWrapper className="pt-4 pb-4">
       <div className="text-center space-y-2 mb-6">
-        <h2 className="text-xl font-headline font-bold text-foreground">
+        <h2 className="text-2xl md:text-3xl font-headline font-bold text-foreground">
           O que as famílias<br />estão dizendo:
         </h2>
       </div>
