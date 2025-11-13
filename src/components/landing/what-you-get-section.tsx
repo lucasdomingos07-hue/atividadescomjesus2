@@ -20,7 +20,7 @@ export default function WhatYouGetSection() {
     <SectionWrapper className="bg-secondary pt-8 pb-8">
         <div className="text-center space-y-4 mb-6 max-w-2xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-headline font-bold text-foreground">
-                O Kit Colorindo Fé<br/>e Alegria, inclui:
+                O que você irá receber:
             </h2>
         </div>
         <div className="max-w-xl mx-auto">
