@@ -1,4 +1,3 @@
-
 "use client";
 
 import { cn } from "@/lib/utils";
@@ -30,7 +29,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={cn("py-2 px-4 md:px-6 sticky top-0 z-40 bg-brand-green text-primary-foreground shine-effect")}>
+    <header className={cn("py-2 px-4 md:px-6 sticky top-0 z-50 bg-brand-green text-primary-foreground shine-effect")}>
       <div className="container mx-auto flex items-center justify-center text-center gap-2">
         <span className={cn("text-sm sm:text-base flex items-center gap-2 text-primary-foreground")}>
           <strong className="font-bold flex items-center gap-2"><span>⚡</span>OFERTA ESPECIAL</strong>
