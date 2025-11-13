@@ -38,7 +38,7 @@ export default function TargetAudienceSection() {
                                     <span className="text-2xl mt-1">
                                         {point.split(' ')[0]}
                                     </span>
-                                    <span className="font-bold">{point.substring(point.indexOf(' ') + 1)}</span>
+                                    <span>{point.substring(point.indexOf(' ') + 1)}</span>
                                 </li>
                             ))}
                         </ul>
