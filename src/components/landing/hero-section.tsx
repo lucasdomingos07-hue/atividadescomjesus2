@@ -16,10 +16,8 @@ export default function HeroSection() {
         <div className="flex flex-col space-y-6 text-center md:items-center">
           <div className="space-y-4 text-center">
             <h1 className="text-2xl md:text-3xl font-headline tracking-tight text-foreground text-[26px] leading-tight md:leading-snug text-glow">
-              ⚠️ <span className="font-bold text-brand-green">ATENÇÃO:</span><br />
-              As telas estão destruindo<br />
-              o desenvolvimento dos<br />
-              seus filhos lentamente!
+              Cansada das telas roubando<br />
+              o tempo das crianças?
             </h1>
             <h2 className="text-lg md:text-xl text-foreground max-w-3xl mx-auto">
               Nessas férias, desperte o foco, a criatividade e a fé que as telas apagaram.
