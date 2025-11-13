@@ -94,7 +94,7 @@ export default function TestimonialsSection() {
             </div>
           </CardContent>
           <Separator className="bg-border/50" />
-          <CardContent className="p-6 pt-8 relative pb-12">
+          <CardContent className="p-6 pt-4 relative pb-12">
             <Carousel
               setApi={setApi}
               plugins={[plugin.current]}
@@ -107,7 +107,7 @@ export default function TestimonialsSection() {
                   <CarouselItem key={index}>
                     <div className="flex flex-col items-center text-center gap-2">
                       {testimonial.image && (
-                        <div className="relative w-24 h-24">
+                        <div className="relative w-24 h-24 mt-2">
                           <Image
                             src={testimonial.image.imageUrl}
                             alt={testimonial.image.description}
