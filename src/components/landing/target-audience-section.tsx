@@ -7,11 +7,11 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const points = [
-  "📱 Seu filho vive grudado nas telas",
-  "🏠 A família quase não se conecta mais",
-  "⚖️ Fica difícil ensinar o que é certo",
-  "🧠 Você nota que ele tem mais dificuldade de se concentrar",
-  "💔 E teme que cresça sem fé e valores",
+  "😣 Seu filho anda irritado por qualquer coisa",
+  "🙉 Já não obedece como antes",
+  "📱 Parece viciado nas telas e perde a paciência quando você tira",
+  "🧠 Tem dificuldade pra se concentrar ou brincar sem celular",
+  "💔 E você sente que está se afastando dele um pouco mais a cada dia",
 ];
 
 const audience = [
