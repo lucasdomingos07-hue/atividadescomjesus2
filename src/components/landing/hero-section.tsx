@@ -16,7 +16,7 @@ export default function HeroSection() {
         <div className="flex flex-col space-y-6 text-center md:items-center">
           <div className="space-y-4 text-center">
             <h1 className="text-2xl md:text-3xl font-headline tracking-tight text-foreground text-[26px] leading-tight md:leading-snug text-glow">
-              <span className="text-brand-green">ATENÇÃO:</span> As telas estão<br />
+              <strong className="text-brand-green">ATENÇÃO:</strong> As telas estão<br />
               roubando a alegria<br />
               dos seus filhos!
             </h1>
