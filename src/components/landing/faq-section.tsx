@@ -23,7 +23,7 @@ const faqs = [
   {
     question: "Posso imprimir quantas vezes?",
     answer:
-      "Sim! O acesso ao material é vitalício. Você pode baixar e imprimir os desenhos e atividades quantas vezes desejar, para usar com todos os seus filhos, sobrinhos ou em turmas de catequese.",
+      "O acesso ao material é vitalício. Você pode baixar e imprimir os desenhos e atividades quantas vezes desejar, para usar com todos os seus filhos, sobrinhos ou em turmas de catequese.",
   },
   {
     question: "Para qual idade é recomendado?",
