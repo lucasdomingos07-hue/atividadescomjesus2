@@ -21,7 +21,7 @@ const faqs = [
       "O acesso ao material é 100% digital e imediato. Após a confirmação do pagamento, você receberá um e-mail com o link para baixar todo o conteúdo em PDF. Simples e rápido!",
   },
   {
-    question: "Posso imprimir quantas vezes eu quiser?",
+    question: "Posso imprimir quantas vezes?",
     answer:
       "Sim! O acesso ao material é vitalício. Você pode baixar e imprimir os desenhos e atividades quantas vezes desejar, para usar com todos os seus filhos, sobrinhos ou em turmas de catequese.",
   },
