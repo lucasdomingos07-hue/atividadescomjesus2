@@ -80,7 +80,12 @@ export default function PricingSection() {
                   <div className="flex flex-col gap-1 mt-3">
                     <CardTitle className="text-base font-headline font-semibold text-card-foreground" dangerouslySetInnerHTML={{ __html: plan.subtitle }} />
                   </div>
-                  <CardDescription className="text-sm text-muted-foreground !mt-3 px-4">{plan.description}</CardDescription>
+                  <CardDescription className={cn(
+                    "text-sm text-muted-foreground !mt-3 px-4",
+                    plan.isRecommended && "text-base"
+                  )}>
+                    {plan.description}
+                  </CardDescription>
                   
                   <div className="text-center pt-4">
                     <p className="text-xl font-semibold text-muted-foreground mt-2">De <span className="line-through">{plan.originalPrice}</span> por</p>
