@@ -26,7 +26,7 @@ const plans = [
   {
     name: "📚 Kit Completo",
     subtitle: "Ensine valores, fortaleça a fé e crie<br />memórias que ficam para sempre.",
-    description: "Atividades que despertam a fé, o foco e a imaginação das crianças de forma leve e divertida.",
+    description: "+2 mil famílias recomendam este kit",
     originalPrice: "R$99,90",
     price: "R$29,90",
     priceDescription: "Acesso vitalício",
@@ -36,7 +36,6 @@ const plans = [
       "Imprima e use sempre que quiser",
       "Suporte e orientação personalizados",
     ],
-    finalBullet: "Ajude seu filho a crescer com fé, foco e valores.",
     bonuses: [
       { title: "Devocional Infantil", oldPrice: "R$ 29,90", newPrice: "R$ 0,00" },
       { title: "Guia da Mãe de Fé", oldPrice: "R$ 19,90", newPrice: "R$ 0,00" },
