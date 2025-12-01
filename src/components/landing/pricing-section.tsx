@@ -25,7 +25,7 @@ const plans = [
   },
   {
     name: "📚 Kit Completo",
-    subtitle: "Ensine valores, fortaleça a fé e crie memórias que ficam para sempre.",
+    subtitle: "Ensine valores, fortaleça a fé e crie<br />memórias que ficam para sempre.",
     description: "Atividades que despertam a fé, o foco e a imaginação das crianças de forma leve e divertida.",
     originalPrice: "R$99,90",
     price: "R$29,90",
@@ -79,7 +79,7 @@ export default function PricingSection() {
                 </div>
                 <div className="p-6 pt-2 w-full flex flex-col items-center">
                   <div className="flex flex-col gap-1 mt-3">
-                    <CardTitle className="text-base font-headline font-semibold text-card-foreground">{plan.subtitle}</CardTitle>
+                    <CardTitle className="text-base font-headline font-semibold text-card-foreground" dangerouslySetInnerHTML={{ __html: plan.subtitle }} />
                   </div>
                   <CardDescription className="text-sm text-muted-foreground !mt-3 px-4">{plan.description}</CardDescription>
                   
