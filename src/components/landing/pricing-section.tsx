@@ -31,7 +31,7 @@ const plans = [
     price: "R$29,90",
     priceDescription: "Acesso vitalício",
     features: [
-      "Tudo do Básico + Bônus Exclusivos",
+      "100 Desenhos Bíblicos • fé e diversão em cada página",
       "25 Histórias infantis • lições que tocam o coração",
       "Imprima e use sempre que quiser",
       "Suporte e orientação personalizados",
