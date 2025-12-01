@@ -17,6 +17,7 @@ const plans = [
     priceDescription: "Acesso vitalício",
     features: [
       "100 Desenhos Bíblicos • fé e diversão em cada página",
+      "Imprima e use sempre que quiser",
     ],
     isRecommended: false,
     cta: "GARANTIR KIT BÁSICO",
