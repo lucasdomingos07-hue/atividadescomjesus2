@@ -9,15 +9,29 @@ import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "📚 Kit Colorindo Fé e Alegria",
+    name: "📚 Kit Básico",
+    subtitle: "Ideal para começar a jornada da fé através da arte.",
+    description: "Uma seleção especial de desenhos e histórias para introduzir valores cristãos.",
+    originalPrice: "R$49,90",
+    price: "R$19,90",
+    priceDescription: "Acesso vitalício",
+    features: [
+      "100 Desenhos Bíblicos • fé e diversão em cada página",
+      "25 Histórias infantis • lições que tocam o coração",
+    ],
+    isRecommended: false,
+    cta: "GARANTIR KIT BÁSICO",
+    url: "https://app.ombrelone.com/checkout/digital/3y799g6jpv" // TODO: Add correct URL
+  },
+  {
+    name: "📚 Kit Completo",
     subtitle: "Ensine valores, fortaleça a fé e crie memórias que ficam para sempre.",
     description: "Atividades que despertam a fé, o foco e a imaginação das crianças de forma leve e divertida.",
     originalPrice: "R$99,90",
     price: "R$29,90",
     priceDescription: "Acesso vitalício",
     features: [
-      "100 Desenhos Bíblicos • fé e diversão em cada página",
-      "25 Histórias infantis • lições que tocam o coração",
+      "Tudo do Básico + Bônus Exclusivos",
       "Imprima e use sempre que quiser",
       "Suporte e orientação personalizados",
     ],
@@ -51,8 +65,14 @@ export default function PricingSection() {
                     </div>
                   )}
                 </div>
-                <div className="bg-brand-green py-2 w-full px-6 shine-effect">
-                  <h3 className="font-headline font-semibold text-xl text-primary-foreground leading-tight">
+                <div className={cn(
+                    "py-2 w-full px-6",
+                    plan.isRecommended ? "bg-brand-green shine-effect" : "bg-muted"
+                )}>
+                  <h3 className={cn(
+                    "font-headline font-semibold text-xl leading-tight",
+                    plan.isRecommended ? "text-primary-foreground" : "text-muted-foreground"
+                  )}>
                     {plan.name}
                   </h3>
                 </div>
