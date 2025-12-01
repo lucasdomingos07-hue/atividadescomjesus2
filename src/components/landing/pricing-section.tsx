@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 const plans = [
   {
     name: "📚 Kit Básico",
-    subtitle: "Ideal para começar a jornada da fé através da arte.",
+    subtitle: "Ideal para começar a jornada<br />da fé através da arte.",
     description: "Uma seleção especial de desenhos e histórias para introduzir valores cristãos.",
     originalPrice: "R$49,90",
     price: "R$19,90",
