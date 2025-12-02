@@ -21,7 +21,7 @@ const plans = [
     ],
     isRecommended: false,
     cta: "GARANTIR KIT BÁSICO",
-    url: "https://app.ombrelone.com/checkout/digital/3y799g6jpv" // TODO: Add correct URL
+    url: "https://pay.kiwify.com.br/ab5tuPe"
   },
   {
     name: "📚 Kit Completo",
@@ -43,7 +43,7 @@ const plans = [
     ],
     isRecommended: true,
     cta: "GARANTIR KIT COM 70% OFF",
-    url: "https://app.ombrelone.com/checkout/digital/3y799g6jpv"
+    url: "https://pay.kiwify.com.br/5FQC1Cu"
   },
 ];
 
