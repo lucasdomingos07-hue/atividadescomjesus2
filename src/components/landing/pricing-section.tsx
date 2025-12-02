@@ -11,7 +11,7 @@ const plans = [
   {
     name: "📚 Kit Básico",
     subtitle: "Ideal para começar a jornada<br />da fé através da arte.",
-    description: "Uma seleção especial de desenhos e histórias para introduzir valores cristãos.",
+    description: "",
     originalPrice: "R$49,90",
     price: "R$19,90",
     priceDescription: "Acesso vitalício",
@@ -26,7 +26,7 @@ const plans = [
   {
     name: "📚 Kit Completo",
     subtitle: "Ensine valores, fortaleça a fé e crie<br />memórias que ficam para sempre.",
-    description: "+2 mil famílias recomendam este kit",
+    description: "Uma seleção especial de desenhos e histórias para introduzir valores cristãos.",
     originalPrice: "R$99,90",
     price: "R$29,90",
     priceDescription: "Acesso vitalício",
