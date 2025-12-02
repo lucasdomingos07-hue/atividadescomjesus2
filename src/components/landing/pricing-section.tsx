@@ -12,7 +12,7 @@ const plans = [
     name: "📚 Kit Básico",
     subtitle: "Ideal para começar a jornada<br />da fé através da arte.",
     description: "",
-    originalPrice: "R$49,90",
+    originalPrice: "R$39,90",
     price: "R$19,90",
     priceDescription: "Acesso vitalício",
     features: [
