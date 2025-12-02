@@ -81,8 +81,7 @@ export default function PricingSection() {
                     <CardTitle className="text-base font-headline font-semibold text-card-foreground" dangerouslySetInnerHTML={{ __html: plan.subtitle }} />
                   </div>
                   <CardDescription className={cn(
-                    "text-sm text-muted-foreground !mt-3 px-4",
-                    plan.isRecommended && "text-base"
+                    "text-sm text-muted-foreground !mt-3 px-4"
                   )}>
                     {plan.description}
                   </CardDescription>
@@ -141,7 +140,7 @@ export default function PricingSection() {
                   </div>
                 )}
               </CardContent>
-              <CardFooter className="mt-auto p-6">
+              <CardFooter className="mt-auto p-6 flex flex-col gap-2">
                 <a href={plan.url} className="w-full">
                   {plan.isRecommended ? (
                     <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow shine-effect")}>
@@ -153,6 +152,9 @@ export default function PricingSection() {
                     </Button>
                   )}
                 </a>
+                {plan.isRecommended && (
+                  <p className="text-sm text-muted-foreground mt-2 font-semibold">+2 mil famílias recomendam este kit</p>
+                )}
               </CardFooter>
             </Card>
           ))}
