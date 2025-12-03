@@ -147,7 +147,7 @@ export default function PricingSection() {
                       {plan.cta}
                     </Button>
                   ) : (
-                    <Button size="lg" className={cn("w-full font-bold text-base h-14 rounded-full bg-accent text-accent-foreground")}>
+                    <Button size="lg" className={cn("w-full font-bold text-base h-14 rounded-full bg-accent-foreground text-accent")}>
                       {plan.cta}
                     </Button>
                   )}
