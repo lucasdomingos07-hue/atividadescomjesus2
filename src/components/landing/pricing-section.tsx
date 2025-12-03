@@ -1,3 +1,4 @@
+
 "use client";
 
 import { SectionWrapper } from "./section-wrapper";
@@ -146,7 +147,7 @@ export default function PricingSection() {
                       {plan.cta}
                     </Button>
                   ) : (
-                    <Button size="lg" className={cn("w-full font-bold text-base h-14 rounded-full shine-effect bg-accent-foreground text-accent")}>
+                    <Button size="lg" className={cn("w-full font-bold text-base h-14 rounded-full bg-accent text-accent-foreground")}>
                       {plan.cta}
                     </Button>
                   )}
@@ -167,3 +168,5 @@ export default function PricingSection() {
     </SectionWrapper>
   );
 }
+
+    
