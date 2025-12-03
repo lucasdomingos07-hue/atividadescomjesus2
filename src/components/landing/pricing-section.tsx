@@ -20,7 +20,7 @@ const plans = [
       "Imprima e use sempre que quiser",
     ],
     isRecommended: false,
-    cta: "GARANTIR KIT BÁSICO",
+    cta: "QUERO O KIT BÁSICO",
     url: "https://pay.kiwify.com.br/ab5tuPe"
   },
   {
@@ -42,7 +42,7 @@ const plans = [
       { title: "Calendário da Fé 2026", oldPrice: "R$ 19,90", newPrice: "R$ 0,00" },
     ],
     isRecommended: true,
-    cta: "GARANTIR KIT COM 75% OFF",
+    cta: "QUERO O KIT COMPLETO",
     url: "https://pay.kiwify.com.br/5FQC1Cu"
   },
 ];
@@ -54,7 +54,7 @@ export default function PricingSection() {
         <h2 className="text-2xl md:text-3xl font-headline font-bold text-foreground">
           Pronta para viver tudo<br />isso com seu filho?
         </h2>
-        <p className="text-base text-foreground mt-2">
+        <p className="text-base text-foreground mt-2 text-white text-sm">
           Selecione sua Oferta e Comece a criar<br />momentos que o tempo não apaga.
         </p>
       </div>
@@ -68,7 +68,7 @@ export default function PricingSection() {
               <CardHeader className="items-center text-center p-0">
                 <div className="py-6 pb-2 w-full flex flex-col items-center">
                   {plan.isRecommended && (
-                    <div className="bg-black text-white text-sm px-3 py-1 rounded-lg shadow-lg mb-4 text-base">
+                    <div className="bg-black text-white text-sm px-3 py-1 rounded-lg shadow-lg text-base">
                       <span><strong>Apenas Hoje</strong> • <span className="text-brand-green">75% OFF</span></span>
                     </div>
                   )}

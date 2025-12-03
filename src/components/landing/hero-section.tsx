@@ -51,7 +51,7 @@ export default function HeroSection() {
         <div className="mt-8 w-full flex justify-center">
           <a href="#pricing" className="w-full max-w-md md:max-w-none md:w-auto">
               <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full shine-effect w-full md:w-auto text-primary-foreground")}>
-                QUERO COMEÇAR AINDA HOJE
+                QUERO COMEÇAR HOJE
               </Button>
           </a>
         </div>
