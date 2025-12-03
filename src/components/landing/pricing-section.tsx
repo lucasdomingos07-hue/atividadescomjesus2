@@ -27,7 +27,7 @@ const plans = [
     name: "📚 Kit Completo",
     subtitle: "Ensine valores, fortaleça a fé e crie<br />memórias que ficam para sempre.",
     description: "Uma seleção especial de desenhos e histórias para introduzir valores cristãos.",
-    originalPrice: "R$99,90",
+    originalPrice: "R$119,90",
     price: "R$29,90",
     priceDescription: "Acesso vitalício",
     features: [
@@ -147,13 +147,13 @@ export default function PricingSection() {
                       {plan.cta}
                     </Button>
                   ) : (
-                    <Button size="lg" className={cn("w-full font-bold text-base h-14 rounded-full bg-accent-foreground text-accent")}>
+                    <Button size="lg" className={cn("w-full font-bold text-base h-14 rounded-full bg-accent text-accent-foreground")}>
                       {plan.cta}
                     </Button>
                   )}
                 </a>
                 {plan.isRecommended && (
-                  <p className="text-sm text-muted-foreground mt-2 font-semibold">+2 mil famílias recomendam este kit</p>
+                  <p className="text-sm text-muted-foreground mt-2 font-semibold text-center">+2 mil famílias recomendam este kit</p>
                 )}
               </CardFooter>
             </Card>
