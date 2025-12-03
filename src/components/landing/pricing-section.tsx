@@ -55,7 +55,7 @@ export default function PricingSection() {
           Pronta para viver tudo<br />isso com seu filho?
         </h2>
         <p className="text-base text-foreground mt-2 text-white text-sm">
-          Selecione sua Oferta e Comece a criar momentos que o tempo não apaga.
+          Selecione sua oferta e comece a criar<br />momentos que o tempo não apaga.
         </p>
       </div>
       <div className="max-w-xl mx-auto">
