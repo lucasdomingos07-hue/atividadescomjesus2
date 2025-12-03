@@ -54,7 +54,7 @@ export default function PricingSection() {
         <h2 className="text-2xl md:text-3xl font-headline font-bold text-foreground">
           Pronta para viver tudo<br />isso com seu filho?
         </h2>
-        <p className="text-lg text-muted-foreground mt-2">
+        <p className="text-lg text-foreground mt-2">
           Selecione sua Oferta e Comece a criar<br />momentos que o tempo não apaga
         </p>
       </div>
