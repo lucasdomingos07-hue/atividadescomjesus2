@@ -54,7 +54,7 @@ export default function PricingSection() {
         <h2 className="text-2xl md:text-3xl font-headline font-bold text-foreground">
           Pronta para viver tudo<br />isso com seu filho?
         </h2>
-        <p className="text-lg text-foreground mt-2">
+        <p className="text-base text-foreground mt-2">
           Selecione sua Oferta e Comece a criar<br />momentos que o tempo não apaga
         </p>
       </div>
@@ -155,7 +155,7 @@ export default function PricingSection() {
                       {plan.cta}
                     </Button>
                   ) : (
-                    <Button size="lg" className={cn("w-full font-bold text-base h-14 rounded-full bg-accent-foreground text-accent")}>
+                    <Button size="lg" variant="outline" className={cn("w-full font-bold text-base h-14 rounded-full bg-accent-foreground text-accent border-accent hover:bg-accent-foreground/90")}>
                       {plan.cta}
                     </Button>
                   )}
@@ -178,4 +178,6 @@ export default function PricingSection() {
 }
 
     
+    
+
     
