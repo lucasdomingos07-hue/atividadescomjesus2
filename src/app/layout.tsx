@@ -39,6 +39,13 @@ export default function RootLayout({
           src="https://www.facebook.com/tr?id=848711979093727&ev=PageView&noscript=1"
           />
         </noscript>
+        <script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          async
+          defer
+        ></script>
       </head>
       <body className={cn("font-body antialiased", "min-h-screen bg-background")}>
         {children}
