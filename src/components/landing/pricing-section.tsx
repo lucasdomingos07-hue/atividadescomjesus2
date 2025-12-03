@@ -42,7 +42,7 @@ const plans = [
       { title: "Calendário da Fé 2026", oldPrice: "R$ 19,90", newPrice: "R$ 0,00" },
     ],
     isRecommended: true,
-    cta: "GARANTIR KIT COM 70% OFF",
+    cta: "GARANTIR KIT COM 75% OFF",
     url: "https://pay.kiwify.com.br/5FQC1Cu"
   },
 ];
@@ -61,7 +61,7 @@ export default function PricingSection() {
                 <div className="py-6 pb-2 w-full flex flex-col items-center">
                   {plan.isRecommended && (
                     <div className="bg-black text-white text-sm px-3 py-1 rounded-lg shadow-lg mb-4 text-base">
-                      <span><strong>Apenas Hoje</strong> • <span className="text-brand-green">70% OFF</span></span>
+                      <span><strong>Apenas Hoje</strong> • <span className="text-brand-green">75% OFF</span></span>
                     </div>
                   )}
                 </div>
@@ -169,4 +169,5 @@ export default function PricingSection() {
   );
 }
 
+    
     
