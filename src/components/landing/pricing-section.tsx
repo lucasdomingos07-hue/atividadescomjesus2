@@ -50,6 +50,14 @@ const plans = [
 export default function PricingSection() {
   return (
     <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-4 pb-8">
+      <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-2 mb-8">
+        <h2 className="text-2xl md:text-3xl font-headline font-bold text-foreground">
+          Pronta para viver tudo<br />isso com seu filho?
+        </h2>
+        <p className="text-lg text-muted-foreground mt-2">
+          Selecione sua Oferta e Comece a criar<br />momentos que o tempo não apaga
+        </p>
+      </div>
       <div className="max-w-xl mx-auto">
         <div className="grid grid-cols-1 gap-8">
           {plans.map((plan) => (
