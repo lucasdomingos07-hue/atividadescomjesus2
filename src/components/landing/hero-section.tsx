@@ -7,12 +7,16 @@ export default function HeroSection() {
 
   return (
     <section className="bg-background relative">
-      <div className="absolute top-0 left-0 right-0 h-48 bg-brand-green"></div>
-      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center pt-12 relative z-10">
+      <div className="absolute top-0 left-0 right-0 h-96 bg-brand-green"></div>
+      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center pt-12 pb-8 relative z-10">
+        
+        <h1 className="text-2xl md:text-3xl font-headline font-bold text-center text-background mb-8">
+          Ensine ao seu filho a palavra<br />de Deus de forma divertida!
+        </h1>
+
         {/* Video */}
         <div className="w-full max-w-lg">
           <Card className={cn("overflow-hidden shadow-none bg-transparent border-none md:shadow-none md:bg-transparent md:border-none relative")}>
-             <div className="absolute -inset-4 bg-white/30 rounded-full blur-3xl opacity-50"></div>
             <CardContent className="p-0 relative">
                <div dangerouslySetInnerHTML={{ __html: `
                 <script src="https://fast.wistia.com/player.js" async></script>
