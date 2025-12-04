@@ -15,7 +15,7 @@ const features = [
 ];
 
 export default function WhatYouGetSection() {
-    const flatlayImage = PlaceHolderImages.find(img => img.id === "flatlay-drawings");
+    const whatYouGetImage = PlaceHolderImages.find(img => img.id === "what-you-get-image");
   return (
     <SectionWrapper className="bg-secondary pt-8 pb-8">
         <div className="text-center space-y-4 mb-6 max-w-2xl mx-auto">
@@ -38,14 +38,14 @@ export default function WhatYouGetSection() {
                         ))}
                     </ul>
                 </CardContent>
-                {flatlayImage && (
+                {whatYouGetImage && (
                     <CardContent className="p-0 overflow-hidden rounded-b-2xl">
                         <Image
-                            src={flatlayImage.imageUrl}
-                            alt={flatlayImage.description}
+                            src={whatYouGetImage.imageUrl}
+                            alt={whatYouGetImage.description}
                             width={600}
                             height={400}
-                            data-ai-hint={flatlayImage.imageHint}
+                            data-ai-hint={whatYouGetImage.imageHint}
                             className="w-full h-auto object-cover"
                         />
                     </CardContent>
