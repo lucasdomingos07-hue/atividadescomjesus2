@@ -15,7 +15,7 @@ export default function HeroSection() {
             <h1 className="text-2xl md:text-3xl font-headline tracking-tight text-foreground leading-tight md:leading-snug text-glow">
               Ensine ao seu filho a palavra de<br />Deus de maneira encantadora!
             </h1>
-            <p className="text-sm text-muted-foreground max-w-xl mx-auto italic">
+            <p className="text-sm text-foreground/80 max-w-xl mx-auto italic">
               “Ensina a criança no caminho em que deve andar, e, ainda quando for velho, não se desviará dele.”<br/>Provérbios 22:6
             </p>
           </div>
