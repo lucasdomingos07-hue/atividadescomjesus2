@@ -9,7 +9,6 @@ import FaqSection from '@/components/landing/faq-section';
 import FinalCtaSection from '@/components/landing/final-cta-section';
 import ColoringPagesSection from '@/components/landing/coloring-pages-section';
 import CreatorSection from '@/components/landing/creator-section';
-import TargetAudienceSection from '@/components/landing/target-audience-section';
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
-        <TargetAudienceSection />
         <ColoringPagesSection />
         <TestimonialsSection />
         <CreatorSection />
