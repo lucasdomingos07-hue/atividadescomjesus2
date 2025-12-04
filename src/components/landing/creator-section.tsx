@@ -6,6 +6,7 @@ import { SectionWrapper } from "./section-wrapper";
 import { cn } from "@/lib/utils";
 import { Heart, BookOpen, Palette, HeartHandshake, Church } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import React from "react";
 
 const benefits = [
   {
@@ -76,8 +77,8 @@ export default function CreatorSection() {
                     <CardContent className="p-0">
                       <div className="flex flex-col gap-4">
                         {benefits.map((benefit, index) => (
-                          <>
-                            <div key={index} className="flex items-center gap-4">
+                          <React.Fragment key={index}>
+                            <div className="flex items-center gap-4">
                               <div className="bg-card border-2 border-accent p-2 rounded-full aspect-square flex items-center justify-center shrink-0">
                                 {benefit.icon}
                               </div>
@@ -87,7 +88,7 @@ export default function CreatorSection() {
                               </div>
                             </div>
                             {index < benefits.length - 1 && <Separator className="bg-border/50" />}
-                          </>
+                          </React.Fragment>
                         ))}
                       </div>
                     </CardContent>
