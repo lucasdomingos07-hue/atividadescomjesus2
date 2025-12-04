@@ -1,12 +1,9 @@
 
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { cn } from "@/lib/utils";
 
 export default function HeroSection() {
-  const heroImage = PlaceHolderImages.find(img => img.id === "hero-family-coloring");
 
   return (
     <section className="pt-8 pb-4 sm:pt-12 bg-background">
@@ -24,22 +21,28 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Image */}
+        {/* Video */}
         <div className="w-full max-w-lg mt-8">
-          <Card className={cn("overflow-visible shadow-none rounded-2xl bg-transparent border-none md:shadow-none md:bg-transparent md:border-none relative", "card-glow")}>
-            <div className="absolute -inset-4 bg-white/30 rounded-full blur-3xl opacity-50"></div>
+          <Card className={cn("overflow-hidden shadow-none rounded-2xl bg-transparent border-none md:shadow-none md:bg-transparent md:border-none relative", "card-glow")}>
+             <div className="absolute -inset-4 bg-white/30 rounded-full blur-3xl opacity-50"></div>
             <CardContent className="p-0 relative">
-              {heroImage && (
-                <Image
-                  src={heroImage.imageUrl}
-                  alt={heroImage.description}
-                  width={1200}
-                  height={800}
-                  data-ai-hint={heroImage.imageHint}
-                  className="w-full h-auto object-contain rounded-2xl"
-                  priority
-                />
-              )}
+               <div dangerouslySetInnerHTML={{ __html: `
+                <script src="https://fast.wistia.com/player.js" async></script>
+                <script src="https://fast.wistia.com/embed/ln87je4mr8.js" async type="module"></script>
+                <style>
+                  wistia-player[media-id='ln87je4mr8']:not(:defined) { 
+                    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/ln87je4mr8/swatch'); 
+                    display: block; 
+                    filter: blur(5px); 
+                    padding-top:150.0%; 
+                  }
+                  wistia-player[media-id='ln87je4mr8'] {
+                    border-radius: 1rem;
+                    overflow: hidden;
+                  }
+                </style> 
+                <wistia-player media-id="ln87je4mr8" aspect="0.6666666666666666"></wistia-player>
+              ` }} />
             </CardContent>
           </Card>
         </div>
