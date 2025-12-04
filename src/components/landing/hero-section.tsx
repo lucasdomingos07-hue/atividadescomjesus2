@@ -6,13 +6,17 @@ import { cn } from "@/lib/utils";
 export default function HeroSection() {
 
   return (
-    <section className="bg-background relative">
+    <section className="relative pb-8">
       <div className="absolute top-0 left-0 right-0 h-80 bg-brand-green"></div>
-      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center pt-12 pb-8 relative z-10">
+      <div className="bg-background">
+        <div className="bg-brand-green h-24"></div>
+      </div>
+      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 -mt-48">
         
-        <h1 className="text-3xl md:text-4xl font-headline font-bold text-center text-background mb-8">
-          Ensine ao seu filho a palavra<br />
-          de Deus de forma divertida!
+        <h1 className="text-3xl md:text-3xl font-headline font-bold text-center text-background mb-8">
+          Ensine ao seu filho<br />
+          a palavra de Deus<br />
+          de forma divertida!
         </h1>
 
         {/* Video */}
