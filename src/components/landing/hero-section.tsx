@@ -15,7 +15,7 @@ export default function HeroSection() {
           </h1>
         </div>
       </div>
-      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 -mt-24">
+      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 -mt-[110px]">
 
         {/* Video */}
         <div className="w-full max-w-lg mt-4">
