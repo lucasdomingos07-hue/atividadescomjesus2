@@ -12,13 +12,7 @@ export default function HeroSection() {
           {/* Text content */}
           <div className="flex flex-col space-y-6 text-center md:items-center">
             <div className="space-y-4 text-center">
-              <h1 className="text-2xl md:text-3xl font-headline font-bold tracking-tight leading-tight md:leading-snug text-[hsl(var(--background))]">
-                <b>
-                  Ensine ao seu filho a palavra
-                  <br />
-                  de Deus de forma divertida!
-                </b>
-              </h1>
+              
             </div>
           </div>
         </div>
