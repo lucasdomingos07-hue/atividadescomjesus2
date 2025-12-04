@@ -11,7 +11,8 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 pt-10">
 
         <h1 className="text-2xl md:text-3xl font-headline font-bold tracking-tight text-center text-white mb-6">
-          Ensine ao seu filho a palavra<br />de Deus de forma divertida!
+          Ensine ao seu filhoa palavra<br />
+          de Deus de forma divertida!
         </h1>
         
         {/* Video */}
@@ -39,7 +40,7 @@ export default function HeroSection() {
         </div>
         
         {/* CTA Button */}
-        <div className="mt-8 mb-4 w-full flex justify-center">
+        <div className="mt-8 mb-0 w-full flex justify-center">
           <a href="#pricing" className="w-full max-w-md md:max-w-none md:w-auto">
               <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full shine-effect w-full md:w-auto text-primary-foreground")}>
                 QUERO COMEÇAR HOJE
