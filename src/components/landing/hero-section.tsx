@@ -37,7 +37,6 @@ export default function HeroSection() {
                     padding-top:150.0%; 
                   }
                   wistia-player[media-id='ln87je4mr8'] {
-                    border-radius: 1rem;
                     overflow: hidden;
                   }
                 </style> 
