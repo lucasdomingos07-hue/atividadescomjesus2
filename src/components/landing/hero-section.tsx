@@ -15,9 +15,6 @@ export default function HeroSection() {
             <h1 className="text-2xl md:text-3xl font-headline tracking-tight text-foreground leading-tight md:leading-snug text-glow">
               Ensine ao seu filho a palavra de<br />Deus de maneira encantadora!
             </h1>
-            <h2 className="text-lg md:text-xl text-foreground max-w-3xl mx-auto">
-              Assista ao vídeo de 1 minuto<br />e comece hoje mesmo!
-            </h2>
           </div>
         </div>
 
