@@ -18,9 +18,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center">
+      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center pt-8">
         {/* Video */}
-        <div className="w-full max-w-lg -mt-16">
+        <div className="w-full max-w-lg">
           <Card className={cn("overflow-hidden shadow-none bg-transparent border-none md:shadow-none md:bg-transparent md:border-none relative rounded-none")}>
              <div className="absolute -inset-4 bg-white/30 rounded-full blur-3xl opacity-50"></div>
             <CardContent className="p-0 relative">
