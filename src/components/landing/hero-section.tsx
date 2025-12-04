@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export default function HeroSection() {
 
   return (
-    <section className="relative pb-8 bg-background">
+    <section className="relative pb-4 bg-background">
       <div className="bg-brand-green">
         <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 pt-10">
           <h1 className="text-2xl md:text-3xl font-headline font-bold tracking-tight text-center text-primary-foreground mb-6">
@@ -18,7 +18,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10">
 
         {/* Video */}
-        <div className="w-full max-w-lg">
+        <div className="w-full max-w-lg -mt-16">
           <Card className={cn("overflow-hidden shadow-none bg-transparent border-none")}>
             <CardContent className="p-0 relative">
                <div dangerouslySetInnerHTML={{ __html: `
