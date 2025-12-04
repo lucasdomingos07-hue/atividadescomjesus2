@@ -12,8 +12,8 @@ export default function HeroSection() {
           {/* Text content */}
           <div className="flex flex-col space-y-6 text-center md:items-center">
             <div className="space-y-4 text-center">
-              <h1 className="text-2xl md:text-3xl font-headline tracking-tight leading-tight md:leading-snug text-[hsl(var(--background))]">
-                Ensine ao seu filho a palavra de<br />Deus de forma divertida!
+              <h1 className="text-2xl md:text-3xl font-headline font-bold tracking-tight leading-tight md:leading-snug text-[hsl(var(--background))]">
+                Ensine ao seu filho a palavra<br />de Deus de forma divertida!
               </h1>
             </div>
           </div>
@@ -23,7 +23,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center">
         {/* Video */}
         <div className="w-full max-w-lg -mt-8">
-          <Card className={cn("overflow-hidden shadow-none rounded-2xl bg-transparent border-none md:shadow-none md:bg-transparent md:border-none relative", "card-glow")}>
+          <Card className={cn("overflow-hidden shadow-none bg-transparent border-none md:shadow-none md:bg-transparent md:border-none relative", "card-glow")}>
              <div className="absolute -inset-4 bg-white/30 rounded-full blur-3xl opacity-50"></div>
             <CardContent className="p-0 relative">
                <div dangerouslySetInnerHTML={{ __html: `
