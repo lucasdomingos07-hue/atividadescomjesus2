@@ -7,7 +7,7 @@ export default function HeroSection() {
 
   return (
     <section className="relative pb-8">
-      <div className="absolute top-0 left-0 right-0 h-64 bg-brand-green -z-10"></div>
+      <div className="absolute top-0 left-0 right-0 h-[400px] bg-brand-green -z-10"></div>
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 pt-10">
         
         {/* Video */}
