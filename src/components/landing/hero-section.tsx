@@ -6,20 +6,23 @@ import { cn } from "@/lib/utils";
 export default function HeroSection() {
 
   return (
-    <section className="pt-8 pb-4 sm:pt-12 bg-background">
-      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center">
-        
-        {/* Text content */}
-        <div className="flex flex-col space-y-6 text-center md:items-center">
-          <div className="space-y-4 text-center">
-            <h1 className="text-2xl md:text-3xl font-headline tracking-tight text-foreground leading-tight md:leading-snug text-glow">
-              Ensine ao seu filho a palavra de<br />Deus de forma divertida!
-            </h1>
+    <section className="bg-background">
+      <div className="bg-brand-green py-8 sm:py-12">
+        <div className="container mx-auto px-4 md:px-6 flex flex-col items-center">
+          {/* Text content */}
+          <div className="flex flex-col space-y-6 text-center md:items-center">
+            <div className="space-y-4 text-center">
+              <h1 className="text-2xl md:text-3xl font-headline tracking-tight leading-tight md:leading-snug text-[hsl(var(--background))]">
+                Ensine ao seu filho a palavra de<br />Deus de forma divertida!
+              </h1>
+            </div>
           </div>
         </div>
+      </div>
 
+      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center">
         {/* Video */}
-        <div className="w-full max-w-lg mt-8">
+        <div className="w-full max-w-lg -mt-8">
           <Card className={cn("overflow-hidden shadow-none rounded-2xl bg-transparent border-none md:shadow-none md:bg-transparent md:border-none relative", "card-glow")}>
              <div className="absolute -inset-4 bg-white/30 rounded-full blur-3xl opacity-50"></div>
             <CardContent className="p-0 relative">
@@ -45,7 +48,7 @@ export default function HeroSection() {
         </div>
         
         {/* CTA Button */}
-        <div className="mt-8 w-full flex justify-center">
+        <div className="mt-8 mb-4 w-full flex justify-center">
           <a href="#pricing" className="w-full max-w-md md:max-w-none md:w-auto">
               <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full shine-effect w-full md:w-auto text-primary-foreground")}>
                 QUERO COMEÇAR HOJE

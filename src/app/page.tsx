@@ -1,5 +1,4 @@
 
-import Header from '@/components/landing/header';
 import Footer from '@/components/landing/footer';
 import HeroSection from '@/components/landing/hero-section';
 import WhatYouGetSection from '@/components/landing/what-you-get-section';
@@ -13,7 +12,6 @@ import CreatorSection from '@/components/landing/creator-section';
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
-      <Header />
       <main className="flex-1">
         <HeroSection />
         <ColoringPagesSection />
