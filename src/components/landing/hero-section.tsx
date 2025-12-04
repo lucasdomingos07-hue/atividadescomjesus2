@@ -7,14 +7,16 @@ export default function HeroSection() {
 
   return (
     <section className="relative pb-8 bg-background">
-      <div className="absolute top-0 left-0 right-0 h-[400px] bg-brand-green -z-10"></div>
-      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 pt-10">
+      <div className="bg-brand-green">
+        <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 pt-10">
+          <h1 className="text-2xl md:text-3xl font-headline font-bold tracking-tight text-center text-primary-foreground mb-6">
+            Ensine ao seu filhoa palavra<br />
+            de Deus de forma divertida!
+          </h1>
+        </div>
+      </div>
+      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10">
 
-        <h1 className="text-2xl md:text-3xl font-headline font-bold tracking-tight text-center text-white mb-6">
-          Ensine ao seu filhoa palavra<br />
-          de Deus de forma divertida!
-        </h1>
-        
         {/* Video */}
         <div className="w-full max-w-lg">
           <Card className={cn("overflow-hidden shadow-none bg-transparent border-none")}>
