@@ -22,8 +22,8 @@ export default function HeroSection() {
 
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center">
         {/* Video */}
-        <div className="w-full max-w-lg -mt-8">
-          <Card className={cn("overflow-hidden shadow-none bg-transparent border-none md:shadow-none md:bg-transparent md:border-none relative", "card-glow")}>
+        <div className="w-full max-w-lg -mt-16">
+          <Card className={cn("overflow-hidden shadow-none bg-transparent border-none md:shadow-none md:bg-transparent md:border-none relative")}>
              <div className="absolute -inset-4 bg-white/30 rounded-full blur-3xl opacity-50"></div>
             <CardContent className="p-0 relative">
                <div dangerouslySetInnerHTML={{ __html: `
