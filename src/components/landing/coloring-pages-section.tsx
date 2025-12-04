@@ -50,7 +50,7 @@ export default function ColoringPagesSection() {
 
   return (
     <SectionWrapper className="py-8 pb-0">
-      <div className="text-center space-y-2 mb-6 max-w-2xl mx-auto">
+      <div className="text-center space-y-2 mb-4 max-w-2xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-headline font-bold text-foreground">
           Atividades completas para<br />aprender sobre Jesus!
         </h2>
