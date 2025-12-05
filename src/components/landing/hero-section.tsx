@@ -7,7 +7,7 @@ export default function HeroSection() {
 
   return (
     <section className="relative pb-4 bg-background">
-      <div className="bg-brand-green pt-8 pb-32">
+      <div className="bg-brand-green pt-4 pb-32">
         <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10">
           <h1 className="text-3xl md:text-[2.2rem] font-headline tracking-tight text-center text-primary-foreground mb-4 leading-tight">
             Ensine ao seu filho<br />a <strong className="font-bold">palavra de Deus</strong><br />
@@ -15,7 +15,7 @@ export default function HeroSection() {
           </h1>
         </div>
       </div>
-      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 -mt-40 pt-2">
+      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 -mt-28 pt-2">
 
         {/* Video */}
         <div className="w-full max-w-lg mt-4">
