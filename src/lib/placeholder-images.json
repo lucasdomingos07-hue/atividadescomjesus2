@@ -117,7 +117,7 @@
     {
       "id": "testimonial-6",
       "description": "Profile picture for the sixth testimonial.",
-      "imageUrl": "https://i.imgur.com/R3tYj9I.jpeg",
+      "imageUrl": "https://imgur.com/sE8ElXR.png",
       "imageHint": "man smiling"
     },
     {
@@ -141,37 +141,37 @@
     {
       "id": "testimonial-7",
       "description": "Profile picture for the seventh testimonial.",
-      "imageUrl": "https://images.unsplash.com/photo-1607529378676-a20456ee2f6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc2NDkyMjk4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/uS5x2jJ.jpeg",
       "imageHint": "person smiling"
     },
     {
       "id": "testimonial-juliana-image",
       "description": "Imagem de depoimento da Juliana.",
-      "imageUrl": "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMHByYXlpbmd8ZW58MHx8fHwxNzY0OTM5Mzc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/0sK6zKO.jpeg",
       "imageHint": "child praying"
     },
     {
       "id": "testimonial-8",
       "description": "Profile picture for the eighth testimonial.",
-      "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWFjaGVyJTIwY2xhc3Nyb29tfGVufDB8fHx8MTc2NDkzMDI3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/gK6fXvV.jpeg",
       "imageHint": "teacher classroom"
     },
     {
       "id": "testimonial-carlos-image",
       "description": "Imagem de depoimento do Carlos.",
-      "imageUrl": "https://images.unsplash.com/photo-1722962674485-d34e69a9a406?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2hpbGRyZW4lMjBiaWJsZSUyMHN0dWR5fGVufDB8fHx8MTc2NDkzOTM3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/9nF0m9o.jpeg",
       "imageHint": "children bible study"
     },
     {
       "id": "testimonial-9",
       "description": "Profile picture for the ninth testimonial.",
-      "imageUrl": "https://images.unsplash.com/photo-1440288736878-766bd5839edb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmYW1pbHklMjBwYXJrfGVufDB8fHx8MTc2NDg4OTc3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/x0c7t3I.jpeg",
       "imageHint": "family park"
     },
     {
       "id": "testimonial-fernanda-image",
       "description": "Imagem de depoimento da Fernanda.",
-      "imageUrl": "https://images.unsplash.com/photo-1758598737990-83994c6a19d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW90aGVyJTIwZGF1Z2h0ZXIlMjByZWFkaW5nfGVufDB8fHx8MTc2NDkzOTM3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/kS9Z0mD.jpeg",
       "imageHint": "mother daughter reading"
     }
   ]
