@@ -105,7 +105,7 @@
     {
       "id": "testimonial-4",
       "description": "Profile picture for the fourth testimonial.",
-      "imageUrl": "https://i.imgur.com/8x2a3M2.jpeg",
+      "imageUrl": "https://imgur.com/BFC3kLe.png",
       "imageHint": "woman smiling"
     },
     {
@@ -119,12 +119,6 @@
       "description": "Profile picture for the sixth testimonial.",
       "imageUrl": "https://imgur.com/sE8ElXR.png",
       "imageHint": "man smiling"
-    },
-    {
-      "id": "testimonial-mariana-image",
-      "description": "Imagem de depoimento da Mariana.",
-      "imageUrl": "https://i.imgur.com/O61J6o2.jpeg",
-      "imageHint": "child gift"
     },
     {
       "id": "testimonial-anaclara-image",
@@ -141,26 +135,14 @@
     {
       "id": "testimonial-7",
       "description": "Profile picture for the seventh testimonial.",
-      "imageUrl": "https://i.imgur.com/uS5x2jJ.jpeg",
+      "imageUrl": "https://imgur.com/0tLaIQQ.png",
       "imageHint": "person smiling"
-    },
-    {
-      "id": "testimonial-juliana-image",
-      "description": "Imagem de depoimento da Juliana.",
-      "imageUrl": "https://i.imgur.com/0sK6zKO.jpeg",
-      "imageHint": "child praying"
     },
     {
       "id": "testimonial-8",
       "description": "Profile picture for the eighth testimonial.",
-      "imageUrl": "https://i.imgur.com/gK6fXvV.jpeg",
+      "imageUrl": "https://imgur.com/7XBR1jP.png",
       "imageHint": "teacher classroom"
-    },
-    {
-      "id": "testimonial-carlos-image",
-      "description": "Imagem de depoimento do Carlos.",
-      "imageUrl": "https://i.imgur.com/9nF0m9o.jpeg",
-      "imageHint": "children bible study"
     }
   ]
 }
