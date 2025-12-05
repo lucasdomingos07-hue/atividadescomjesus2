@@ -28,18 +28,18 @@ const testimonials = [
     testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-camila-image"),
   },
   {
-    name: "Família Oliveira",
-    role: "Pais de 3 crianças",
-    quote: "Finalmente encontramos algo que une diversão e fé! Nossos filhos pedem para colorir todos os dias.",
-    image: PlaceHolderImages.find(img => img.id === "testimonial-3"),
-    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-familia-image"),
-  },
-  {
     name: "Roberto L.",
     role: "Pai do Davi, 5 anos",
     quote: "Uma forma simples e poderosa de criar memórias com meu filho. Sentamos juntos, pintamos e conversamos sobre as histórias. São momentos que eu não troco por nada.",
     image: PlaceHolderImages.find(img => img.id === "testimonial-6"),
     testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-roberto-image"),
+  },
+  {
+    name: "Família Oliveira",
+    role: "Pais de 3 crianças",
+    quote: "Finalmente encontramos algo que une diversão e fé! Nossos filhos pedem para colorir todos os dias.",
+    image: PlaceHolderImages.find(img => img.id === "testimonial-3"),
+    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-familia-image"),
   },
   {
     name: "Paula F.",
@@ -53,7 +53,6 @@ const testimonials = [
     role: "Tia e Madrinha",
     quote: "Comprei de presente para meus sobrinhos e eles amaram! É um presente que edifica, diverte e ainda ensina sobre o amor de Deus. Recomendo de olhos fechados.",
     image: PlaceHolderImages.find(img => img.id === "testimonial-4"),
-    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-mariana-image"),
   },
   {
     name: "Ana Clara R.",
@@ -67,14 +66,12 @@ const testimonials = [
     role: "Mãe do Miguel, 7 anos",
     quote: "O devocional infantil é maravilhoso. Meu filho agora tem um momento especial com Deus todos os dias antes de dormir. É lindo de ver!",
     image: PlaceHolderImages.find(img => img.id === "testimonial-7"),
-    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-juliana-image"),
   },
   {
     name: "Carlos E.",
     role: "Líder do Ministério Infantil",
     quote: "Este kit é uma ferramenta incrível para o ministério. As crianças amam as atividades e aprendem de forma significativa. Recomendo a todos os líderes.",
     image: PlaceHolderImages.find(img => img.id === "testimonial-8"),
-    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-carlos-image"),
   }
 ];
 
