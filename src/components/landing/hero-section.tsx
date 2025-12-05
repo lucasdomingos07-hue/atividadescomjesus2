@@ -10,15 +10,15 @@ export default function HeroSection() {
       <div className="bg-brand-green pt-10 pb-48">
         <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10">
           <h1 className="text-3xl md:text-[2.65rem] tracking-tight text-center text-primary-foreground mb-4 leading-tight">
-            Ensine ao seu filho<br />a <strong className="font-bold">palavra de Deus</strong><br />
+            Ensine ao seu filho<br />a <strong>palavra de Deus</strong><br />
             de forma divertida!
           </h1>
         </div>
       </div>
-      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 -mt-[15.5rem] pt-4">
+      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 -mt-[15.5rem] pt-8">
 
         {/* Video */}
-        <div className="w-full max-w-lg mt-4">
+        <div className="w-full max-w-lg">
           <Card className={cn("overflow-hidden shadow-none bg-transparent border-none")}>
             <CardContent className="p-0 relative">
                <div dangerouslySetInnerHTML={{ __html: `
