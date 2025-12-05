@@ -1,4 +1,3 @@
-
 "use client";
 
 import { SectionWrapper } from "./section-wrapper";
@@ -40,6 +39,27 @@ const testimonials = [
     quote: "Finalmente encontramos algo que une diversão e fé! Nossos filhos pedem para colorir todos os dias.",
     image: PlaceHolderImages.find(img => img.id === "testimonial-3"),
     testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-familia-image"),
+  },
+  {
+    name: "Mariana P.",
+    role: "Tia e Madrinha",
+    quote: "Comprei de presente para meus sobrinhos e eles amaram! É um presente que edifica, diverte e ainda ensina sobre o amor de Deus. Recomendo de olhos fechados.",
+    image: PlaceHolderImages.find(img => img.id === "testimonial-4"),
+    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-mariana-image"),
+  },
+  {
+    name: "Ana Clara R.",
+    role: "Mãe do Lucas, 4 anos",
+    quote: "Meu filho não largava o celular. Com as atividades, ele descobriu um novo jeito de se divertir e está aprendendo sobre o amor de Deus. A diferença no comportamento dele é nítida!",
+    image: PlaceHolderImages.find(img => img.id === "testimonial-5"),
+    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-anaclara-image"),
+  },
+  {
+    name: "Roberto L.",
+    role: "Pai do Davi, 5 anos",
+    quote: "Uma forma simples e poderosa de criar memórias com meu filho. Sentamos juntos, pintamos e conversamos sobre as histórias. São momentos que eu não troco por nada.",
+    image: PlaceHolderImages.find(img => img.id === "testimonial-6"),
+    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-roberto-image"),
   },
 ];
 

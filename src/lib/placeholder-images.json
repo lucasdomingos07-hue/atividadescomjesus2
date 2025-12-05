@@ -101,6 +101,42 @@
       "description": "Crianças colorindo desenhos da bíblia em uma mesa.",
       "imageUrl": "https://i.imgur.com/Vmrw8NL.png",
       "imageHint": "children coloring"
+    },
+    {
+      "id": "testimonial-4",
+      "description": "Profile picture for the fourth testimonial.",
+      "imageUrl": "https://i.imgur.com/8x2a3M2.jpeg",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "testimonial-5",
+      "description": "Profile picture for the fifth testimonial.",
+      "imageUrl": "https://i.imgur.com/o1bY2d3.jpeg",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-6",
+      "description": "Profile picture for the sixth testimonial.",
+      "imageUrl": "https://i.imgur.com/R3tYj9I.jpeg",
+      "imageHint": "man smiling"
+    },
+    {
+      "id": "testimonial-mariana-image",
+      "description": "Imagem de depoimento da Mariana.",
+      "imageUrl": "https://i.imgur.com/O61J6o2.jpeg",
+      "imageHint": "child gift"
+    },
+    {
+      "id": "testimonial-anaclara-image",
+      "description": "Imagem de depoimento da Ana Clara.",
+      "imageUrl": "https://i.imgur.com/i9T9s84.jpeg",
+      "imageHint": "child coloring"
+    },
+    {
+      "id": "testimonial-roberto-image",
+      "description": "Imagem de depoimento do Roberto.",
+      "imageUrl": "https://i.imgur.com/rS2h2gT.jpeg",
+      "imageHint": "father son"
     }
   ]
 }
