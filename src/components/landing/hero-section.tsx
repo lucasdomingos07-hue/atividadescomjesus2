@@ -7,15 +7,16 @@ export default function HeroSection() {
 
   return (
     <section className="relative pb-4 bg-background">
-      <div className="bg-brand-green pt-10 pb-48">
+      <div className="bg-brand-green pt-8 pb-56 md:pb-64">
         <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10">
           <h1 className="text-3xl md:text-[2.65rem] tracking-tight text-center text-primary-foreground leading-tight">
-            Ensine ao seu filho<br />a <strong>palavra de Deus</strong><br />
+            Ensine ao seu filho<br />
+            a <strong>palavra de Deus</strong><br />
             de forma divertida!
           </h1>
         </div>
       </div>
-      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 -mt-[17rem] pt-8">
+      <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 -mt-48 md:-mt-56">
 
         {/* Video */}
         <div className="w-full max-w-lg">
