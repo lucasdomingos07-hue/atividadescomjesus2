@@ -28,11 +28,11 @@ const testimonials = [
     testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-camila-image"),
   },
   {
-    name: "Paula F.",
-    role: "Professora de Catequese",
-    quote: "Esse material transformou minhas aulas de catequese! As crianças ficam super envolvidas, aprendendo sobre a Palavra de Deus com alegria e criatividade. É uma bênção!",
-    image: PlaceHolderImages.find(img => img.id === "testimonial-2"),
-    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-paula-image"),
+    name: "Família Oliveira",
+    role: "Pais de 3 crianças",
+    quote: "Finalmente encontramos algo que une diversão e fé! Nossos filhos pedem para colorir todos os dias.",
+    image: PlaceHolderImages.find(img => img.id === "testimonial-3"),
+    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-familia-image"),
   },
   {
     name: "Roberto L.",
@@ -42,11 +42,11 @@ const testimonials = [
     testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-roberto-image"),
   },
   {
-    name: "Família Oliveira",
-    role: "Pais de 3 crianças",
-    quote: "Finalmente encontramos algo que une diversão e fé! Nossos filhos pedem para colorir todos os dias.",
-    image: PlaceHolderImages.find(img => img.id === "testimonial-3"),
-    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-familia-image"),
+    name: "Paula F.",
+    role: "Professora de Catequese",
+    quote: "Esse material transformou minhas aulas de catequese! As crianças ficam super envolvidas, aprendendo sobre a Palavra de Deus com alegria e criatividade. É uma bênção!",
+    image: PlaceHolderImages.find(img => img.id === "testimonial-2"),
+    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-paula-image"),
   },
   {
     name: "Mariana P.",
@@ -189,7 +189,7 @@ export default function TestimonialsSection() {
                 ))}
               </CarouselContent>
               <CarouselPrevious className="hidden sm:flex -left-10" />
-              <CarouselNext className="hidden sm:flex -right-10" />
+              <CarouselNext className="hidden sm.flex -right-10" />
             </Carousel>
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center gap-1">
                 <div className="flex items-center gap-2">
