@@ -111,7 +111,7 @@
     {
       "id": "testimonial-5",
       "description": "Profile picture for the fifth testimonial.",
-      "imageUrl": "https://i.imgur.com/N7tO3KN.png",
+      "imageUrl": "https://imgur.com/N7tO3KN.png",
       "imageHint": "woman portrait"
     },
     {
@@ -129,13 +129,13 @@
     {
       "id": "testimonial-anaclara-image",
       "description": "Imagem de depoimento da Ana Clara.",
-      "imageUrl": "https://i.imgur.com/mIQWDx6.png",
+      "imageUrl": "https://imgur.com/mIQWDx6.png",
       "imageHint": "child coloring"
     },
     {
       "id": "testimonial-roberto-image",
       "description": "Imagem de depoimento do Roberto.",
-      "imageUrl": "https://i.imgur.com/ShmtnyF.png",
+      "imageUrl": "https://imgur.com/ShmtnyF.png",
       "imageHint": "father son"
     },
     {
@@ -161,18 +161,6 @@
       "description": "Imagem de depoimento do Carlos.",
       "imageUrl": "https://i.imgur.com/9nF0m9o.jpeg",
       "imageHint": "children bible study"
-    },
-    {
-      "id": "testimonial-9",
-      "description": "Profile picture for the ninth testimonial.",
-      "imageUrl": "https://i.imgur.com/x0c7t3I.jpeg",
-      "imageHint": "family park"
-    },
-    {
-      "id": "testimonial-fernanda-image",
-      "description": "Imagem de depoimento da Fernanda.",
-      "imageUrl": "https://i.imgur.com/kS9Z0mD.jpeg",
-      "imageHint": "mother daughter reading"
     }
   ]
 }

@@ -75,13 +75,6 @@ const testimonials = [
     quote: "Este kit é uma ferramenta incrível para o ministério. As crianças amam as atividades e aprendem de forma significativa. Recomendo a todos os líderes.",
     image: PlaceHolderImages.find(img => img.id === "testimonial-8"),
     testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-carlos-image"),
-  },
-  {
-    name: "Fernanda C.",
-    role: "Mãe da Sofia, 5 anos",
-    quote: "Qualidade e propósito em um só material. As histórias são cativantes e os desenhos, lindos. Valeu cada centavo!",
-    image: PlaceHolderImages.find(img => img.id === "testimonial-9"),
-    testimonialImage: PlaceHolderImages.find(img => img.id === "testimonial-fernanda-image"),
   }
 ];
 
