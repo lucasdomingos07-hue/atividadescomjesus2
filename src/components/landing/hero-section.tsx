@@ -2,8 +2,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function HeroSection() {
+  const heroImage = PlaceHolderImages.find(img => img.id === "hero-family-coloring");
 
   return (
     <section className="relative pb-4 bg-background">
@@ -18,26 +21,21 @@ export default function HeroSection() {
       </div>
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10 -mt-48 md:-mt-56">
 
-        {/* Video */}
+        {/* Image */}
         <div className="w-full max-w-lg">
-          <Card className={cn("overflow-hidden shadow-none bg-transparent border-none")}>
+          <Card className={cn("overflow-hidden shadow-2xl rounded-2xl bg-card border")}>
             <CardContent className="p-0 relative">
-               <div dangerouslySetInnerHTML={{ __html: `
-                <script src="https://fast.wistia.com/player.js" async></script>
-                <script src="https://fast.wistia.com/embed/ln87je4mr8.js" async type="module"></script>
-                <style>
-                  wistia-player[media-id='ln87je4mr8']:not(:defined) { 
-                    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/ln87je4mr8/swatch'); 
-                    display: block; 
-                    filter: blur(5px); 
-                    padding-top:150.0%; 
-                  }
-                  wistia-player[media-id='ln87je4mr8'] {
-                    overflow: hidden;
-                  }
-                </style> 
-                <wistia-player media-id="ln87je4mr8" aspect="0.6666666666666666"></wistia-player>
-              ` }} />
+              {heroImage && (
+                <Image
+                  src={heroImage.imageUrl}
+                  alt={heroImage.description}
+                  width={1200}
+                  height={800}
+                  data-ai-hint={heroImage.imageHint}
+                  className="w-full h-auto object-contain"
+                  priority
+                />
+              )}
             </CardContent>
           </Card>
         </div>
