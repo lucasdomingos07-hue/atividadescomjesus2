@@ -94,6 +94,23 @@ export default function ColoringPagesSection() {
         </h2>
       </div>
 
+       <div className="mb-4 flex flex-col items-center justify-center gap-1">
+          <div className="flex items-center gap-2">
+              {Array.from({ length: count }).map((_, i) => (
+                  <span
+                      key={i}
+                      className={cn(
+                          'h-2 rounded-full transition-all duration-300',
+                          i + 1 === current ? 'w-5 bg-primary' : 'w-2 bg-primary/50'
+                      )}
+                  />
+              ))}
+          </div>
+          <p className="text-center text-muted-foreground text-xs font-medium">
+            Arraste para o lado
+          </p>
+      </div>
+
       <div className="max-w-xl mx-auto">
         <Card className={cn("bg-card shadow-lg rounded-xl overflow-hidden border-primary/20", "card-glow")}>
           <CardContent className="p-1 md:p-2 relative">
@@ -125,22 +142,6 @@ export default function ColoringPagesSection() {
               <CarouselPrevious className="hidden sm:flex -left-4" />
               <CarouselNext className="hidden sm:flex -right-4" />
             </Carousel>
-             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center gap-1">
-                <div className="flex items-center gap-2">
-                    {Array.from({ length: count }).map((_, i) => (
-                        <span
-                            key={i}
-                            className={cn(
-                                'h-2 rounded-full transition-all duration-300',
-                                i + 1 === current ? 'w-5 bg-background' : 'w-2 bg-background/50'
-                            )}
-                        />
-                    ))}
-                </div>
-                <p className="text-center text-background/80 text-xs font-medium">
-                  Arraste para o lado
-                </p>
-            </div>
           </CardContent>
           <Separator />
           <CardContent className="p-6">
