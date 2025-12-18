@@ -92,10 +92,7 @@ export default function PricingSection() {
         {/* Complete Plan */}
         <div className="flex flex-col h-full">
           <Card className="bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-2xl flex-grow flex flex-col p-6 relative overflow-hidden">
-            <div className="absolute top-4 right-[-50px] bg-red-700 text-white font-bold text-sm px-16 py-2 transform rotate-45">
-              OFERTA
-            </div>
-
+            
             <div className="absolute top-0 left-0 right-0 py-2 bg-red-700 text-center">
                 <p className="font-bold text-white flex items-center justify-center gap-2"><Flame className="w-4 h-4"/> Apenas Hoje • 70% OFF</p>
             </div>
@@ -112,9 +109,9 @@ export default function PricingSection() {
             </CardHeader>
             <CardContent className="p-0 mt-4 flex-grow">
               <div className="text-center mb-4">
-                <p className="text-red-200">De <span className="line-through">R$99,90</span> por</p>
-                <p className="text-5xl font-bold text-white mt-1">R$19,90</p>
-                <p className="text-red-200 text-sm">/ Acesso vitalício</p>
+                <p className="text-red-200">De <span className="line-through">{plans[1].originalPrice}</span> por</p>
+                <p className="text-5xl font-bold text-white mt-1">{plans[1].price}</p>
+                <p className="text-red-200 text-sm">/ {plans[1].priceDescription}</p>
               </div>
 
               <div className="bg-white/20 rounded-xl p-4 space-y-3 text-sm backdrop-blur-sm border border-white/20">
