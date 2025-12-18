@@ -16,7 +16,7 @@ export default function HeroSection() {
             <span className="font-bold">Menos telas nas férias.</span> <br /> Mais fé, foco e imaginação <br /> antes que esse tempo passe.
           </h1>
           <h2 className="text-lg md:text-xl text-primary-foreground/80 mt-4 max-w-2xl text-center">
-            Atividades bíblicas prontas para imprimir e criar momentos de fé entre mãe e filho.
+            <strong>Atividades bíblicas prontas para imprimir</strong> e criar momentos de fé entre mãe e filho.
           </h2>
         </div>
       </div>
