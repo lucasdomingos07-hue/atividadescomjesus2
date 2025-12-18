@@ -127,14 +127,14 @@ export default function PricingSection() {
               </div>
 
               <div className="mt-4 space-y-3">
-                <h4 className="font-bold text-center flex items-center justify-center gap-2"><Gift className="w-4 h-4"/> Bônus Exclusivos (R$ 281 em Presentes)</h4>
+                <h4 className="font-bold text-center flex items-center justify-center gap-2"><Gift className="w-4 h-4"/> Bônus (R$ 281 em Presentes)</h4>
                 <div className="bg-white/20 rounded-xl p-4 space-y-2 text-sm backdrop-blur-sm border border-white/20">
                   {plans[1].bonuses?.map((bonus, index) => (
-                    <div key={index} className="flex justify-between items-center">
-                      <span className="flex items-center gap-2">
+                    <div key={index} className="flex justify-between items-center gap-2">
+                      <span className="flex items-center gap-2 whitespace-nowrap">
                         <span className="font-mono text-orange-200">T</span> {bonus.title}
                       </span>
-                      <span>
+                      <span className="text-right whitespace-nowrap">
                         <span className="line-through text-red-200">{bonus.oldPrice}</span> → <span className="font-bold">{bonus.newPrice}</span>
                       </span>
                     </div>
