@@ -16,6 +16,9 @@ import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import React from "react";
 import { cn } from "@/lib/utils";
+import { Separator } from "../ui/separator";
+import { Heart, Palette, HeartHandshake, BookOpen, Church, ClipboardCheck } from "lucide-react";
+
 
 const coloringPages = [
   PlaceHolderImages.find((img) => img.id === "coloring-page-1"),
@@ -26,6 +29,39 @@ const coloringPages = [
   PlaceHolderImages.find((img) => img.id === "coloring-page-9"),
   PlaceHolderImages.find((img) => img.id === "coloring-page-10"),
 ].filter(Boolean);
+
+const benefits = [
+    {
+      icon: <Heart className="w-8 h-8 text-red-500" />,
+      title: "Fortalece a fé",
+      description: "Ensina valores cristãos com leveza.",
+    },
+    {
+      icon: <Palette className="w-8 h-8 text-blue-500" />,
+      title: "Ativa criatividade",
+      description: "Brincar enquanto aprende.",
+    },
+    {
+      icon: <HeartHandshake className="w-8 h-8 text-pink-500" />,
+      title: "Conecta pais e filhos",
+      description: "Momentos que viram memórias.",
+    },
+    {
+      icon: <BookOpen className="w-8 h-8 text-green-500" />,
+      title: "Histórias que tocam",
+      description: "Aproximam o coração de Deus.",
+    },
+    {
+      icon: <Church className="w-8 h-8 text-purple-500" />,
+      title: "Fé dentro de casa",
+      description: "Um pequeno ministério no lar.",
+    },
+    {
+      icon: <ClipboardCheck className="w-8 h-8 text-orange-500" />,
+      title: "Criado de mãe para mãe",
+      description: "Pensado para a realidade das férias, do tempo curto e das distrações.",
+    },
+  ];
 
 export default function ColoringPagesSection() {
   const plugin = React.useRef(
@@ -51,7 +87,7 @@ export default function ColoringPagesSection() {
 
 
   return (
-    <SectionWrapper className="py-8 pb-0">
+    <SectionWrapper className="py-8">
       <div className="text-center space-y-2 mb-4 max-w-2xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-headline font-bold text-foreground">
           Atividades completas para<br />aprender sobre Jesus!
@@ -104,6 +140,25 @@ export default function ColoringPagesSection() {
                 <p className="text-center text-background/80 text-xs font-medium">
                   Arraste para o lado
                 </p>
+            </div>
+          </CardContent>
+          <Separator />
+          <CardContent className="p-6">
+            <div className="flex flex-col gap-4">
+              {benefits.map((benefit, index) => (
+                <React.Fragment key={index}>
+                  <div className="flex items-center gap-4">
+                    <div className="bg-card border-2 border-accent p-2 rounded-full aspect-square flex items-center justify-center shrink-0">
+                      {benefit.icon}
+                    </div>
+                    <div className="flex flex-col text-left">
+                      <h3 className="font-headline text-base font-semibold text-card-foreground">{benefit.title}</h3>
+                      <p className="text-sm text-muted-foreground">{benefit.description}</p>
+                    </div>
+                  </div>
+                  {index < benefits.length - 1 && <Separator className="bg-border/50" />}
+                </React.Fragment>
+              ))}
             </div>
           </CardContent>
         </Card>
