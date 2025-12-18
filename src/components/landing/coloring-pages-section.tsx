@@ -101,7 +101,7 @@ export default function ColoringPagesSection() {
                       key={i}
                       className={cn(
                           'h-2 rounded-full transition-all duration-300',
-                          i + 1 === current ? 'w-5 bg-white' : 'w-2 bg-white/50'
+                          i + 1 === current ? 'w-5 bg-brand-green' : 'w-2 bg-brand-green/50'
                       )}
                   />
               ))}
