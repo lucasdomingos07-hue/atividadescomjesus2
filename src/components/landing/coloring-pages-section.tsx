@@ -21,7 +21,6 @@ const coloringPages = [
   PlaceHolderImages.find((img) => img.id === "coloring-page-1"),
   PlaceHolderImages.find((img) => img.id === "coloring-page-2"),
   PlaceHolderImages.find((img) => img.id === "coloring-page-3"),
-  PlaceHolderImages.find((img) => img.id === "coloring-page-4"),
   PlaceHolderImages.find((img) => img.id === "coloring-page-5"),
 ].filter(Boolean);
 
