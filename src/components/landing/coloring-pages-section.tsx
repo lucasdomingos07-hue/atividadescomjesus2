@@ -23,6 +23,8 @@ const coloringPages = [
   PlaceHolderImages.find((img) => img.id === "coloring-page-6"),
   PlaceHolderImages.find((img) => img.id === "coloring-page-7"),
   PlaceHolderImages.find((img) => img.id === "coloring-page-8"),
+  PlaceHolderImages.find((img) => img.id === "coloring-page-9"),
+  PlaceHolderImages.find((img) => img.id === "coloring-page-10"),
 ].filter(Boolean);
 
 export default function ColoringPagesSection() {

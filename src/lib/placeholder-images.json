@@ -143,6 +143,18 @@
       "description": "Coloring page of a girl praying.",
       "imageUrl": "https://i.imgur.com/uBJxiDF.png",
       "imageHint": "girl praying coloring"
+    },
+    {
+      "id": "coloring-page-9",
+      "description": "Coloring page of Jesus with children.",
+      "imageUrl": "https://i.imgur.com/BOE1xgX.png",
+      "imageHint": "Jesus children coloring"
+    },
+    {
+      "id": "coloring-page-10",
+      "description": "Coloring page of Jesus calming the storm.",
+      "imageUrl": "https://i.imgur.com/vOCojI0.png",
+      "imageHint": "Jesus storm coloring"
     }
   ]
 }
