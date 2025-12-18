@@ -12,7 +12,7 @@ export default function HeroSection() {
     <section className="relative pb-4 bg-background">
       <div className="bg-brand-green pt-8 pb-56 md:pb-64">
         <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10">
-          <h1 className="text-2xl md:text-3xl tracking-tight text-center text-primary-foreground leading-tight font-headline">
+          <h1 className="text-2xl md:text-2xl tracking-tight text-center text-primary-foreground leading-tight font-headline">
             <span className="font-bold">Menos telas nas férias.</span> <br /> Mais fé, foco e imaginação <br /> antes que esse tempo passe.
           </h1>
           <h2 className="text-lg md:text-xl text-primary-foreground/80 mt-4 max-w-2xl text-center">
@@ -45,7 +45,7 @@ export default function HeroSection() {
         <div className="mt-6 mb-0 w-full flex justify-center">
           <a href="#pricing" className="w-full max-w-md md:max-w-none md:w-auto">
               <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full shine-effect w-full md:w-auto text-primary-foreground")}>
-                QUERO COMEÇAR HOJE
+                ACESSAR MATERIAL AGORA
               </Button>
           </a>
         </div>
