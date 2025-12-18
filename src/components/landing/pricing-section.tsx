@@ -50,10 +50,10 @@ const plans = [
 export default function PricingSection() {
   return (
     <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-12 pb-12">
-      <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-start">
+      <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-start justify-center">
         
         {/* Basic Plan */}
-        <div className="flex flex-col h-full">
+        <div className="flex flex-col h-full max-w-md">
           <Card className="bg-slate-800/50 border-slate-700 text-white rounded-2xl flex-grow flex flex-col p-6 backdrop-blur-sm">
             <CardHeader className="p-0">
               <div className="flex items-center gap-2">
@@ -90,7 +90,7 @@ export default function PricingSection() {
         </div>
 
         {/* Complete Plan */}
-        <div className="flex flex-col h-full">
+        <div className="flex flex-col h-full max-w-md">
           <Card className="bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-2xl flex-grow flex flex-col p-6 relative overflow-hidden">
             
             <div className="absolute top-0 left-0 right-0 py-2 bg-red-700 text-center">
