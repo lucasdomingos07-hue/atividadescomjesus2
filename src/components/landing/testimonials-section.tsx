@@ -1,4 +1,3 @@
-
 "use client";
 
 import { SectionWrapper } from "./section-wrapper";
@@ -122,7 +121,7 @@ export default function TestimonialsSection() {
             <div className={cn("flex items-center justify-center text-center gap-3 w-full")}>
                 <Users className="w-6 h-6 text-background shrink-0"/>
                 <span className="font-medium text-left text-sm leading-tight text-background">
-                  <strong>+ de 5 mil</strong> famílias já transformaram o tempo de tela em diversão e aprendizado.
+                  <strong>Mais de 20.637</strong> famílias já transformaram o tempo de tela em diversão e aprendizado.
                 </span>
             </div>
           </CardContent>
