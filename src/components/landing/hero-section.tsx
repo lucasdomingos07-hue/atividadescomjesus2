@@ -13,7 +13,7 @@ export default function HeroSection() {
       <div className="bg-brand-green pt-8 pb-56 md:pb-64">
         <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10">
           <h1 className="text-2xl md:text-2xl tracking-tight text-center text-primary-foreground leading-tight font-headline">
-            <span className="font-bold">Menos telas nas férias.</span> <br /> Mais fé, foco e imaginação <br /> antes que esse tempo passe.
+            <span className="font-bold">Menos telas nas férias.</span> <br /> Mais fé, foco e imaginação.
           </h1>
           <h2 className="text-lg md:text-xl text-primary-foreground/80 mt-4 max-w-2xl text-center">
             <strong>Atividades bíblicas prontas para imprimir</strong> e criar momentos de fé entre mãe e filho.
