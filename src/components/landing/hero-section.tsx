@@ -12,7 +12,7 @@ export default function HeroSection() {
     <section className="relative pb-4 bg-background">
       <div className="bg-brand-green pt-8 pb-56 md:pb-64">
         <div className="container mx-auto px-4 md:px-6 flex flex-col items-center relative z-10">
-          <h1 className="text-3xl md:text-3xl tracking-tight text-center text-primary-foreground leading-tight font-headline">
+          <h1 className="text-2xl md:text-3xl tracking-tight text-center text-primary-foreground leading-tight font-headline">
             Menos telas nas férias. <br /> Mais fé, foco e imaginação <br /> antes que esse tempo passe.
           </h1>
           <h2 className="text-lg md:text-xl text-primary-foreground/80 mt-4 max-w-2xl text-center">
