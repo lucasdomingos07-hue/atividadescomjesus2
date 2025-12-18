@@ -66,7 +66,7 @@ export default function PricingSection() {
             </CardHeader>
             <CardContent className="p-0 mt-6 flex-grow">
               <div className="bg-slate-900/60 rounded-xl p-6 text-center">
-                  <p className="text-slate-400">De <span className="line-through">R$49,90</span> por</p>
+                  <p className="text-slate-400">De <span className="line-through">R$29,90</span> por</p>
                   <p className="text-4xl font-bold text-white mt-1">R$10,00</p>
                   <p className="text-slate-400 text-sm">/ Acesso vitalício</p>
               </div>
@@ -108,7 +108,7 @@ export default function PricingSection() {
                   <h3 className="font-semibold text-lg">Kit Completo</h3>
               </div>
               <p className="text-red-100 pt-4 text-lg font-semibold">Ensine valores, fortaleça a fé e crie memórias eternas.</p>
-              <p className="text-red-200 text-sm">{plans[1].description}</p>
+              <p className="text-red-200 text-sm text-center">{plans[1].description}</p>
             </CardHeader>
             <CardContent className="p-0 mt-4 flex-grow">
               <div className="text-center mb-4">
