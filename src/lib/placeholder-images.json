@@ -79,18 +79,6 @@
       "imageHint": "nativity coloring"
     },
     {
-      "id": "coloring-page-3",
-      "description": "Coloring page of Jesus with disciples.",
-      "imageUrl": "https://i.imgur.com/Affp3Me.png",
-      "imageHint": "Jesus disciples coloring"
-    },
-    {
-      "id": "coloring-page-5",
-      "description": "Coloring page of the Nativity scene.",
-      "imageUrl": "https://i.imgur.com/VDmyRb9.jpeg",
-      "imageHint": "nativity scene coloring"
-    },
-    {
       "id": "audience-section-image",
       "description": "Crianças colorindo desenhos da bíblia em uma mesa.",
       "imageUrl": "https://i.imgur.com/Vmrw8NL.png",
@@ -137,6 +125,24 @@
       "description": "Profile picture for the eighth testimonial.",
       "imageUrl": "https://i.imgur.com/7XBR1jP.png",
       "imageHint": "teacher classroom"
+    },
+    {
+      "id": "coloring-page-6",
+      "description": "Coloring page of Noah's Ark.",
+      "imageUrl": "https://i.imgur.com/RwsSkSB.png",
+      "imageHint": "noah ark coloring"
+    },
+    {
+      "id": "coloring-page-7",
+      "description": "Coloring page of the Last Supper.",
+      "imageUrl": "https://i.imgur.com/3uMPAoo.png",
+      "imageHint": "last supper coloring"
+    },
+    {
+      "id": "coloring-page-8",
+      "description": "Coloring page of a girl praying.",
+      "imageUrl": "https://i.imgur.com/uBJxiDF.png",
+      "imageHint": "girl praying coloring"
     }
   ]
 }

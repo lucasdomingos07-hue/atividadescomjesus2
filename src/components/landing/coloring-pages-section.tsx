@@ -20,7 +20,9 @@ import { cn } from "@/lib/utils";
 const coloringPages = [
   PlaceHolderImages.find((img) => img.id === "coloring-page-1"),
   PlaceHolderImages.find((img) => img.id === "coloring-page-2"),
-  PlaceHolderImages.find((img) => img.id === "coloring-page-5"),
+  PlaceHolderImages.find((img) => img.id === "coloring-page-6"),
+  PlaceHolderImages.find((img) => img.id === "coloring-page-7"),
+  PlaceHolderImages.find((img) => img.id === "coloring-page-8"),
 ].filter(Boolean);
 
 export default function ColoringPagesSection() {
