@@ -2,7 +2,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { SectionWrapper } from "./section-wrapper";
 import { cn } from "@/lib/utils";
-import { Heart, Palette, HeartHandshake, BookOpen, Church } from "lucide-react";
+import { Heart, Palette, HeartHandshake, BookOpen, Church, ClipboardCheck } from "lucide-react";
 import React from "react";
 import { Separator } from "../ui/separator";
 
@@ -31,6 +31,11 @@ const benefits = [
       icon: <Church className="w-8 h-8 text-purple-500" />,
       title: "Fé dentro de casa",
       description: "Um pequeno ministério no lar.",
+    },
+    {
+      icon: <ClipboardCheck className="w-8 h-8 text-orange-500" />,
+      title: "Criado de mãe para mãe",
+      description: "Pensado para a realidade das férias, do tempo curto e das distrações.",
     },
   ];
 
