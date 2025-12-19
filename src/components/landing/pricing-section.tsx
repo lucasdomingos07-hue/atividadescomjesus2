@@ -21,7 +21,7 @@ const plans = [
     ],
     isRecommended: false,
     cta: "GARANTIR KIT BÁSICO",
-    url: "https://pay.kiwify.com.br/ab5tuPe"
+    url: "https://checkout.dinamicasdafe.site/VCCL1O8SCKM9"
   },
   {
     name: "Kit Completo",
@@ -43,7 +43,7 @@ const plans = [
     ],
     isRecommended: true,
     cta: "GARANTIR KIT COM 70% OFF",
-    url: "https://pay.kiwify.com.br/5FQC1Cu"
+    url: "https://checkout.dinamicasdafe.site/VCCL1O8SCKM8"
   },
 ];
 
@@ -53,7 +53,7 @@ export default function PricingSection() {
       <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-start justify-center">
         
         {/* Basic Plan */}
-        <div className="flex flex-col h-full max-w-md">
+        <div className="flex flex-col h-full max-w-md mx-auto">
           <Card className="bg-slate-800/50 border-slate-700 text-white rounded-2xl flex-grow flex flex-col p-6 backdrop-blur-sm">
             <CardHeader className="p-0">
               <div className="flex items-center gap-2">
@@ -90,7 +90,7 @@ export default function PricingSection() {
         </div>
 
         {/* Complete Plan */}
-        <div className="flex flex-col h-full max-w-md">
+        <div className="flex flex-col h-full max-w-md mx-auto">
           <Card className="bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-2xl flex-grow flex flex-col p-6 relative overflow-hidden">
             
             <div className="absolute top-0 left-0 right-0 py-2 bg-red-700 text-center">
